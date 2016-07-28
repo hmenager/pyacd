@@ -378,6 +378,32 @@ class Acd(object):
         self.application = application
         self.sections = sections or []
 
+    def parameter_names(self):
+        return [parameter.name for section in self.sections for parameter in
+                section.parameters]
+
+    def qualifier_names(self):
+        return [qualifier for section in self.sections for parameter in
+                section.parameters for qualifier in
+                parameter.qualifiers.keys()]
+
+    def parameter_by_name(self, name):
+        for section in self.sections:
+            for parameter in section.parameters:
+                if parameter.name==name:
+                    return parameter
+        return None
+
+    def parameter_by_index(self, index):
+        return [parameter for section in self.sections for parameter in
+                section.parameters if parameter.attributes['parameter']==True][
+            index]
+
+    def parameter_by_qualifier_name(self, name):
+        return [parameter for section in self.sections for parameter in
+                section.parameters if
+                name in parameter.qualifiers.keys()]
+
 
 class UnknownAcdPropertyException(Exception):
     """
