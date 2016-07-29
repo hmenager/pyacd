@@ -77,8 +77,61 @@ class TestParser(unittest.TestCase):
         self.assertEqual(res.input_lines[1].input_line, ' tutu.dat')
 
     def test_parse_qa_cai(self):
-        qatest_text = open('cai/qatest.dat', 'r').read()
-        acd_text = open('cai/cai.acd', 'r').read()
+        qatest_text = '''
+        ID cai-ex
+        AP cai
+        CL AB009602
+        IN
+        IN
+        FI stderr
+        FC = 2
+        FP 0 /Warning: /
+        FP 0 /Error: /
+        FP 0 /Died: /
+        FI ab009602.cai
+        FP /0\.188/
+        //
+        '''
+        acd_text = '''
+        application: cai [
+          documentation: "Calculate codon adaptation index"
+          groups: "Nucleic:Codon usage"
+          relations: "EDAM_topic:0107 Codon usage analysis"
+          relations: "EDAM_operation:0286 Codon usage analysis"
+        ]
+
+        section: input [
+          information: "Input section"
+          type: "page"
+        ]
+
+          seqall: seqall [
+            parameter: "Y"
+            type: "DNA"
+            relations: "EDAM_data:2887 Sequence record (nucleic acid)"
+          ]
+
+          codon: cfile [
+            standard: "Y"
+            default: "Eyeast_cai.cut"
+            relations: "EDAM_data:1597 Codon usage table"
+          ]
+
+        endsection: input
+
+        section: output [
+          information: "Output section"
+          type: "page"
+        ]
+
+          outfile: outfile [
+            parameter: "Y"
+            knowntype: "cai output"
+            relations: "EDAM_data:2865 Codon usage bias"
+          ]
+
+        endsection: output
+        '''
         acd_def = parse_acd(acd_text)
         qa_item = parse_qa(qatest_text)
         qa_item.parse_command_lines(acd_def)
