@@ -1,3 +1,5 @@
+from acd import BooleanParameter
+
 class ApplicationRef(object):
     """
     A reference to an application
@@ -130,24 +132,50 @@ class Qa(object):
                 name = chunk[1:]
                 parameter = acd_def.parameter_by_name(name)
                 if parameter is not None:
-                    parameter_value = cl_chunks.next()
+                    if isinstance(parameter, BooleanParameter):
+                        parameter_value = True
+                    else:
+                        parameter_value = cl_chunks.next()
                     job_order[parameter.name]['value'] = parameter_value
                     parameters_count += 1
                 else:
-                    parameters = acd_def.parameter_by_qualifier_name(
-                        name)
-                    if len(parameters)==1:
-                        parameter = parameters[0]
-                        parameter_value = cl_chunks.next()
-                        job_order[parameter.name][name] = parameter_value
+                    if name.startswith('no') and acd_def.parameter_by_name(
+                            name[2:]) is not None:
+                        parameter = acd_def.parameter_by_name(
+                            name[2:])
+                        job_order[parameter.name]['value'] = False
                     else:
-                        print "HELP" #TODO ambiguous qualifier name
+                        parameters = acd_def.parameter_by_qualifier_name(
+                            name)
+                        if len(parameters)==1:
+                            parameter = parameters[0][0]
+                            qualifier_name = parameters[0][1]
+                            parameter_value = cl_chunks.next()
+                            job_order[parameter.name][qualifier_name] = parameter_value
+                        elif len(parameters)>1:
+                            # ambiguous qualifier name
+                            raise AmbiguousOptionParseException(name, parameters)
+                        else: #len(parameters)==0
+                            # testing for a no-prefixed qualifier
+                            parameters = acd_def.parameter_by_qualifier_name(
+                                name[2:])
+                            if len(parameters) == 1:
+                                parameter = parameters[0][0]
+                                qualifier_name = parameters[0][1]
+                                job_order[parameter.name][
+                                    qualifier_name] = False
+                            elif len(parameters) > 1:
+                                # ambiguous qualifier name
+                                raise AmbiguousOptionParseException(name,
+                                                                    parameters)
+                            else:  # len(parameters)==0
+                                raise UnknownOptionParseException(name)
             else:
                 # parameter values by position on the command line
-                # index = command_line_array.index(parameters_count)
                 parameter = acd_def.parameter_by_index(parameters_count)
                 job_order[parameter.name]['value'] = chunk
-                parameters_count += 1
+                if parameter.qualifiers.get('parameter')==True:
+                    parameters_count += 1
         input_lines_array = [line.input_line for line in self.input_lines]
         for parameter_name in acd_def.parameter_names():
             if len(input_lines_array)==0:
