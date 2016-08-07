@@ -119,7 +119,9 @@ class Qa(object):
         cl_chunks = iter(command_line_array)
         parameters_count = 0
         for chunk in cl_chunks:
-            if chunk=='-auto':
+            if chunk.replace('-','') in ['auto', 'stdout', 'debug', 'filter',
+                                         'help', 'options']:
+                # ignore all global qualifiers?
                 #ignore auto qualifier, which should be automatically set by
                 #wrappers
                 continue
