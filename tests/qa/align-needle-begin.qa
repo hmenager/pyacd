@@ -1,0 +1,21 @@
+
+ID align-needle-begin
+AP needle
+CL -gapopen 16 -gapext 4 -stdout -sbegin1 5
+IN ../../data/aligna.dna
+IN ../../data/alignb.dna
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI stdout
+FP /^# Identity: +8\/60 \(13\.3%\)/
+FP /^# Score: +24\.0\n/
+FP 1 /^AFULL +5 aaccggttaaacccgggtttaaaaccccggggttttcccaaatttgggcc     54\n/
+FP 1 /^      +          \|\|\|\|\.\.\|\.\.\|\|\|                 +\n/
+FP 1 /^BFULL +1 --------aaacgggccttt------------------------------     12\n/
+FP 1 /^BFULL +12 ----------     12\n/
+FC = 43
+//

@@ -1,0 +1,10 @@
+
+ID seq-infeat-refseqp
+AP seqret
+CL -feat ../../data/protein.refseqp  sw::test.out -auto
+FI test.out
+FZ = 7288
+## active site two locations with copied annotation (note and comment)
+FP /^FT   SIGNAL        1     21       ifn-beta. 2410.\n/
+FP /^FT   SITE         97     97       other. N-glycosylation site. CDD:28979.\n/
+//

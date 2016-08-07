@@ -1,0 +1,18 @@
+
+ID acdlog-check
+AP acdlog
+CL antigenic
+IN tsw:actb1_takru
+IN
+IN
+FI actb1_takru.antigenic
+FZ = 0
+FI antigenic.acdlog
+FC = 6200
+FP 55 /^acdProcess/
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+//

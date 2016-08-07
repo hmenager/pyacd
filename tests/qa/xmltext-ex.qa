@@ -1,0 +1,19 @@
+
+ID xmltext-ex
+AP xmltext
+CL dbfetch:embl:x13776
+IN
+FI x13776.xmltext
+FC = 278
+FP 1 /^<ROOT/
+FP 3 /^\s+<keyword>[^<>]+<\/keyword>\n/
+FP 4 /^\s+<reference type=/
+FP 10 /^\s+<feature name=/
+FP 7 /^\s+<taxon scientificName=/
+FP 25 /^\s+<qualifier name=/
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+//

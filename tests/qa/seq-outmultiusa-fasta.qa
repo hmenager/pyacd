@@ -1,0 +1,9 @@
+
+ID seq-outmultiusa-fasta
+AP seqret
+CL -auto ../../data/dna.m-embl fasta::test.out
+FI test.out
+FZ = 513
+FP 3 /^>FASTAM[1-3] F3000[1-3] FASTA FORMAT DNA SEQUENCE F3000[1-3]\n/
+FP /^>FASTAM3 F30003 FASTA FORMAT DNA SEQUENCE F30003\n/
+//

@@ -1,0 +1,15 @@
+
+# currently reads in all contigs are returned when a BAM index not available
+# this test needs to be updated once this has changed????
+ID assemblyget-bamquery2bam2-keep
+AP assemblyget
+CL bam::../../data/index_test.bam:chrY -oformat bam chrY.bam -auto
+DL keep
+TI 600
+FI chrY.bam
+FZ = 597748
+FP /.*/
+FI chrY.bam.bai
+FZ = 1621416
+FP /^BAI\001/
+//

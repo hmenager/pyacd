@@ -1,0 +1,22 @@
+
+ID patmatmotifs-ex
+AP patmatmotifs
+PP EMBOSS_DATA=../prosextract-keep/
+PP export EMBOSS_DATA
+CL -full
+IN tsw:opsd_human
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI opsd_human.patmatmotifs
+FP /^# HitCount: 2\n/
+FP /^# Motif: OPSIN\n# Count: 1\n/
+FP /^Start = position 123 of sequence\n/
+FP /^End = position 139 of sequence\n/
+FP /^Length = 17\n/
+FP /^Motif = G_PROTEIN_RECEP_F1_1\n/
+FP /^TLGGEIALWSLVVLAIERYVVVCKPMS\n/
+//

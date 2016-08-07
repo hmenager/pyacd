@@ -1,0 +1,22 @@
+
+ID dbxreport-ex
+PP cp ../dbxflat-ex-keep/embl.*ac .
+PP cp ../dbxflat-ex-keep/embl.*id .
+AP dbxreport
+CL -indexdir .
+IN embl
+IN id,acc
+IN
+QQ rm embl.xac
+QQ rm embl.pxac
+QQ rm embl.xid
+QQ rm embl.pxid
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: / 0 /No '[^']+' index found/
+FI embl.dbxreport
+FC = 65
+FP 2 /Identifier index '[^']+' index found with \d+ pages/
+//

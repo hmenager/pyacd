@@ -1,0 +1,18 @@
+
+ID drfindformat-ex
+AP drfindformat
+CL fasta
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI drfindformat.drcat
+FC = 209
+FP 8 /^ID      /
+FP 6 /^EDAMfmt 1929 \| FASTA format\n/
+FP 2 /^EDAMfmt 2310 \| FASTA-HTML\n/
+FP 8 /^Taxon   /
+FP 7 /^Taxon   1 /
+//

@@ -1,0 +1,9 @@
+
+ID dbxgcg-allsys-keywild
+AP seqret
+CL "qanxgcgall-key:m*" test.out -auto
+FI test.out
+FZ = 9919
+FP 1 /^>AB009602/
+FP 3 /^>/
+//

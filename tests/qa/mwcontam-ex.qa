@@ -1,0 +1,16 @@
+
+ID mwcontam-ex
+AP mwcontam
+IN ../../data/mw1.dat,../../data/mw2.dat,../../data/mw3.dat
+IN
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI outfile.mwcontam
+FZ = 15
+FP /^67\.000\n/
+FP /^415\.000\n/
+//

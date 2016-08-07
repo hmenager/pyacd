@@ -1,0 +1,16 @@
+
+ID splitter-ex2
+UC Split a sequence into sub-sequences of 50,000 bases with an overlap of 3,000 bases on each sub-sequence:
+AP splitter
+CL tembl:BA000025 ba000025.split -size=50000 -over=3000
+FI stderr
+FC = 1
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI ba000025.split
+FZ = 2414678
+FP /\A>BA000025_1-50000/
+FP /^>BA000025_47001-97000/
+FP 48 /^>/
+//

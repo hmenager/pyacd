@@ -1,0 +1,9 @@
+
+ID qsyn-idlist4
+AP seqret
+CL "tsw-id{hba_human|hbb_human}" stdout -auto
+FI stdout
+FP 0 /^>HIRA_TAKRU/
+FP 1 /^>HBA_HUMAN/
+FP 2 /^>/
+//

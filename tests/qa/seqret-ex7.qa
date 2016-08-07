@@ -1,0 +1,15 @@
+
+ID seqret-ex7
+UC Extract the bases between the positions starting at 5 and ending at 25:
+AP seqret
+CL -sbegin 5 -send 25
+IN tembl:x65923
+IN 
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI x65923.fasta
+FP /X65923/
+//

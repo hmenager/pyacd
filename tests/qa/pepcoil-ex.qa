@@ -1,0 +1,19 @@
+
+ID pepcoil-ex
+AP pepcoil
+IN tsw:gcn4_yeast
+IN
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI gcn4_yeast.pepcoil 
+FZ = 845
+FP 1 /^ +Sequence:/
+FP /^\(1\) Score 1\.910 length 49 at residues 233->281\n/
+FP /^ Sequence: ARNTEAARRSRARKLQRMKQLEDKVEELLSKNYHLENEVARLKKLVGER\n/
+OC The SwissProt annotation marks the true leucine zipper motif as from 253 to 274.
+OC The leucine zipper is a special case of a coiled-coil region.
+//

@@ -1,0 +1,9 @@
+
+ID seq-inauto-abi
+AP seqret
+CL -auto ../../data/abiview.abi test.out -osf embl
+FI test.out
+FZ = 1258
+FP /^ID   .* 838 BP\.\n/
+FP /^SQ   Sequence 838 BP; 274 A; 140 C; 182 G; 211 T; 31 other;/
+//

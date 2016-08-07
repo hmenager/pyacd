@@ -1,0 +1,9 @@
+
+ID dbxgcg-allsys-nextlast
+AP seqret
+CL qanxgcgall-id:Z69719 test.out -auto
+FI test.out
+FZ = 34577
+FP 1 /^>Z69719 /
+FP 1 /^>/
+//

@@ -1,0 +1,15 @@
+
+ID taxgetup-ex2
+AP taxgetup
+CL ttax:9606 -hidden -oformat excel
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI 9606.excel
+FP 1 /^9605\t207598\tgenus\tN\tHomo\n/
+FP 1 /^207598\t/
+FC = 29
+//

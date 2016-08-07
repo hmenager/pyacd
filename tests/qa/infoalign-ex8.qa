@@ -1,0 +1,9 @@
+
+ID infoalign-ex8
+AP infoalign
+CL -auto @../../data/eclac.list -out test.out
+FI test.out
+FC = 6
+FP /tembl-id:J01636\s+J01636\s+7477\s+7477\s+0\s+0\s+374\s+0\s+7103\s+94\.997[0-9]+\s+1\.0+\s+E.*/
+FP /tembl-id:V00296\s+V00296\s+3078\s+3078\s+0\s+0\s+373\s+0\s+2705\s+87\.881[0-9]+\s+1\.0+\s+E.*/
+//

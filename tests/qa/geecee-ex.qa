@@ -1,0 +1,14 @@
+
+ID geecee-ex
+AP geecee
+CL tembl:L46634
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI l46634.geecee
+FZ = 42
+FP /^L46634        0\.53\n/
+//

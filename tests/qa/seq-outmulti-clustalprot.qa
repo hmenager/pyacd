@@ -1,0 +1,11 @@
+
+ID seq-outmulti-clustalprot
+AP seqret
+CL -auto ../../data/prot.m-swiss test.out -osf clustal
+FI test.out
+FZ = 584
+FP /^CLUSTAL W \(1\.83\) multiple sequence alignment\n/
+FP /^SWISSM2         AACCDDEEFFGGHHIIKKLLMMNNPPQQRRSSTTVVWWYYAACCDDEEFFGGHHIIKKLL\n/
+FP 3 /^\n/
+FP 1 /^                                                                            \n/
+//

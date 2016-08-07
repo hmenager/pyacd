@@ -1,0 +1,10 @@
+
+ID seq-in-selex
+AP seqret
+CL -auto ../../data/test.selex -sf selex test.out -osf embl
+FI test.out
+FZ = 587
+FP 3 /^ID/
+FP /^ID   lig28.* 31 BP\.\n/
+FP /^SQ   Sequence 31 BP; 7 A; 7 C; 8 G; 7 T; 2 other;/
+//

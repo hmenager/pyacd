@@ -1,0 +1,11 @@
+
+ID seq-outmulti-phylipnon
+AP seqret
+CL -auto ../../data/dna.m-embl test.out -osf phylipnon
+FI test.out
+FZ = 492
+FP /^3 120\n/
+FP /^FASTAM1   ACGTACGTAC GTACGTACGT ACGTACGTAC GTACGTACGT ACGTACGTAC\n/
+FP 6 /^          [ACGT \-]+\n/
+FP / GTACGTACGT\nFASTAM2/
+//

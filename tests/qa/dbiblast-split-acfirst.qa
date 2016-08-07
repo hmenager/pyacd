@@ -1,0 +1,9 @@
+
+ID dbiblast-split-acfirst
+AP seqret
+CL qapblastsplit-acc:P53450 test.out -auto
+FI test.out
+FZ = 435
+FP 1 /^>FOS_FUGRU P53450 /
+FP 1 /^>/
+//

@@ -1,0 +1,16 @@
+
+ID acdc-reportbadformat
+AP acdc
+ER 1
+PP EMBOSS_ACDROOT=../../acd
+PP export EMBOSS_ACDROOT
+CL testreport -rformat fred
+IN 
+FI stderr
+FZ > 0
+FP 0 /Warning: /
+FP 1 /Error: /
+FP 1 /Died: /
+FP /Error: Unknown report format 'fred'\n/
+FP /Died: Report option -rtest: Validation failed\n/
+//

@@ -1,0 +1,9 @@
+
+ID dbxgcg-allsys-splitbefore
+AP seqret
+CL qanxgcgall-id:AC017364 test.out -auto
+FI test.out
+FZ = 3801
+FP 1 /^>AC017364 /
+FP 1 /^>/
+//

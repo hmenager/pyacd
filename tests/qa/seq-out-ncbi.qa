@@ -1,0 +1,9 @@
+
+ID seq-out-ncbi
+AP seqret
+CL -auto ../../data/dna.embl test.out -osf ncbi
+FI test.out
+FZ = 153
+FP /^>gnl\|unk\|EMBL \(E10002\.34\) EMBL FORMAT DNA SEQUENCE\n/
+FP /^acgtacgtacgtacgtacgtacgtacgtacgtacgtacgt\n/
+//

@@ -1,0 +1,14 @@
+
+ID infoseq-ex3
+UC Display only the name and length of a sequence:
+AP infoseq
+CL tembl:x13776 -only -name -length
+FI stderr
+FC = 1
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI stdout
+FZ = 46
+FP /^X13776\s+2167\s+\n/
+//

@@ -1,0 +1,41 @@
+
+#############################################
+# The qawfasta database
+#############################################
+
+ID dbifasta-worm-keep
+DL keep
+AP dbifasta
+IN WORM
+IN simple
+IN ../../data
+IN wormpep.clone.*
+IN
+IN
+IN
+FI stderr
+FC = 8
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI division.lkp
+FZ = 344
+FP s /\A.{300}\001\000wormpep\.clone\.AB\000/
+FI entrynam.idx
+FZ = 1488
+FP s /\A.{300}AC3\.1\000/
+FI acnum.hit
+FZ = 564
+FP s /\A.{300}\001/
+FI acnum.trg
+FZ = 1356
+## Pattern needs 's' modifier ... binary data includes a newline
+FP s /\A.{308}AC3\.1\000/
+FI outfile.dbifasta
+FC = 38
+FP /# Fields: 2\n/
+FP /# Files: 2\n/
+FP 2 /^filename: /
+FP /Index acc: maxlen 8 items 66\n/
+FP /Total 2 files 66 entries \(0 duplicates\)\n/
+//

@@ -1,0 +1,13 @@
+
+ID cachedas-ensembl
+AP cachedas
+TI 300
+CL -servername tensembldasserver -auto
+CL -cachefile ~/.embossdata/qatests.server.ensembldasserver
+QQ cp ~/.embossdata/qatests.server.ensembldasserver .
+FI qatests.server.ensembldasserver
+FP /^DBNAME Ailuropoda_melanoleuca/
+FI stdout
+FC > 30
+FP /embl/
+//

@@ -1,0 +1,9 @@
+
+ID dbiflat-tembl-nextlast
+AP seqret
+CL tembl-id:Z52466 test.out -auto
+FI test.out
+FZ = 500
+FP 1 /^>Z52466 /
+FP 1 /^>/
+//

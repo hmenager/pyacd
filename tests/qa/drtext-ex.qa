@@ -1,0 +1,16 @@
+
+ID drtext-ex
+AP drtext
+CL drcat:uniprot
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI uniprot.drtext
+FC = 21
+FP 1 /^ID      \S+\n/
+FP 1 /^IDalt   UniProtKB\n/
+FP 1 /^EDAMtpc 0639 \| Protein sequence analysis\n/
+//

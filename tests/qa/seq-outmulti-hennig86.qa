@@ -1,0 +1,14 @@
+
+ID seq-outmulti-hennig86
+AP seqret
+CL -auto ../../data/dna.m-embl test.out -osf hennig86
+FI test.out
+FZ = 432
+FP /^xread\n/
+FP /^' Written by EMBOSS [0-9][0-9]\/[01][0-9]\/[0-9][0-9] '\n/
+FP /^120 3\n/
+FP 3 /^FASTAM[1-3]\n/
+FP /^FASTAM2\n/
+FP /^03210321032103210321\?\?\?\?032103210321032103210321032103210321032103210321032103210321032103210321032103210321123003210321\n/
+FP /^;\n/
+//

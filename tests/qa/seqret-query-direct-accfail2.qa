@@ -1,0 +1,12 @@
+
+ID seqret-query-direct-accfail2
+ER 1
+AP seqret
+CL -auto -out test.out -osf embl embl::../../embl/rod.dat:ACC:99999Z
+FI stderr
+FZ = 139
+FP /^Error: Unable to read sequence 'embl::\.\.\/\.\.\/embl\/rod\.dat:ACC:99999Z'/
+FP 0 /Warning: /
+FP 1 /Error: /
+FP 1 /Died: /
+//

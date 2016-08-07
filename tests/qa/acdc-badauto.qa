@@ -1,0 +1,17 @@
+
+ID acdc-badauto
+AP acdc
+ER 1
+PP EMBOSS_ACDROOT=../../acd
+PP export EMBOSS_ACDROOT
+PP EMBOSS_ACDPROMPTS=2
+PP export EMBOSS_ACDPROMPTS
+CL testselect -stest 6 -auto
+FI stderr
+FZ > 0
+FP 0 /Warning: /
+FP 2 /Error: /
+FP 1 /Died: /
+FP 1 /Error: Bad select option '[1-9]'\n/
+FP /Died: testselect terminated: Bad value for '-stest' with -auto defined\n/
+//

@@ -1,0 +1,14 @@
+
+ID noreturn-topc
+AP noreturn
+CL ../../data/abc.dat -system pc
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI abc.noreturn
+FZ = 73
+FP /carriage return format\r\nACDEFGHIKLMNPQRSTVWY\r\n$/
+//

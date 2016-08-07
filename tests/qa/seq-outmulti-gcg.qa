@@ -1,0 +1,12 @@
+
+ID seq-outmulti-gcg
+AP seqret
+CL -auto ../../data/dna.m-embl test.out -osf gcg
+FI test.out
+FZ = 750
+FP 3 /^!!NA_SEQUENCE 1\.0\n/
+FP /^FASTAM1  Length: 120  Type: N  Check: 8587 \.\.\n/
+FP /^FASTAM2  Length: 120  Type: N  Check: 6178 \.\.\n/
+FP /^FASTAM3  Length: 120  Type: N  Check: 8431 \.\.\n/
+FP 3 /^FASTA FORMAT DNA SEQUENCE F3000[1-3]\n/
+//

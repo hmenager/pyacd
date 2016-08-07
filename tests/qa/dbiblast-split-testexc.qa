@@ -1,0 +1,9 @@
+
+ID dbiblast-split-testexc
+AP seqret
+CL qapblastsplitexc:CO9_FUGRU test.out -auto
+FI test.out
+FZ = 649
+FP 1 /^>CO9_FUGRU /
+FP 1 /^>/
+//

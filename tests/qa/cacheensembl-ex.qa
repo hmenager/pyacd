@@ -1,0 +1,19 @@
+
+###################
+# Ensembl
+###################
+
+ID cacheensembl-ex
+TI 180
+AP cacheensembl
+CL -servername ensembl -cachefile ~/.embossdata/qatests.server.ensembl -auto
+QQ cp ~/.embossdata/qatests.server.ensembl .
+FI qatests.server.ensembl
+FP 1 /^ALIAS 9606 homo_sapiens\n/
+FP 8 /^ALIAS \S+ homo_sapiens\n/
+FP 1 /^DBNAME homo_sapiens \[/
+FP 6 /^DBNAME homo_sapiens/
+FI stdout
+FC = 140
+FP 6 /homo_sapiens/
+//

@@ -1,0 +1,16 @@
+
+ID matcher-ex
+AP matcher
+CL tsw:hba_human tsw:hbb_human
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI hba_human.matcher
+FP /^# Identity: +63\/145 \(43\.4%\)/
+FP /^# Score: +264\n/
+FP /^HBA_HU -----GSAQVKGHGKKVADALTNAVAHVDDMPNALSALSDLHAHKLRVDP\n/
+FC = 49
+//

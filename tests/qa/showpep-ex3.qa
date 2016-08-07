@@ -1,0 +1,16 @@
+
+ID showpep-ex3
+UC Display only the sequence:
+AP showpep
+CL tsw:laci_ecoli -sbeg 1 -send 100 -noname -nodesc -format 0 -thing S
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI laci_ecoli.showpep
+FZ = 123
+FP /^          MKPVTLYDVAEYAGVSYQTVSRVVNQASHVSAKTREKVEAAMAELNYIPNRVAQQLAGKQ\n/
+FP /^          SLLIGVATSSLALHAPSQIVAAIKSRADQLGASVVVSMVE\n/
+//

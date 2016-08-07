@@ -1,0 +1,10 @@
+
+ID seq-textauto-gcg
+AP entret
+CL -auto ../../data/dna.gcg test.out
+FI test.out
+FZ = 362
+FC = 14
+FP /^GCG  Length: 100  Type: N  Check: 6856 \.\.\n/
+FP /^   1 ACGTAC\<note\<GTAC GTACGTACGT\n/
+//

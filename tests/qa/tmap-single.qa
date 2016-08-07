@@ -1,0 +1,22 @@
+
+ID tmap-single
+AP tmap
+CL tsw:opsd_human -out tmap.res -graph cps
+FI stderr
+FC = 1
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI stdout
+FZ = 16
+FP /^Created tmap\.ps\n/
+FI tmap.res
+FZ = 1696
+FP 2 /^     43      69        1 YMFLLIVLGFPINFLTLYVTVQHKKLR\n/
+FP /^# Reported_sequences: 2\n/
+FP /^# Reported_hitcount: 14\n/
+FI tmap.ps
+FC = 1426
+FP /^%%Title: PLplot Graph\n/
+FP /^%%Pages: 1\n/
+//

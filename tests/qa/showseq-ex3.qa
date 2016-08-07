@@ -1,0 +1,16 @@
+
+ID showseq-ex3
+UC Display only the sequence:
+AP showseq
+CL tembl:x13776 -sbeg 1 -send 100 -noname -nodesc -format 0 -thing S
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI x13776.showseq 
+FZ = 123
+FP /^          ggtacc/
+FP /^          ctacctggcgagcctggagcacgagcgggttcgcttcgta\n/
+//

@@ -1,0 +1,13 @@
+
+ID featseqall-begin-embl
+AP seqret
+CL -feat @../../data/eclac.list -sbegin 51 -send 100 -out test.out -osf embl -auto
+FI test.out
+FZ = 31364
+FP 5 /^ID   /
+FP 5 /^FH   /
+FP /^ +ggaagagagt caattcaggg tggtgaatgt gaaaccagta acgttatacg +50/
+FP /^ +cgatgtcgca gagtatgccg gtgtctctta tcagaccgtt tcccgcgtgg +50/
+FP /^FT   CDS             29\.\.>50\n/
+FP /^FT   CDS             <1\.\.>50\n/
+//

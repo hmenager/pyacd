@@ -1,0 +1,10 @@
+
+ID seqret-ncbiout-gi
+AP seqret
+CL ../../data/testids.ncbi:123456 test.out -osf ncbi -auto
+FI test.out
+FP 1 /^>/
+FP /^>gi\|123456 gi prefix/
+FP /^GIPREFIX$/
+FZ = 30
+//

@@ -1,0 +1,8 @@
+
+
+ID seqret-circ1
+AP seqret
+CL -auto tembl:ab031077 embl::test.out
+FI test.out
+FP /^ID   .*circular/
+//

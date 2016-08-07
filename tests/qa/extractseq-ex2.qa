@@ -1,0 +1,15 @@
+
+# use database entry in example
+ID extractseq-ex2
+UC Extract the regions 10 to 20, 30 to 45, 533 to 537:
+AP extractseq
+CL tembl:x65921 result2.seq -regions "10-20 30-45 533-537"
+FI stderr
+FC = 1
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI result2.seq
+FZ = 71
+FP /^tccctctcgatacactcgggacaagttagggc\n/
+//

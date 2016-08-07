@@ -1,0 +1,10 @@
+
+ID seqset-begin-fasta
+AQ seqretset
+CL "tembl:v0029*" -sbegin 51 -send 100 -out test.out -auto
+FI test.out
+FZ = 364
+FP 3 /^>/
+FP /^ataataataaccgggcaggccatgtctgcccgtatttcgcgtaaggaaat\n/
+FP /^aaaccctggcgttacccaacttaatcgccttgcagcacatccccctttcg\n/
+//

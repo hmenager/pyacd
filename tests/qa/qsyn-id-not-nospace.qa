@@ -1,0 +1,9 @@
+
+ID qsyn-id-not-nospace
+AP seqret
+CL "tsw-{id:h*!des:Hemoglobin}" stdout -auto
+FI stdout
+FP /^>HIRA_TAKRU/
+FP 0 /^>HBA_HUMAN/
+FP 2 /^>/
+//

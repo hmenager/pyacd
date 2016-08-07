@@ -1,0 +1,10 @@
+
+ID dbxfasta-swiss-wild
+AP seqret
+CL "qapxfasta:q2*" test.out -auto
+FI test.out
+FZ = 960
+FP 1 /^>Q2KT90_FUGRU /
+FP 3 /^>Q2/
+FP 3 /^>/
+//

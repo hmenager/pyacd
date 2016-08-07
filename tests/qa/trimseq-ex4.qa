@@ -1,0 +1,15 @@
+
+ID trimseq-ex4
+AP trimseq
+CL ../../data/untrimmed.seq trim4.seq -window 5 -percent 50 -strict
+FI stderr
+FC = 1
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI trim4.seq
+FZ = 522
+FP /^>myseq/
+FP /^ctttctcgactc/
+FP /ttca-gnntc\n/
+//

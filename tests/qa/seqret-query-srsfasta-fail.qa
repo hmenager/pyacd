@@ -1,0 +1,14 @@
+
+ID seqret-query-srsfasta-fail
+CC Requires a local SRS installation
+RQ srs
+ER 1
+AP seqret
+CL -auto -out test.out -osf embl qasrsfasta-id:OLD
+FI stderr
+FZ = 121
+FP /^Error: Unable to read sequence 'qasrsfasta-id:OLD'/
+FP 0 /Warning: /
+FP 1 /Error: /
+FP 1 /Died: /
+//

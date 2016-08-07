@@ -1,0 +1,14 @@
+
+ID cai-ex
+AP cai
+CL TEMBL:AB009602
+IN
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI ab009602.cai
+FP /0\.188/
+//

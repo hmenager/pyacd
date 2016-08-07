@@ -1,0 +1,10 @@
+
+ID seqret-ncbiout-pir
+AP seqret
+CL ../../data/testids.ncbi:PIR test.out -osf ncbi -auto
+FI test.out
+FP 1 /^>/
+FP /^>pir\|\|PIR /
+FP /^PIR$/
+FZ = 45
+//

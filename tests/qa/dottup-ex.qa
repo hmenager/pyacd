@@ -1,0 +1,17 @@
+
+ID dottup-ex
+AP dottup
+CL tembl:j01636 tembl:v00294 -wordsize=6 -gtitle="v00294 vs j01636" -graph cps
+FI stdout
+FZ = 18
+FP /^Created dottup\.ps\n/
+FI dottup.ps
+FC = 2499
+FP /^%%Title: PLplot Graph\n/
+FP /^%%Pages: 1\n/
+FI stderr
+FC = 1
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+//

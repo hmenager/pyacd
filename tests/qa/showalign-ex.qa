@@ -1,0 +1,15 @@
+
+ID showalign-ex
+AP showalign
+IN ../../data/globins.msf
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI globins.showalign
+FZ = 2003
+FP /^HBB_HUMAN  --------VH\.tPE\.K\.A\.TaL\.G\.V\.-VD\.\.\.\.E\.\.GR-\.LVvY\.WT\.R\.\.Es\.GD\.\.T\n/
+FP /^Consensus  xxxxxxxxxxLSxxExSxVxSxWxKxNxxxEVGGxALxxxLxxIxPxxQxFFxTFxxLSx\n/
+//

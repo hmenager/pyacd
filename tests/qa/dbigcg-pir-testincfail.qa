@@ -1,0 +1,12 @@
+
+ID dbigcg-pir-testincfail
+ER 1
+AP seqret
+CL qapirinc-id:S11172 test.out -auto
+FI stderr
+FZ = 122
+FP /Error: Unable to read sequence 'qapirinc-id:S11172'/
+FP 0 /Warning: /
+FP 1 /Error: /
+FP 1 /Died: /
+//

@@ -1,0 +1,16 @@
+
+ID infoalign-ex6
+UC Display information formatted with HTML:
+AP infoalign
+CL ../../data/globins.msf -html
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI globins.infoalign
+FC = 94
+FP /^<tr><td>msf::\.\./\.\./data/globins\.msf:HBA_HORSE<\/td>\n/
+FP /^<td>HBA_HORSE<\/td>\n/
+//

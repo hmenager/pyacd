@@ -1,0 +1,18 @@
+
+
+ID drfinddata-ex
+AP drfinddata
+CL virus
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI drfinddata.drcat
+FC = 32
+FP 2 /^ID      /
+FP 2 /^EDAMdat 2307 \| Virus annotation\n/
+FP 1 /^EDAMdat 2308 \| Virus annotation \(taxonomy\)\n/
+FP 2 /^Taxon   10239 \| Viruses\n/
+//

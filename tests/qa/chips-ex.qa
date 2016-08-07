@@ -1,0 +1,14 @@
+
+ID chips-ex
+AP chips
+CL -sbeg 135 -send 1292
+IN tembl:x13776
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI x13776.chips
+FP /Nc = 32\.951/
+//

@@ -1,0 +1,21 @@
+
+ID isochore-ex
+AP isochore
+CL tembl:AF129756  -graph cps
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI af129756.iso
+FZ = 22819
+FP /^5000\s+0\.476\n/
+FI isochore.ps
+FZ > 100
+FP /^%%Title: PLplot Graph\n/
+FP /^%%Pages: 1\n/
+FI stdout
+FZ = 20
+FP /^Created isochore\.ps\n/
+//

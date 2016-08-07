@@ -1,0 +1,18 @@
+
+ID plotcon-data
+AP plotcon
+CL -sformat msf ../../data/globins.msf -graph data
+IN
+FI stdout
+FC = 1
+FP /^Created plotcon1\.dat\n/
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI plotcon1.dat
+FC = 179
+FP /^##Points 164\n/
+FP /^135\.000000\s+0\.305580\n/
+//

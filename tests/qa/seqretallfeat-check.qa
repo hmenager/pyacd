@@ -1,0 +1,16 @@
+
+ID seqretallfeat-check
+AQ seqretallfeat
+CL -osf embl
+IN @../../data/eclac.list
+IN x51872ll.embl
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI x51872ll.embl
+FZ = 62309
+FP 3 /^ID   V00/
+FP 5 /^ID   /
+//

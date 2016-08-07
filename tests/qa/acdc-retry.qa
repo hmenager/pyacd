@@ -1,0 +1,19 @@
+
+ID acdc-retry
+AP acdc
+ER 1
+PP EMBOSS_ACDROOT=../../acd
+PP export EMBOSS_ACDROOT
+PP EMBOSS_ACDPROMPTS=2
+PP export EMBOSS_ACDPROMPTS
+CL testselect
+IN 6
+IN 7
+FI stderr
+FZ > 0
+FP 0 /Warning: /
+FP 4 /Error: /
+FP 1 /Died: /
+FP 2 /Error: Bad select option '[1-9]'\n/
+FP /Died: testselect terminated: Bad value for '-stest' and no more retries\n/
+//

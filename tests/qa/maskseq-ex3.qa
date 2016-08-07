@@ -1,0 +1,15 @@
+
+ID maskseq-ex3
+UC Mask off the regions 20 to 23, 34 to 45 and 88 to 90 in 'prot.fasta':
+AP maskseq
+CL ../../data/prot.fasta prot2.seq -reg=20-23,34-45,88-90
+FI stderr
+FC = 1
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI prot2.seq
+FZ = 146
+FP /^ACDEFGHIKLMNPQRSTVWXXXXEFGHIKLMNPXXXXXXXXXXXXGHIKLMNPQRSTVWY\n/
+FP /^ACDEFGHIKLMNPQRSTVWYACDEFGHXXXMNPQRSTVWY\n/
+//

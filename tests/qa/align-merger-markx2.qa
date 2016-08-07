@@ -1,0 +1,27 @@
+
+
+ID align-merger-markx2
+AP merger
+CL -aformat markx2
+IN tembl:v00295
+IN tembl:x51872
+IN
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI v00295.merger
+FC = 293
+FP /^# Score: 795\.0\n/
+FP / 1340      1350\nV00295 cgctt/
+FP /^V00295 cgcttagcggccccggcccgctttccctgctgcgtcgtcaggtgaatgaa\n/
+FP /^V00295 [acgt]+gtgaatgaa\nX51872 [-]+\.\.\.\.\.\.\.\.\.\n/
+FI v00295.fasta
+FC = 54
+FZ = 3291
+FP 1 /^>/
+FP /^agcttccggccagcgccagcccgcccatggtaaccaccggcagagcggtcgac\n/
+FP /ggaaaaaaga\ncttcgtggg/
+//

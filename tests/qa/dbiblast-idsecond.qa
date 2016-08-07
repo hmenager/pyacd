@@ -1,0 +1,9 @@
+
+ID dbiblast-idsecond
+AP seqret
+CL qapblast-id:E2BB_FUGRU test.out -auto
+FI test.out
+FZ = 473
+FP 1 /^>E2BB_FUGRU /
+FP 1 /^>/
+//

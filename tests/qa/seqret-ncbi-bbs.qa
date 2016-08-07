@@ -1,0 +1,10 @@
+
+ID seqret-ncbi-bbs
+AP seqret
+CL ../../data/testids.ncbi:GENINFO test.out -auto
+FI test.out
+FP 1 /^>/
+FP /^>geninfo Geninfo/
+FP /^GENINF-$/
+FZ = 37
+//

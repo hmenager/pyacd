@@ -1,0 +1,17 @@
+
+ID est2genome-ex
+TI 200
+AP est2genome
+IN tembl:h45989
+IN tembl:z69719
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI h45989.est2genome
+FZ = 3050
+FP /Note .* forward est and forward genome, .* imply REVERSED GENE/
+FP /^Exon       163  91\.8 25685 25874 Z69719           1   193 H45989/
+//

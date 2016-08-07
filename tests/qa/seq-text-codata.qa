@@ -1,0 +1,10 @@
+
+ID seq-text-codata
+AP entret
+CL -auto ../../data/dna.codata -sf codata test.out
+FI test.out
+FZ = 423
+FC = 10
+FP /^ENTRY           CODATA *\n/
+FP /^     91 G T A C G T A C G T\n/
+//

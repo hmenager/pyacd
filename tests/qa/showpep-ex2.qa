@@ -1,0 +1,23 @@
+
+ID showpep-ex2
+UC The standard list of output formats are only a small selection of the
+UC possible ways in which a sequence might be displayed.  Precise control
+UC over the output format is acheived by selecting the qualifier '-format 0' 
+UC (Option 0 in the list of things to display).  For example,
+UC by choosing format '0' and then specifying that we want to display the
+UC things: 'b,t,s', we will output the sequence in the following way:
+AP showpep
+CL tsw:laci_ecoli -sbeg 1 -send 120
+IN 0
+IN b,t,s
+IN 
+FI stderr
+FC = 14
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI laci_ecoli.showpep 
+FZ = 323
+FP 2 /^          ----:----\|----:----\|----:----\|----:----\|----:----\|----:----\|\n/
+FP /^          SLLIGVATSSLALHAPSQIVAAIKSRADQLGASVVVSMVERSGVEACKAAVHNLLAQRVS/
+//

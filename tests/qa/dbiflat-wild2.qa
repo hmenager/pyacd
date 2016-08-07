@@ -1,0 +1,9 @@
+
+ID dbiflat-wild2
+AP seqret
+CL "qanflat:m119*" test.out -auto
+FI test.out
+FZ = 2225
+FP 1 /^>M11904 /
+FP 3 /^>/
+//

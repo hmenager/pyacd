@@ -1,0 +1,34 @@
+
+## commit a data/seqs.list file for input
+
+##ID primersearch-ex3
+##UC Here is an example of running with a file containing a list of sequences:
+##CC Need the seqs.list input list
+##AP primersearch
+##CL @../../data/seqs.list
+##IN ../../data/primers
+##IN
+##IN
+##FI stderr
+##FC = 2
+##FP 0 /Warning: /
+##FP 0 /Error: /
+##FP 0 /Died: /
+##FI hs214yg7.primersearch
+##FZ = 0
+##//
+
+ID printsextract-keep
+DL keep
+PP mkdir ./PRINTS
+PP EMBOSS_DATA=./
+PP export EMBOSS_DATA
+AP printsextract
+IN ../../data/prints.test
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+DI PRINTS
+//

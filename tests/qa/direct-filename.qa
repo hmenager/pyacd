@@ -1,0 +1,7 @@
+
+ID direct-filename
+AP seqret
+CL "temblvrt:*" test.out -auto
+FI test.out
+FP 31 /^>/
+//

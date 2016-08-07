@@ -1,0 +1,9 @@
+
+ID dbxflatall-keywild
+AP seqret
+CL "qanxflatall-key:a*" test.out -auto
+FI test.out
+FZ = 90158
+FP 1 />U01317 /
+FP 7 />/
+//

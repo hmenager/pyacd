@@ -1,0 +1,9 @@
+
+ID dbigcg-allsys-key
+AP seqret
+CL qangcgall-key:rhodopsin test.out -auto
+FI test.out
+FZ = 5086
+FP 1 /^>L07770 /
+FP 3 /^>/
+//

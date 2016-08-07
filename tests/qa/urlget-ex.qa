@@ -1,0 +1,14 @@
+
+ID urlget-ex
+AP urlget
+CL pseudocap:PA3363 -swiss
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI pa3363.url
+FC = 1
+FP 1 /^http:\/\/www\.pseudomonas\.com\/getAnnotation\.do\?locusID\=PA3363        Locus ID \(PseudoCAP\): PA3363\n/
+//

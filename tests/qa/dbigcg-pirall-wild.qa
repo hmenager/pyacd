@@ -1,0 +1,9 @@
+
+ID dbigcg-pirall-wild
+AP seqret
+CL "qapirall:c*" test.out -auto
+FI test.out
+FZ = 7969
+FP 49 /^>C/
+FP 49 /^>/
+//

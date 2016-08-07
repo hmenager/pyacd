@@ -1,0 +1,9 @@
+
+ID dbxgcg-testincall
+AP seqret
+CL "qanxgcginc-id:*" test.out -auto
+FI test.out
+FZ = 400271
+FP 1 /^>J01636 /
+FP 10 /^>/
+//

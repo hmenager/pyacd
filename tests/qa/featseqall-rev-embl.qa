@@ -1,0 +1,13 @@
+
+ID featseqall-rev-embl
+AP seqret
+CL -feat @../../data/eclac.list -sbegin 51 -send 100 -srev -out test.out -osf embl -auto
+FI test.out
+FZ = 31508
+FP 5 /^ID   /
+FP 5 /^FH   /
+FP /^ +cgtataacgt tactggtttc acattcacca ccctgaattg actctcttcc +50\n/
+FP /^ +ccacgcggga aacggtctga taagagacac cggcatactc tgcgacatcg +50\n/
+FP /^FT   CDS             complement[(]<1\.\.22[)]\n/
+FP /^FT   CDS             complement[(]<1\.\.>50[)]\n/
+//

@@ -1,0 +1,9 @@
+
+ID dbiblast-nextlast
+AP seqret
+CL qapblast-id:ODO2_FUGRU test.out -auto
+FI test.out
+FZ = 569
+FP 1 /^>ODO2_FUGRU /
+FP 1 /^>/
+//

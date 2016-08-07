@@ -1,0 +1,22 @@
+
+ID showseq-ex2
+UC The standard list of output formats are only a small selection of the
+UC possible ways in which a sequence might be displayed.  Precise control
+UC over the output format is acheived by selecting the qualifier '-format 0' 
+UC (Option 0 in the list of things to display).  For example,
+UC by choosing format '0' and then specifying that we want to display the
+UC things: 'b,s,t,c', we will output the sequence in the following way:
+AP showseq
+CL tembl:x13776 -sbeg 1 -send 120
+IN 0
+IN b,s,t,c
+IN 
+FI stderr
+FC = 28
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI x13776.showseq 
+FZ = 511
+FP /^          ggtacc/
+//

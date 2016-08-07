@@ -1,0 +1,25 @@
+
+ID newcpgreport-ex
+AP newcpgreport
+IN tembl:u68037
+IN
+IN
+IN
+IN
+IN
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI u68037.newcpgreport
+FZ = 540
+FP /^FT   CpG island       104\.\.509\n/
+FP /^FT                    \/size=406\n/
+FP /^FT                    \/Sum C\+G=269\n/
+FP /^FT                    \/Percent CG=66\.26\n/
+FP /^FT                    \/ObsExp=0\.81\n/
+FP /^FT   CpG island       596\.\.924\n/
+FP /^FT   numislands       2\n/
+//

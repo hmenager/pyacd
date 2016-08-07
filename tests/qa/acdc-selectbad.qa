@@ -1,0 +1,18 @@
+
+ID acdc-selectbad
+AP acdc
+ER 1
+PP EMBOSS_ACDROOT=../../acd
+PP export EMBOSS_ACDROOT
+CL testselect
+IN x
+FI stderr
+FZ > 0
+FP 0 /Warning: /
+FP 3 /Error: /
+FP 0 /Died: /
+FP /Error: 'x' is not a valid selection list option\n/
+FP /Error: Bad select option 'x'\n/
+FP /Accepted values are: one,two,three,four,five\n/
+FP /Error: Unable to get reply from user - end of standard input\n/
+//

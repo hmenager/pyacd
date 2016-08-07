@@ -1,0 +1,15 @@
+
+ID nam-badresattr
+AP showdb
+ER 1
+PP EMBOSSRC=../../rc
+PP export EMBOSSRC
+PP EMBOSS_BADFILE=../../rc/badresattr.rc
+PP export EMBOSS_BADFILE
+FI stderr
+FZ > 0
+FP 0 /Warning: /
+FP 2 /Error: /
+FP 1 /Died: /
+FP /Error: File .*badresattr\.rc line 3: Bad attribute 'badattr' for resource 'badresource'\n/
+//

@@ -1,0 +1,11 @@
+
+ID ebeye-uniprot
+RQ soapws
+CC requires (axis2C) SOAP webservices library enabled
+AP textget
+CL tebeye:uniprot:1A74_HUMAN stdout -auto
+FI stdout
+FC > 10
+FP /P30459/
+FP /HLA-A/
+//

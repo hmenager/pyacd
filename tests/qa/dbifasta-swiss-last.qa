@@ -1,0 +1,9 @@
+
+ID dbifasta-swiss-last
+AP seqret
+CL qapfasta-id:Q68HA9_FUGRU test.out -auto
+FI test.out
+FZ = 678
+FP 1 /^>Q68HA9_FUGRU /
+FP 1 /^>/
+//

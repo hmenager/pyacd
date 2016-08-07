@@ -1,0 +1,20 @@
+
+ID seqret-ex11
+UC seqret does not read in features by default because this results in
+UC slightly faster performance.  If however you wish to read in features
+UC with your sequence and write them out on output, using '-feature' will
+UC change the default behaviour to use any features present in the sequence. 
+UC N.B. use embl format for the output file as the default format 'fasta'
+UC reports the features in gff (file "<seqname>.gff")
+AP seqret
+CL -feature
+IN tembl:x65923
+IN embl::x65923.embl
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI x65923.embl
+FP /X65923/
+//

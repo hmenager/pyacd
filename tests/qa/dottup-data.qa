@@ -1,0 +1,20 @@
+
+ID dottup-data
+AP dottup
+CL tembl:j01636 tembl:v00294 -wordsize=6 -gtitle="v00294 vs j01636"
+CL -graph data
+IN
+FI stdout
+FC = 1
+FP /^Created dottup1\.dat\n/
+FI dottup1.dat
+FC = 2278
+FP /^##Maintitle v00294 vs j01636\n/
+FP /^##Subtitle Mon 15 Jul 2013 12:00:00\n/
+FP /^Line x1 625\.000000 y1 5288\.000000 x2 635\.000000 y2 5298\.000000 colour 0\n/
+FI stderr
+FC = 1
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+//

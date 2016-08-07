@@ -1,0 +1,18 @@
+
+####################
+# ACD parsing errors
+####################
+
+ID acd-nofile
+AP acdc
+ER 1
+PP EMBOSS_ACDROOT=../../acd
+PP export EMBOSS_ACDROOT
+CL nofile
+FI stderr
+FZ > 0
+FP /Error: File \.\.[\/\\]\.\.[\/\\]acd[\/\\]nofile\.acd line 0: ACD file not opened\n/
+FP 0 /Warning: /
+FP 1 /Error: /
+FP 0 /Died: /
+//

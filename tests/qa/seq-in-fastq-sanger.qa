@@ -1,0 +1,10 @@
+
+ID seq-in-fastq-sanger
+AP seqret
+CL -auto ../../data/fastqall.sanger -sf fastq-sanger test.out -osf experiment
+FI test.out
+FC = 10
+FP /^ID   .* 94 BP\.\n/
+FP /^AV   73 72 71 70 69 68 67 66 65 64 63 62 61 60 59 58 57 56 55 54\n/
+FP /^SQ   Sequence 94 BP; 24 A; 24 C; 23 G; 23 T; 0 other;\n/
+//

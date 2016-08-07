@@ -1,0 +1,14 @@
+
+ID seqret-query-filename-simple
+AP seqret
+CL -auto -out test.out -osf embl "../../data/dna.embl"
+FI stderr
+FC = 0
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI test.out
+FC = 16
+FP 1 /^ID   /
+FP /^ID   E10002; /
+//

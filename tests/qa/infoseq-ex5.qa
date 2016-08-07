@@ -1,0 +1,14 @@
+
+ID infoseq-ex5
+UC Display the type of a sequence:
+AP infoseq
+CL tembl:x13776 -only -type
+FI stderr
+FC = 1
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI stdout
+FZ = 12
+FP /^Type\s+\nN\s+\n/
+//

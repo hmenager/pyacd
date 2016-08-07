@@ -1,0 +1,30 @@
+
+##ID abiview-old
+##AP abiview
+##CC Example file missing test/data/ba16d2.s1
+##CL -graph ps
+##IN ../../data/ba16d2.s1
+##IN
+##FI stderr
+##FC = 2
+##FI stdout
+##FZ = 18
+##FP /^Created abiview\.ps\n/
+##FI outfile.fasta
+##FZ = 0
+##//
+
+ID aligncopy-ex
+AP aligncopy
+IN ../../data/globins.msf
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI globins.aligncopy
+FC = 68
+FP /HBB_HUMAN          1 --------VHLTPEEKSAVTALWGKVN-VDEVGGEALGR-LLVVYPWTQR     40\n/
+FP /                               ::  : : :.: : : :   :::: ::   :  : :  : \n/
+//

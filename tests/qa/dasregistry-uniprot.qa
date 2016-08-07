@@ -1,0 +1,9 @@
+
+ID dasregistry-uniprot
+AP seqret
+CL tdas:uniprot:P00280 -sbegin 1 -send 10 stdout -auto
+FI stdout
+FC = 2
+FP 1 /^>P00280/
+FP 1 /MLAKATLAIV/
+//

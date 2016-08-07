@@ -1,0 +1,17 @@
+
+ID dbxobo-idlast
+AP ontoget
+CL tobo:3016
+IN test.out
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI test.out
+FP /^id: EDAM_format:3016\n/
+FP 1 /^id: /
+FP 1 /^is_a: EDAM_format:2330/
+FP 0 /^relationship: /
+FC = 10
+//

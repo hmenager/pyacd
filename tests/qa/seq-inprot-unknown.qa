@@ -1,0 +1,9 @@
+
+ID seq-inprot-unknown
+AP infoseq
+CL -nocolumn -delimiter "\t"
+CL -auto ../../data/prot.text -sprot -outfile test.out -sf unknown
+FI test.out
+FC = 2
+FP /^raw::\S+\t-\t-\t-\tP\t100\t/
+//

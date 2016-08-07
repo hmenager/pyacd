@@ -1,0 +1,10 @@
+
+ID seq-text-fasta
+AP entret
+CL -auto ../../data/dna.fasta -sf fasta test.out
+FI test.out
+FZ = 143
+FC = 4
+FP /^>FASTA F10002 FASTA FORMAT DNA SEQUENCE\n/
+FP /^ACGTACGTACGTACGTACGT\n/
+//

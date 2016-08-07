@@ -1,0 +1,7 @@
+
+ID seqretall-ex2
+AP seqret
+CL -auto tembl:v00296 test.out -osf fasta
+FI test.out
+FP 1 /^>V00296/
+//

@@ -1,0 +1,14 @@
+
+ID charge-ex
+AP charge
+CL tsw:hbb_human
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI hbb_human.charge
+FP /CHARGE of HBB_HUMAN from 1 to 147: window 5/
+FC = 146
+//

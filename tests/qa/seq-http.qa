@@ -1,0 +1,13 @@
+
+ID seq-http
+AP seqret
+CL -auto -out test.out -osf embl http://emboss.open-bio.org/downloads/rod.dat
+FI test.out
+FZ = 13390
+FP /^ID   L48662; /
+FP /^ID   Z46957; /
+FP /^ID   U68037; /
+FP 6 /^ID/
+FI stderr
+FZ = 0
+//

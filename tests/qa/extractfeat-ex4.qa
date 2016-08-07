@@ -1,0 +1,12 @@
+
+ID extractfeat-ex4
+UC To extract the CDS region with the exons joined into one sequence:
+AP extractfeat
+CL tembl:x65921 -type CDS -join
+IN
+FI stderr
+FC = 2
+FI x65921.fasta
+FZ = 453
+FP /^>X65921_782_1912 \[CDS\] H\.sapiens fau 1 gene\n/
+//

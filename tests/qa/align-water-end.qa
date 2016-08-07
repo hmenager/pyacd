@@ -1,0 +1,19 @@
+
+ID align-water-end
+AP water
+CL -gapopen 5 -gapext 1 -stdout -send1 15
+IN ../../data/aligna.dna
+IN ../../data/alignb.dna
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI stdout
+FP /^# Identity: +7\/10 \(70\.0%\)/
+FP /^# Score: +25\.0\n/
+FP 1 /^AFULL              5 aaccgg--tt     12\n/
+FP 1 /^BFULL              2 aacgggcctt     11\n/
+FC = 39
+//

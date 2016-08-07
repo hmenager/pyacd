@@ -1,0 +1,19 @@
+
+ID fuzznuc-ex
+AP fuzznuc
+IN tembl:L46634
+IN AAGCTT
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI l46634.fuzznuc
+FC = 35
+FP /^# HitCount: 2\n/
+FP /^      1       6       [+] pattern:AAGCTT        . aagctt\n/
+FP /^   1267    1272       [+] pattern:AAGCTT        . aagctt\n/
+FP /^# Reported_sequences: 1\n/
+FP /^# Reported_hitcount: 2\n/
+//

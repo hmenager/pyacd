@@ -1,0 +1,18 @@
+
+ID distmat-ex
+AP distmat
+CC Example file missing test/data/pax.align
+CC No example in the documentation
+CL ../../data/pax.align
+IN 2
+IN
+FI stderr
+FC = 6
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI pax.distmat
+FP / Kimura /
+FP /^\s+0\.00\s+20\.37\s+PX8A_HUMAN 9\n/
+FC = 17
+//

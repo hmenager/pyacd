@@ -1,0 +1,9 @@
+
+ID seq-innuc-nbrf
+AP infoseq
+CL -nocolumn -delimiter "\t"
+CL -auto ../../data/dna.nbrf -snuc -sf nbrf -outfile test.out
+FI test.out
+FC = 2
+FP /^nbrf::\S+\t-\tGENBANK\t-\tN\t100\t/
+//

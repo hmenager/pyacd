@@ -1,0 +1,14 @@
+
+ID acdc-codemissing
+AP acdc
+PP EMBOSS_ACDROOT=../../acd
+PP export EMBOSS_ACDROOT
+PP EMBOSS_LANGUAGE=missing
+PP export EMBOSS_LANGUAGE
+CL qatest -help
+FI stderr
+FP 1 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FP /Warning: Code file \.\.[\/\\]\.\.[\/\\]acd[\/\\]codes\.missing not found\n/
+//

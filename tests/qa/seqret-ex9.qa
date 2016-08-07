@@ -1,0 +1,15 @@
+
+ID seqret-ex9
+UC Read all entries in the database 'tembl' that start with 'h'
+UC and write them to a file:
+AP seqret
+IN tembl:h*
+IN hall.seq
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI hall.seq
+FP /H45989/
+//

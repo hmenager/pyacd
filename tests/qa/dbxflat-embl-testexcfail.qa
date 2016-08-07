@@ -1,0 +1,12 @@
+
+ID dbxflat-embl-testexcfail
+ER 1
+AP seqret
+CL qanxflatexc-id:U68037 test.out -auto
+FI stderr
+FZ = 125
+FP /Error: Unable to read sequence 'qanxflatexc-id:U68037'/
+FP 0 /Warning: /
+FP 1 /Error: /
+FP 1 /Died: /
+//

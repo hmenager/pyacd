@@ -1,0 +1,15 @@
+
+ID showalign-ex11
+UC Format for HTML and highlight some interesting regions in different colours:
+AP showalign
+CL -html -high "4-13 green 43-43 red 51-56 blue"
+IN ../../data/globins.msf
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI globins.showalign
+FP /HBB_HUMAN/
+//

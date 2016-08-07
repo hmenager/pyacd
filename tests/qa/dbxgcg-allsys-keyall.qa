@@ -1,0 +1,9 @@
+
+ID dbxgcg-allsys-keyall
+AP seqret
+CL "qanxgcgall-key:*" test.out -auto
+FI test.out
+FZ = 1470428
+FP 1 /^>L07770 /
+FP 35 /^>/
+//

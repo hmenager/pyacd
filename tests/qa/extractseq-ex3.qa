@@ -1,0 +1,17 @@
+
+# use database entry in example
+ID extractseq-ex3
+UC Extract the regions 782-856, 951-1095, 1557-1612 and 1787-1912:
+AP extractseq
+CL tembl:x65921 -reg "782..856,951..1095,1557..1612,1787..1912" stdout
+FI stderr
+FC = 1
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI stdout
+FC = 8
+FZ = 447
+FP /^atgcagctctttg[^\n]+ccaggaaacg/
+FP /^cccacctttggcaagaagaagggccccaatgccaactcttaa\n/
+//

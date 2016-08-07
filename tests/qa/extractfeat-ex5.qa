@@ -1,0 +1,23 @@
+
+# The example has phosphorylation, we only have features that say
+# PHOSPHORYLATION (BY RK) (BY SIMILARITY).
+ID extractfeat-ex5
+UC To write out the 7 residues around all phosphorylated serine residues
+## in the tsw database
+AP extractfeat
+CL "tsw:*" -type MOD_RES -value "phosphoserine*" -before 3 -after -4
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI cru4_arath.fasta
+FZ = 7500
+FP 43 /^>/
+FP 43 /\[post_translationally_modified_region\]/
+FP /^>OPSD_HUMAN_343_343 \[post_translationally_modified_region] Rhodopsin \(Opsin-2\)\n/
+FP /^TETSQVA\n/
+FP /^>PAXI_HUMAN_109_109 \[post_translationally_modified_region] Paxillin\n/
+FP /^SPCSRVG\n/
+//

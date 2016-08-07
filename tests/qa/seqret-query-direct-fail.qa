@@ -1,0 +1,17 @@
+
+#####################################################
+# Test the query part of USAs
+#####################################################
+
+ID seqret-query-direct-fail
+ER 1
+AP seqret
+CL -auto -out test.out -osf embl embl::../../embl/rod.dat:bad:L48662
+FI stderr
+FZ = 238
+FP /Error: Query '\.\.\/\.\.\/embl\/rod\.dat:bad:L48662' query field 'bad' not defined for datatype 'sequence'/
+FP /Error: Unable to read sequence 'embl::\.\.\/\.\.\/embl\/rod\.dat:bad:L48662'/
+FP 0 /Warning: /
+FP 2 /Error: /
+FP 1 /Died: /
+//

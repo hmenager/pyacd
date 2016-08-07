@@ -1,0 +1,15 @@
+
+ID iep-ex
+AP iep
+CL tsw:laci_ecoli
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI laci_ecoli.iep
+FZ = 761 
+FP /^Isoelectric Point = 6\.8385\n/
+FP /^  7\.00    43\.37    -0\.63\n/
+//

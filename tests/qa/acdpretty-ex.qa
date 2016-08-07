@@ -1,0 +1,15 @@
+
+ID acdpretty-ex
+AP acdpretty
+PP EMBOSS_ACDROOT=../../acd
+PP export EMBOSS_ACDROOT
+CL qatest
+FI qatest.acdpretty
+FZ = 847
+FP 2 /[\#]/
+FP 3 /^string:/
+FP 12 /^[a-z]+: /
+FI stdout
+FC = 1
+FP /^Created qatest\.acdpretty\n/
+//

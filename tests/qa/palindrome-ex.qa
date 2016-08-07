@@ -1,0 +1,22 @@
+
+ID palindrome-ex
+AP palindrome
+IN tembl:d00596
+IN 15
+IN
+IN
+IN
+IN
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI d00596.pal
+FZ = 1579
+FP /^Palindromes:\n126 +caaaaaaaaaaaaaaaa +142\n/
+FP /^217 +gtttttttttttttttt +201\n/
+FP /^127 +aaaaaaaaaaaaaaaagaccgccagggct +155\n/
+FP /^204 +ttttttttttttttttctggcggtcccga +176\n/
+//

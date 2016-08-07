@@ -1,0 +1,19 @@
+
+###############################################################
+#
+# DAS sequence/feature access methods
+#
+###############################################################
+
+ID cachedas-ex
+TI 600
+AP cachedas
+CL -servername tdas -auto
+CL -cachefile ~/.embossdata/qatests.server.dasregistry
+QQ cp ~/.embossdata/qatests.server.dasregistry .
+FI qatests.server.dasregistry
+FP 1 /^DBNAME uniprot /
+FI stdout
+FC > 30
+FP /embl/
+//

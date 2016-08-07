@@ -1,0 +1,11 @@
+
+ID ebeye-emblrel_con-multifield
+RQ soapws
+CC requires (axis2C) SOAP webservices library enabled
+AP textget
+CL "tebeye:emblrelease_con-{keywords:Aspergillus fumigatus & description:BAC}"
+CL stdout -auto
+FI stdout
+FP /BX649216/
+FP /Aspergillus fumigatus BAC pilot project supercontig/
+//

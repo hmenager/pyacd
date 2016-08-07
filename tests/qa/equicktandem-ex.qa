@@ -1,0 +1,18 @@
+
+ID equicktandem-ex
+UC The input sequence is the human herpesvirus tandem repeat.
+AP equicktandem
+CL -noorigfile
+IN tembl:L46634
+IN
+IN
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI l46634.qtan
+FC = 25
+FP /^ +191     935       [+]     339      6    124\n/
+//

@@ -1,0 +1,68 @@
+
+ID dbxobo-keep
+AP dbxobo
+DL keep
+IN edam
+IN
+IN oboresource
+IN ../../data/
+IN EDAM.obo
+IN *
+IN
+IN
+FI stderr
+FC = 8
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI outfile.dbxobo
+FC = 10
+FP 1 /Processing file: /
+FI edam.ent
+FC = 5
+FP 1 /Single filename database\n/
+FP /EDAM.obo\n/
+FI edam.pxac
+FC = 17
+FP /^Count +143\n/
+FP /^Fullcount +143\n/
+FI edam.pxde
+FC = 17
+FP /^Count +562\n/
+FP /^Fullcount +2167\n/
+FI edam.pxid
+FC = 17
+FP /^Count +143\n/
+FP /^Fullcount +143\n/
+FI edam.pxis
+FC = 17
+FP /^Count +90\n/
+FP /^Fullcount +225\n/
+FI edam.pxnm
+FC = 17
+FP /^Count +323\n/
+FP /^Fullcount +725\n/
+FI edam.pxns
+FC = 17
+FP /^Count +5\n/
+FP /^Fullcount +143\n/
+FI edam.xac
+FZ = 19118
+FP 2 /\000operation\000/
+FI edam.xde
+FZ = 44509
+FP 2 /\000bootstrapping\000/
+FI edam.xid
+FZ = 4682
+FP 2 /\0001915\000/
+FI edam.xis
+FZ = 7385
+FP 2 /\0002065\000/
+FI edam.xnm
+FZ = 34576
+FP 2 /\000ontologies\000/
+FI edam.xns
+FZ = 3708
+FP 2 /operation/
+FP 2 /\0001422\000/
+//

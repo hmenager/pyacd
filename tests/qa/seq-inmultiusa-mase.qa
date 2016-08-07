@@ -1,0 +1,11 @@
+
+ID seq-inmultiusa-mase
+AP seqret
+CL -auto mase::../../data/test.mase test.out -osf swiss
+FI test.out
+FP 1 /^ID   Sequence1               Unreviewed;         120 AA\.\n/
+FP 1 /^ID   Sequence2               Unreviewed;         120 AA\.\n/
+FP 1 /^DE   First protein sequence\n/
+FP 1 /^SQ   SEQUENCE   120 AA;  12728 MW;  F55A82D26A16578D CRC64;/
+FP 2 /^ID/
+//

@@ -1,0 +1,24 @@
+
+ID supermatcher-ex
+TI 400
+AP supermatcher
+CL @../../data/eclac.list tembl:j01636 -word 50 
+IN
+IN 3.0
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI stdout 
+FZ = 0
+FI supermatcher.error
+FZ = 0
+FI j01636.supermatcher
+FZ > 71230
+FP /^J01636 +1 /
+FP /^# Score: 37385\.0/
+FP 5 /^# Score: /
+FP /^X51872 +1801 [acgt]+ +1832\n/
+//

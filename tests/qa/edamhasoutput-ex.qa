@@ -1,0 +1,20 @@
+
+ID edamhasoutput-ex
+AP edamhasoutput
+CL sequence
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI edamhasoutput.obo
+FC = 626
+FP /^id: EDAM_operation:0448\n/
+FP 43 /^id: /
+FP 43 /^namespace: operation/
+FP 1 /^relationship: has_output EDAM_data:0849 (\{[^\}]+\} )?\! Sequence record/
+FP 5 /^relationship: has_output EDAM_data:1298 (\{[^\}]+\} )?\! Sequence features \(motifs\)/
+FP 1 /^relationship: has_output EDAM_data:0857 (\{[^\}]+\} )?\! Database hits \(sequence\)/
+FP 1 /^relationship: has_output EDAM_data:0863 (\{[^\}]+\} )?\! Sequence alignment/
+//

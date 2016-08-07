@@ -1,0 +1,19 @@
+
+ID cusp-ex
+UC This example uses only one input sequence.
+UC The normal use would be to use a set of coding sequences as the input.
+AP cusp
+CL -sbeg 135 -send 1292
+IN tembl:x13776
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI x13776.cusp
+FP /GCA +A +0\.077 +7\.772 +3/
+FP /GCC +A +0\.462 +46\.632 +18/
+FP /GCG +A +0\.462 +46\.632 +18/
+FP /GCT +A +0\.000 +0\.000 +0/
+//

@@ -1,0 +1,15 @@
+
+ID showserver-ex
+UC Display information on the currently available servers:
+AP showserver
+PP EMBOSS_RCHOME=N
+PP export EMBOSS_RCHOME
+FI stderr
+FC = 1
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI stdout
+FC = 20
+FP /^srs\s+text\s+Unknown\s+OK\s+OK\s+OK\s+16\s+\S+server\.srs/
+//

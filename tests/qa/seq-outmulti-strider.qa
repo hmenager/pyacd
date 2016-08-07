@@ -1,0 +1,12 @@
+
+ID seq-outmulti-strider
+AP seqret
+CL -auto ../../data/dna.m-embl test.out -osf strider
+FI test.out
+FZ = 570
+FP /^; ### from DNA Strider ;-\)\n/
+FP 3 /^; DNA sequence  FASTAM[1-3], 120 bases\n/
+FP /^; DNA sequence  FASTAM2, 120 bases\n/
+FP /^;\n/
+FP /^ACGTACGTACGTACGTACGT\n/
+//

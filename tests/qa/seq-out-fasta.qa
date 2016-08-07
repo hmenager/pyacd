@@ -1,0 +1,9 @@
+
+ID seq-out-fasta
+AP seqret
+CL -auto ../../data/dna.embl test.out -osf fasta
+FI test.out
+FZ = 143
+FP /^>EMBL E10002\.34 EMBL FORMAT DNA SEQUENCE\n/
+FP /^acgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgt\n/
+//

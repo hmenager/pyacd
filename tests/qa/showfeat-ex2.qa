@@ -1,0 +1,18 @@
+
+ID showfeat-ex2
+UC Display 'joined' features on one line with positions:
+AP showfeat
+CL -joinfeat -pos
+IN tembl:x65921
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI x65921.showfeat 
+FZ = 1150
+FP /\|=+\| 2016\n/
+FP /mRNA\n/
+FP /source\n/
+//

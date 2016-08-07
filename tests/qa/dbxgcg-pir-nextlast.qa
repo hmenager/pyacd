@@ -1,0 +1,9 @@
+
+ID dbxgcg-pir-nextlast
+AP seqret
+CL qaxpir-id:S11172 test.out -auto
+FI test.out
+FZ = 178
+FP 1 /^>S11172 /
+FP 1 /^>/
+//

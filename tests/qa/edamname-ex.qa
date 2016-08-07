@@ -1,0 +1,17 @@
+
+ID edamname-ex
+AP edamname
+CL "*sequence_set*"
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI edamname.obo
+FP /^id: EDAM_data:1234\n/
+FP 5 /^id: /
+FP 5 /^name: Sequence set/
+FP 1 /^name: .*Sequence set$/
+FC = 62
+//

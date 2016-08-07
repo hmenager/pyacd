@@ -1,0 +1,18 @@
+
+ID listor-ex2
+UC Write the logical AND of two lists:
+AP listor
+CL ../../data/file1 ../../data/file2 -operator and
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI file1.list
+FZ = 58
+FC = 2
+FP 2 /^fasta::/
+FP 2 /file1/
+FP 0 /file2/
+//

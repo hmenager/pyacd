@@ -1,0 +1,9 @@
+
+ID dbfetch-noentry
+AP seqret
+CL tdbfetch:uniprotkb:abcdefg stdout -auto
+ER 1
+FI stderr
+FC = 2
+FP 1 /Unable to read sequence/
+//

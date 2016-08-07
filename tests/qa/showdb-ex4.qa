@@ -1,0 +1,16 @@
+
+ID showdb-ex4
+UC Display information on the databases formatted in HTML:
+AP showdb
+PP EMBOSS_RCHOME=N
+PP export EMBOSS_RCHOME
+CL -html
+FI stderr
+FC = 1
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI stdout
+FP /^<tr><td>tsw</td><td>Protein Protfeatures Text</td>/
+FP /^<tr><td>tembl</td><td>Nucleotide Refseq Nucfeatures</td>/
+//

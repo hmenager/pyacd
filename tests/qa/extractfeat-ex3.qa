@@ -1,0 +1,17 @@
+
+ID extractfeat-ex3
+UC To write out the 10 bases around the start of all 'exon' features in the tembl database: 
+AP extractfeat
+CL "tembl:*"  -type exon -before 5 -after -5
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI em498477.fasta
+FZ = 85782
+FP 5 /^>X65921_/
+FP 811 /^>/
+FP /^>X65921_951_1095 \[exon\] H\.sapiens fau 1 gene\n/
+//

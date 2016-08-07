@@ -1,0 +1,16 @@
+
+ID seqret-query-filename-home
+AP seqret
+PP cp ../../data/dna.embl ~/seqret-query-filename-home.embl
+QQ rm ~/seqret-query-filename-home.embl
+CL -auto -out test.out -osf embl "~/seqret-query-filename-home.embl"
+FI stderr
+FC = 0
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI test.out
+FC = 16
+FP 1 /^ID   /
+FP /^ID   E10002; /
+//

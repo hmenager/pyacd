@@ -1,0 +1,19 @@
+
+ID garnier-range
+AP garnier
+CL -sbegin 51 -send 120
+IN tsw:amic_pseae
+IN
+FI stderr
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FC = 2
+FI amic_pseae.garnier
+FC = 50
+FP /^#  Residue totals: H: 17   E: 22   T: 21   C: 10\n/
+FP /RADA\nhelix                HHHHHH            HHHH H     HHHHHH\n/
+FP /^turns        T TTT  TTT   \n/
+FP 1 /^# Reported_sequences: 1\n/
+FP 1 /^# Reported_hitcount: 25\n/
+//

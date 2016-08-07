@@ -1,0 +1,15 @@
+
+ID trimspace-ex
+AP trimspace
+IN ../../data/seqspace2.txt
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI seqspace2.trimspace
+FC = 46
+FP /^>X13776 Pseudomonas aeruginosa amiC and amiR gene\n/
+FP /^ggtaccgctg gccgagcatc tgctcgatca ccaccagccg ggcgacggga\n/
+//

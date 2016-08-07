@@ -1,0 +1,21 @@
+
+
+ID align-matcher-long
+AP matcher
+CL -gapopen 5 -gapextend 1 -stdout
+IN tembl:j01636
+IN tembl:v00296
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI stdout
+FP /^# Identity: +3078\/3078 \(100\.0%\)/
+FP /^# Score: +15390\n/
+FP 1 /^       4340      4350      4360    \n/
+FP 1 /^             3060      3070        \n/
+FP 2 /^ *\S+ +GTTGGTCTGGTGTCAAAAATAATAATAA\n/
+FC = 406
+//

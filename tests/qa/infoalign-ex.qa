@@ -1,0 +1,16 @@
+
+# change examples to .msf from .seq
+#
+ID infoalign-ex
+AP infoalign
+CL ../../data/globins.msf
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI globins.infoalign
+FC = 8
+FP /^msf::\S+msf:HBA_HORSE\s+HBA_HORSE\s+141\s+144\s+2\s+3\s+63\s+6\s+72\s+56\.250000\s+0\.830000\s+\n/
+//

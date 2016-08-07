@@ -1,0 +1,16 @@
+
+ID prettyseq-ex
+AP prettyseq
+IN tembl:x13776
+IN 135-1292
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI x13776.prettyseq 
+FZ = 8166 
+FP / 121 AGGAGAGGAAACGGatgggatcgcaccaggagcggccgctgatcggcctgctgttctccg 180\n/
+FP / 1               M  G  S  H  Q  E  R  P  L  I  G  L  L  F  S  E 16\n/
+//

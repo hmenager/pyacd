@@ -1,0 +1,17 @@
+
+ID acdc-testassoc2
+AP acdc
+PP EMBOSS_ACDROOT=../../acd
+PP export EMBOSS_ACDROOT
+## -send at the start should work on both sequences
+CL testassoc -send -1001 tembl:v00294 tembl:x13776
+IN
+IN
+FI stderr
+FZ > 0
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FP /Asequence end 113:/
+FP /Bsequence end 1167:/
+//

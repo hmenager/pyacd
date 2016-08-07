@@ -1,0 +1,16 @@
+
+ID seq-in-badusaformat
+##
+## bad format name - but still reads (auto) it if it can
+##
+AP seqret
+CL -auto badformat::../../data/dna.fasta test.out -osf embl
+FI stderr
+FP /Unknown input format 'badformat'/
+FP 0 /Warning: /
+FP 1 /Error: /
+FP 0 /Died: /
+FI test.out
+FP /^ID   .* 100 BP\.\n/
+FP /SQ   Sequence 100 BP; 25 A; 25 C; 25 G; 25 T; 0 other;/
+//

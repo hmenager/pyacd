@@ -1,0 +1,18 @@
+
+ID treetypedisplay-check
+AQ treetypedisplay
+CC No documentation, no example
+CL -graph ps
+FI stderr
+FC = 1
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI stdout
+FC = 1
+FP /^Created treetypedisplay\.ps\n/
+FI treetypedisplay.ps
+FC = 290
+FP /^%%Title: PLplot Graph\n/
+FP /^%%Pages: 1\n/
+//

@@ -1,0 +1,11 @@
+
+ID seq-inauto-pdb
+AP seqret
+CL -auto ../../data/1tos.pdb test.out -osf swiss
+CC PDB format reads single seqres
+FI test.out
+FZ = 396
+FP /^ID   1TOS_A1 .* 10 AA\.\n/
+FP 3 /^ID   1TOS_A\d .* 10 AA\.\n/
+FP /^SQ   SEQUENCE   10 AA;  1063 MW;  316593786B5AADC7 CRC64;/
+//

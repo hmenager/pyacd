@@ -1,0 +1,11 @@
+
+ID seq-outmulti-embl
+AP seqret
+CL -auto ../../data/dna.m-embl test.out -osf embl
+FI test.out
+FZ = 1023
+FP 3 /^ID   F3000[1-3]; SV 1; linear; unassigned DNA; STD; UNC; 120 BP\.\n/
+FP 3 /^AC   F3000[1-3];\n/
+FP /^AC   F30003;\n/
+FP /^SQ   Sequence 120 BP; 29 A; 29 C; 29 G; 29 T; 4 other;\n/
+//

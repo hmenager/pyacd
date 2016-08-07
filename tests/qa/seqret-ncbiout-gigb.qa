@@ -1,0 +1,10 @@
+
+ID seqret-ncbiout-gigb
+AP seqret
+CL ../../data/testids.ncbi:GIGENBANK test.out -osf ncbi -auto
+FI test.out
+FP 1 /^>/
+FP /^>gi\|123456\|gb\|G67890\|GIGENBANK gi /
+FP /^GIGENBANK$/
+FZ = 65
+//

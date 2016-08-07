@@ -1,0 +1,10 @@
+
+ID dbigcg-pirall-acnumwild
+AP seqret
+CL "qapirall-acc:s*" test.out -auto
+FI test.out
+FZ = 841
+## CCHO has an S* secondary accession number, rest are primary
+FP 4 /^>[A-Z0-9]+ S/
+FP 5 /^>/
+//

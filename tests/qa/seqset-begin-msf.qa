@@ -1,0 +1,12 @@
+
+ID seqset-begin-msf
+AQ seqretset
+CL "tembl:v0029*" -sbegin 51 -send 100 -out test.out -osf msf -auto
+FI test.out
+FZ = 498
+FP 3 / +Name: /
+FP  / +Name: V00294 .* Check: 2937/
+FP  / +Name: V00295 .* Check: 1564/
+FP /^V00294     cgatgtcgcagagtatgccggtgtctcttatcagaccgtttcccgcgtgg\n/
+FP /^V00295     ataataataaccgggcaggccatgtctgcccgtatttcgcgtaaggaaat\n/
+//

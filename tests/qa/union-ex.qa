@@ -1,0 +1,15 @@
+
+ID union-ex
+UC The file 'cds.list' contains a list of the regions making up the coding sequence of 'embl:x65923':
+AP union
+IN @../../data/cds.list
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI x65921.fasta
+FZ = 447
+FP 1 /^>/
+//

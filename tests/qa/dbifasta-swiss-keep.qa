@@ -1,0 +1,41 @@
+
+#############################################
+# The qapfasta database
+#############################################
+
+ID dbifasta-swiss-keep
+DL keep
+AP dbifasta
+IN SWNEW
+IN idacc
+IN ../../data
+IN swnew
+IN
+IN
+IN
+FI stderr
+FC = 8
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI division.lkp
+FZ = 322
+FP s /\A.{300}\001\000swnew\000/
+FI entrynam.idx
+FZ = 498
+FP s /\A.{300}O42495_FUGRU\000/
+FI acnum.hit
+FZ = 336
+FP s /\A.{300}\001/
+FI acnum.trg
+FZ = 426
+FP s /\A.{308}O42495\001/
+FI outfile.dbifasta
+FC = 34
+FP /# Fields: 2\n/
+FP /# Files: 1\n/
+FP /#   File 1: \S+\/data[\/\\]swnew\n/
+FP 1 /^filename: /
+FP /Index acc: maxlen 6 items 9\n/
+FP /Total 1 files 9 entries \(0 duplicates\)\n/
+//

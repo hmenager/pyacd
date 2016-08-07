@@ -1,0 +1,12 @@
+
+ID btwisted-ex
+AP btwisted
+CL -auto tembl:ab000095 -sbegin 100 -send 120
+FI ab000095.btwisted
+FP /^# Twisting calculated from 100 to 120 of AB000095\n/
+FP /^Total twist \(degrees\): 681\.1\n/
+FP /^Total turns : 1\.89\n/
+FP /^Average bases per turn: 11\.10\n/
+FP /^Total stacking energy : -179\.34\n/
+FP /^Average stacking energy per dinucleotide: -8\.97\n/
+//

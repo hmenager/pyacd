@@ -1,0 +1,16 @@
+
+ID featseq-end-msf
+AQ seqretsingle
+CL -feat tembl:v00294 -send 100 -out test.out -osf msf -auto
+FI test.out
+FZ = 395
+FP 1 /^ +Name: /
+FP  / +Name: V00294 .* Check: 8066/
+FP /^V00294     cgatgtcgcagagtatgccggtgtctcttatcagaccgtttcccgcgtgg\n/
+FI test.gff
+FC = 7
+FZ = 1262
+FP /^##sequence-region V00294 1 100\n/
+FP /^#!Type DNA\n/
+FP /^V00294\tEMBL\tCDS\t31\t100\t\.\t[+]\t0\tID=\S+;featflags=end_after:true;/
+//

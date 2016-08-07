@@ -1,0 +1,9 @@
+
+ID dbxgcg-allsys-keyspace
+AP seqret
+CL "qanxgcgall-key:lacy gene" test.out -osformat embl -auto
+FI test.out
+FZ = 26226
+FP 2 /^KW   .*; lacY gene;/
+FP 2 /^ID   /
+//

@@ -1,0 +1,16 @@
+
+ID acdc-missing
+AP acdc
+## "" as a parameter is a missing value treated as an empty string
+PP EMBOSS_ACDROOT=../../acd
+PP export EMBOSS_ACDROOT
+CL qatest tembl:x13776 "" x.x
+ER 1
+FI stderr
+FP 0 /Warning: /
+FP 2 /Error: /
+FP 1 /Died: /
+FP /Error: Failed to open filename ''\n/
+FP /Error: Unable to read sequence ''\n/
+FP /Died: qatest terminated: Bad value for '-bsequence' and no prompt\n/
+//

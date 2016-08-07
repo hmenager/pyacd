@@ -1,0 +1,9 @@
+
+ID seq-inprot-nbrf
+AP infoseq
+CL -nocolumn -delimiter "\t"
+CL -auto ../../data/prot.nbrf -sprot -sf nbrf -outfile test.out
+FI test.out
+FC = 2
+FP /^nbrf::\S+\t-\tpir\t-\tP\t90\t/
+//

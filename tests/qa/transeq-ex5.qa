@@ -1,0 +1,18 @@
+
+ID transeq-ex5
+UC To translate a sequence in all three reverse frames:
+AP transeq
+CL tembl:x13776 amir.pep -frame=R
+FI stderr
+FC = 1
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI amir.pep
+FZ = 2461
+FP /^>X13776_4/
+FP /^>X13776_5/
+FP /^SNQTALRNSTAPTYSRTSPSMMTIPLLLLFWSARIAQADGSFPSNS\*AIFRIGSRRFIAS\n/
+FP /^LEELVGGHPQIGKSE\*QGQRSGLQRALPGCCGKDQVERDAGAQHADQEVDHRHLPTADLA\n/
+FP /^>X13776_6/
+//

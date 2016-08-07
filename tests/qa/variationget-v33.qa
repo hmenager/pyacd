@@ -1,0 +1,17 @@
+
+ID variationget-v33
+AP variationget
+CL ../../data/valid-3.3.vcf
+IN test.vcf
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI test.vcf
+FC = 30
+FP /^##fileformat=VCFv4.0\n/
+FP 19 /^##/
+FP 1 /^#CHROM\t/
+FP 10 /^[^#]/
+//

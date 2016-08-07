@@ -1,0 +1,9 @@
+
+ID dbifasta-worm-idsecond
+AP seqret
+CL qawfasta-id:AC3.2 test.out -auto
+FI test.out
+FZ = 1057
+FP 1 /^>AC3\.2 /
+FP 1 /^>/
+//

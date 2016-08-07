@@ -1,0 +1,18 @@
+
+ID antigenic-ex
+AP antigenic
+IN tsw:actb1_takru
+IN
+IN
+FI actb1_takru.antigenic
+FP /^# Program: antigenic\n/
+FP /1\.207/
+FP /AA[^AV]VV/
+FZ > 100
+FC > 5
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+//

@@ -1,0 +1,29 @@
+
+ID acd-calc-seqset
+AP acdc
+PP EMBOSS_ACDROOT=../../acd
+PP export EMBOSS_ACDROOT
+CL qatestcalcseqset @../../data/eclac.list
+IN
+IN
+IN
+IN
+IN
+IN
+IN
+IN
+FI stderr
+FC = 2
+FP 8 /:/
+FP 1 /Length \[7477\]: /
+FP 1 /Name \[J01636\]: /
+FP 1 /Begin \[1\]: /
+FP 1 /End \[7477\]: /
+FP 1 /Protein \[N\]:/
+FP 1 /Nucleic \[Y\]: /
+FP 1 /Totweight \[5\.000\]: /
+FP 1 /Count \[5\]: /
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+//

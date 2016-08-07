@@ -1,0 +1,52 @@
+
+#############################################
+# The qaxpir database(s)
+#############################################
+
+ID dbxgcg-pir-keep
+DL keep
+TI 120
+AP dbxgcg
+IN pir
+IN pirresource
+IN pir
+IN ../../pir
+IN
+IN
+IN
+IN
+FI stderr
+FC = 12
+FP 0 /Warning:/
+FP 0 /Error: /
+FP 0 /Died: /
+FI outfile.dbxgcg
+FC = 12
+FP 4 /^Processing file: /
+FP 4 /^Processing file: pir[1-9]\.seq\n/
+FP 1 /^Processing file: pir3\.seq\nentries: 57 \(3\) /
+FP 1 /^Entry idlen \d+ OK/
+FP 1 /^Field \S+ \S+ \d+ OK/
+FP 1 /^Field \S+ /
+FI pir.ent
+FC = 8
+FP 1 /^# Number of files: 4\n/
+FP 1 /^Reference 2 filename database\n/
+FP 4 /^pir[1-9]\.seq pir[1-9]\.ref\n/
+FI pir.pxac
+FZ = 287
+FP 1 /^Count        78\n/
+FP 1 /^Fullcount    93\n/
+FI pir.pxid
+FZ = 286
+FP 1 /^Count        60\n/
+FP 1 /^Fullcount    60\n/
+FI pir.xac
+FZ = 6029
+FP 1 /\000a00011\000/
+FP 1 /\000a04607\000/
+FI pir.xid
+FZ = 3018
+FP 1 /\000ccms\000/
+FP 2 /\000cchu\000/
+//

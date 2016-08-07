@@ -1,0 +1,8 @@
+
+ID infoassembly-ex
+AP infoassembly
+CL sam::../../data/samspec1.4example.sam stdout -auto
+FI stdout
+FC > 2
+FP /ref	45	0.00	6	0	0.00	0.00/
+//

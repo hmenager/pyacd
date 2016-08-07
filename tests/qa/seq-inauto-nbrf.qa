@@ -1,0 +1,10 @@
+
+ID seq-inauto-nbrf
+AP seqret
+CL -auto ../../data/prot.nbrf test.out -osf swiss
+FI test.out
+FZ = 251
+FP /^ID   pir .* 90 AA\.\n/
+FP /^DE   example pir format\n/
+FP /^SQ   SEQUENCE   90 AA;  9685 MW;  5B548D9C397EC1FE CRC64;/
+//

@@ -1,0 +1,11 @@
+
+ID featseq-end-embl
+AQ seqretsingle
+CL -feat tembl:v00294 -send 100 -out test.out -osf embl -auto
+FI test.out
+FZ = 2896
+FP 1 /^ID   /
+FP 1 /^FH   /
+FP /^ +gagtatgccg gtgtctctta tcagaccgtt tcccgcgtgg +100\n/
+FP /^FT   CDS             31\.\.>100\n/
+//

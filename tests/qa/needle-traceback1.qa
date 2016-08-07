@@ -1,0 +1,17 @@
+
+ID needle-traceback1
+AP needle
+CL -auto -stdout -aformat simple -gapextend 1.0
+CL asis::acgtaggtacgttttacgtacgtacgtacgtaaacaggtg
+CL asis::acgtagaacgtacgtacgtacgtacacgcataagcggcag
+FC = 0
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI stdout
+FP /^# Identity: +28\/48 \(58\.3%\)/
+FP /^# Score: +94\.0\n/
+FP /^asis +1 acgtaggtacgttttacgtacgtacgtacgtaaac----aggtg----     40\n/
+FP /^asis +1 acgtag--------aacgtacgtacgtacgtacacgcataagcggcag     40\n/
+FC = 39
+//

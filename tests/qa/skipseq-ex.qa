@@ -1,0 +1,16 @@
+
+ID skipseq-ex
+UC This does not skip any sequences. It is exactly equivalent to seqret:
+AP skipseq
+IN @../../data/eclac.list
+IN
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI j01636.fasta
+FZ = 15619
+FP 5 /^>/
+//

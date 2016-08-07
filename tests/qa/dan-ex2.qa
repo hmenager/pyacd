@@ -1,0 +1,22 @@
+
+ID dan-ex2
+UC An example of producing a plot of Tm:
+AP dan
+CL -plot -graph cps
+IN tembl:x13776
+IN
+IN
+IN
+IN
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI stdout
+FZ = 15
+FP /^Created dan\.ps\n/
+FI dan.ps
+FP /^%%Title: PLplot Graph/
+//

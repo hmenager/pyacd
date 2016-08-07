@@ -1,0 +1,18 @@
+
+ID polydot-ex
+AP polydot
+CL ../../data/globins.fasta -gtitle="Polydot of globins.fasta"
+CL -graph cps
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI stdout
+FZ = 19
+FP /^Created polydot\.ps\n/
+FI polydot.ps
+FP /^%%Title: PLplot Graph\n/
+FP /^%%Pages: 1\n/
+//

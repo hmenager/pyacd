@@ -1,0 +1,12 @@
+
+ID corbatest-check
+AQ corbatest
+CC No documentation, no example
+CL x13776 test.out
+FI stderr
+FC < 2
+FP 1 /^CORBA support has not been compiled\n/
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+//

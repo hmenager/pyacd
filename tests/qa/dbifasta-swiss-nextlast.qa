@@ -1,0 +1,9 @@
+
+ID dbifasta-swiss-nextlast
+AP seqret
+CL qapfasta-id:Q50J40_FUGRU test.out -auto
+FI test.out
+FZ = 440
+FP 1 /^>Q50J40_FUGRU /
+FP 1 /^>/
+//

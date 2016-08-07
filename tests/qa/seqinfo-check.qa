@@ -1,0 +1,16 @@
+
+ID seqinfo-check
+AQ seqinfo
+CC No documentation, no example
+IN tembl:x13776
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI stdout
+FZ = 163
+FP /^Length:[ \t]+2167 basepairs\n/
+FP /^GC Content:[ \t]+66\.5436 %\n/
+//

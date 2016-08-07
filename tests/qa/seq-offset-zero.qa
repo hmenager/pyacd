@@ -1,0 +1,13 @@
+
+ID seq-offset-zero
+AP seqret
+CL -auto -out test.out -osf embl embl::../../embl/rod.dat%0
+FI test.out
+FZ = 13390
+FP /^ID   L48662; /
+FP /^ID   Z46957; /
+FP /^ID   U68037; /
+FP 6 /^ID/
+FI stderr
+FZ = 0
+//

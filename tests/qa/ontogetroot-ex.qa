@@ -1,0 +1,17 @@
+
+ID ontogetroot-ex
+AP ontogetroot
+CL edam:1234
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI 1234.obo
+FP /^id: EDAM_data:0006\n/
+FP 1 /^id: /
+FP 0 /^relationship: /
+FP 0 /^is_a: /
+FC = 24
+//

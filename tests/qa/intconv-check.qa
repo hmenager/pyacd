@@ -1,0 +1,20 @@
+
+# this test needs to be kept so stdin can be used for the
+# valgrind test
+
+ID intconv-check
+AQ intconv
+CL stdin stdout -auto
+DL keep
+IN int main (int argc, char* argv[]) {
+IN   int number;
+IN   long time;
+IN   ajint long[52];
+IN   ajlong int;
+IN   exit (1);
+IN }
+FI stdout
+FP 4 /ajint/
+FP 2 /ajlong/
+FZ = 107
+//

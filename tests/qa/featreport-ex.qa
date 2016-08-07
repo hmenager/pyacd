@@ -1,0 +1,16 @@
+
+ID featreport-ex
+AP featreport
+IN ../../data/paamir.fasta
+IN ../../data/paamir.gff
+IN test.out
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI test.out
+FC = 15
+FP /\A##gff-version 3\n/
+FP 10 /^PAAMIR\tEMBL\t/
+//

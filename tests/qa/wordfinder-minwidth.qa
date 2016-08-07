@@ -1,0 +1,23 @@
+
+ID wordfinder-minwidth
+AP wordfinder
+CL ../../data/tropomyosin.fasta ../../data/aligna.dna
+CL -width 1 -gapopen 1 -gapextend 1 -aformat score -outfile align.score -auto
+FI wordfinder.error
+FP /matches 12/
+FC = 1
+FI align.score
+FZ = 373
+FP /AFULL BF056441 17 \(31.0\)/
+FP /.+BE848719 11 \(37.0\)/
+FP /.+BF022813 6 \(30.0\)/
+FP /.+BF452255 6 \(30.0\)/
+FP /.+BG147728 6 \(30.0\)/
+FP /.+BI817778 7 \(35.0\)/
+FP /.+AF186109 6 \(30.0\)/
+FP /.+AF186110 9 \(36.0\)/
+FP /.+AF310722 9 \(36.0\)/
+FP /.+AF362886 6 \(30.0\)/
+FP /.+AF362887 6 \(30.0\)/
+FP /.+AF087679 6 \(30.0\)/
+//

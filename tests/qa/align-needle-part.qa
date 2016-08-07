@@ -1,0 +1,20 @@
+
+ID align-needle-part
+AP needle
+CL -gapopen 16 -gapext 4 -stdout
+IN ../../data/aligna.dna
+IN ../../data/alignapart.dna
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI stdout
+FP /^# Identity: +46\/67 \(68\.7%\)/
+FP /^# Score: +162\.0\n/
+FP 1 /^AFULL             48 ttgggccaattggcatg     64\n/
+FP 1 /^                     \|\| \.\.\|\|\.\.\|\|      \n/
+FP 1 /^APART             47 tt-aaccggtt------     56\n/
+FC = 42
+//

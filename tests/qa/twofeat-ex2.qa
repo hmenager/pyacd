@@ -1,0 +1,19 @@
+
+ID twofeat-ex2
+UC The -twoout option makes the output report give the pairs of features found. The output report format type has been changed to display the full original pairs of features in GFF format.
+AP twofeat
+CL -twoout -rformat gff tembl:x65923
+IN polyA_signal
+IN polyA_site
+IN 10
+IN 50
+IN 
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI x65923.twofeat
+FZ = 217
+FP /polyA_signal_sequence\t484\t489/
+//

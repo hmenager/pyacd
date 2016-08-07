@@ -1,0 +1,16 @@
+
+ID backtranseq-nbrf
+UC Using an NBRF format sequence
+AP backtranseq
+IN ../../data/104k.nbrf
+IN
+FI 104k_thean.fasta
+FP /^>104K_THEAN/
+FP /^GGCATCCTGTGA\n/
+FZ = 2709
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+//

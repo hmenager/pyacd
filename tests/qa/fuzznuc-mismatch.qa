@@ -1,0 +1,20 @@
+
+ID fuzznuc-mismatch
+AP fuzznuc
+CL -pattern @../../data/barcodes.pat -pmismatch 1
+IN ../../data/barcodes.seq
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI barcodes.fuzznuc
+FC = 39
+FP /^# HitCount: 3\n/
+FP /^      1      14       \+ bc_1:tcaggtagtactcg        1 tcagctagtactcg\n/
+FP /^     15      28       \+ bc_2:tcagggctaggcat        1 tcagcgctaggcat\n/
+FP /^     29      42       \+ bc_3:cgacctcgactcga        1 cgacgtcgactcga\n/
+FP /^# Reported_sequences: 1\n/
+FP /^# Reported_hitcount: 3\n/
+//

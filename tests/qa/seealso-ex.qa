@@ -1,0 +1,17 @@
+
+ID seealso-ex
+AP seealso
+IN matcher
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI stdout
+FC = 11
+FP /^seqmatchall/
+FP /^supermatcher/
+FP /^water/
+FP /^wordfinder/
+FP /^wordmatch/
+//

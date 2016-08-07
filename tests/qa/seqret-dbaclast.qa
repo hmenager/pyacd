@@ -1,0 +1,7 @@
+
+ID seqret-dbaclast
+AP seqret
+CL -auto tembl-acc:Z69719 test.out
+FI test.out
+FP 1 /\A>Z69719 Z69719\.1 /
+//

@@ -1,0 +1,14 @@
+
+ID marscan-ex
+AP marscan
+IN tembl:u01317
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI u01317.marscan 
+FZ = 1413
+FP /\t2242\t2458\t.*start8bp 2451;.*end8bp 2458;.*start16bp 2242;.*end16bp 2257\n/
+//

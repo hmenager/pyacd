@@ -1,0 +1,43 @@
+
+#############################################
+# The qapflat database
+#############################################
+
+ID dbiflat-swiss-keep
+DL keep
+AP dbiflat
+IN SWNEW
+IN
+IN ../../swnew
+IN
+IN
+IN
+IN
+FI stderr
+FC = 6
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI division.lkp
+FZ = 322
+FP s /\A.{300}\001\000trembl\.dat\000/
+FI entrynam.idx
+FZ = 498
+FP s /\A.{300}O42495_TAKRU\000/
+FI acnum.hit
+FZ = 336
+FP s /\A.{300}\001/
+FI acnum.trg
+FZ = 426
+FP s /\A.{308}O42495\001/
+FI outfile.dbiflat
+FC = 32
+FP /# Fields: 2\n/
+FP /# Files: 1\n/
+FP /# Filenames: \*\.dat\n/
+FP /filename: 'trembl\.dat'\n    id: 9\n/
+FP /Index acc: maxlen 6 items 9\n/
+FP /^Total 1 files 9 entries \(0 duplicates\)\n/
+FP 1 /^Index \S+ maxlen \d+ items \d+\n/
+FP 1 /^filename: /
+//

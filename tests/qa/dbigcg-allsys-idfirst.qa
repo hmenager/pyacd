@@ -1,0 +1,9 @@
+
+ID dbigcg-allsys-idfirst
+AP seqret
+CL qangcgall-id:AB000095 test.out -auto
+FI test.out
+FZ = 2542
+FP 1 /^>AB000095 /
+FP 1 /^>/
+//

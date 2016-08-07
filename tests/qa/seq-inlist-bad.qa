@@ -1,0 +1,15 @@
+
+ID seq-inlist-bad
+AP seqret
+CL -auto @../../data/bad.list test.out -osf swiss
+FI stderr
+FZ = 112
+FP 0 /Warning: /
+FP 2 /Error: /
+FP 0 /Died: /
+FP /^Error: Failed to open filename '\.\.\/\.\.\/data\/alignc\.prot'\n/
+FP /^Error: Failed to read sequence '\.\.\/\.\.\/data\/alignc\.prot'\n/
+FI test.out
+FP 3 /^ID   .* AA\.\n/
+FP /^SQ   SEQUENCE   56 AA;  6465 MW;  48CB2E252357CBF6 CRC64;/
+//

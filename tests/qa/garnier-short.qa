@@ -1,0 +1,15 @@
+
+ID garnier-short
+AP garnier
+IN asis::GSHQERPL
+IN 
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI asis.garnier
+FP /^#  Residue totals: H:  0   E:  0   T:  2   C:  6\n/
+FP /^turns       TT\n/
+FP /^ coil CCCCCC  \n/
+//

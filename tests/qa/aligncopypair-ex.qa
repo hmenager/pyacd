@@ -1,0 +1,15 @@
+
+ID aligncopypair-ex
+AP aligncopypair
+IN ../../data/globins.msf
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI globins.aligncopypair
+FC = 683
+FP 21 /Aligned_sequences:/
+FP /HBB_HUMAN          1 --------VHLTPEEKSAVTALWGKVN-VDEVGGEALGR-LLVVYPWTQR     40\n/
+//

@@ -1,0 +1,19 @@
+
+ID prophecy-ex
+AP prophecy
+IN ../../data/globins.msf
+IN
+IN globins
+IN
+IN
+FI stderr
+FC = 6
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI globins.prophecy 
+FZ = 13782
+FC = 173
+FP /^Maximum score\s+496\n/
+FP /^Consensus\s+PIVDT.*AAYQG\n/
+//

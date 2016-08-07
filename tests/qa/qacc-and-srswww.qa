@@ -1,0 +1,8 @@
+
+ID qacc-and-srswww
+AP seqret
+CL "srs:uniprot-acc{p07464 & p77862}" stdout -auto
+FI stdout
+FP 1 /^>/
+FP 1 /^>THGA_ECOLI /
+//

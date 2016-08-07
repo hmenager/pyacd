@@ -1,0 +1,10 @@
+
+ID qacc-eor-gcg
+AP seqret
+CL "qangcg-acc{v0029* ^ v00295}" stdout -auto
+FI stdout
+FP 2 /^>/
+FP 0 /^>V00295/
+FP 1 /^>V00294/
+FP 1 /^>V00296/
+//

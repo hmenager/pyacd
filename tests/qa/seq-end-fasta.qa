@@ -1,0 +1,13 @@
+
+###############################################
+# seqret (sequence input) associated qualifiers
+###############################################
+
+ID seq-end-fasta
+AQ seqretsingle
+CL tembl:v00294 -send 100 -out test.out -auto
+FI test.out
+FZ = 168
+FP 1 /^>/
+FP /^gagtatgccggtgtctcttatcagaccgtttcccgcgtgg\n/
+//

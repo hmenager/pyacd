@@ -1,0 +1,11 @@
+
+ID showdb-ex7
+UC Display just a list of the available database names:
+AP showdb
+PP EMBOSS_RCHOME=N
+PP export EMBOSS_RCHOME
+CL -noheading -notype -noid -noquery -noall -nocomment -auto
+FI stdout
+FP /^tsw\s+\n/
+FP /^tembl\s+\n/
+//

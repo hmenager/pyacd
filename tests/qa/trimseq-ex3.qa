@@ -1,0 +1,16 @@
+
+
+ID trimseq-ex3
+AP trimseq
+CL ../../data/untrimmed.seq trim3.seq -window 5 -percent 50
+FI stderr
+FC = 1
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI trim3.seq
+FZ = 528
+FP /^>myseq/
+FP /^ttyyyctttctcgactc/
+FP /ttca-gnntcy\n/
+//

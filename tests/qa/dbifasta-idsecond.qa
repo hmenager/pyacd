@@ -1,0 +1,9 @@
+
+ID dbifasta-idsecond
+AP seqret
+CL qanfasta-id:M11903 test.out -auto
+FI test.out
+FZ = 861
+FP 1 /^>M11903 /
+FP 1 /^>/
+//

@@ -1,0 +1,9 @@
+
+ID seq-innuc-gcg
+AP infoseq
+CL -nocolumn -delimiter "\t"
+CL -auto ../../data/dna.gcg -snuc -sf gcg -outfile test.out
+FI test.out
+FC = 2
+FP /^gcg::\S+\t-\tGCG\t-\tN\t100\t/
+//

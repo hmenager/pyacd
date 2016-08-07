@@ -1,0 +1,17 @@
+
+ID acd-noendsec
+AP acdc
+ER 1
+PP EMBOSS_ACDROOT=../../acd
+PP export EMBOSS_ACDROOT
+CL noendsec
+FI stderr
+FZ > 0
+FP /Error: Section 'output' has no endsection\n/
+FP /Error: Section 'input' has no endsection\n/
+FP 2 /Error: Section '[a-z]*' has no endsection\n/
+FP /Error: File .*noendsec\.acd line 13: Unclosed sections in ACD file\n/
+FP 0 /Warning: /
+FP 3 /Error: /
+FP 0 /Died: /
+//

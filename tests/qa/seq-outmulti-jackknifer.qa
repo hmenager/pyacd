@@ -1,0 +1,9 @@
+
+ID seq-outmulti-jackknifer
+AP seqret
+CL -auto ../../data/dna.m-embl test.out -osf jackknifer
+FI test.out
+FZ = 590
+FP /^' Written by EMBOSS [0-9\/]+ \n/
+FP 3 /^\(FASTAM3\)            [ACGT.\-]+\n/
+//

@@ -1,0 +1,15 @@
+
+ID density-ex3
+AP density
+CL tembl:x13776 -display dual -graph cps
+FI stdout
+FC = 1
+FP /^Created density\.ps\n/
+FI stderr
+FC = 1
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI density.ps
+FP /^%%Title: PLplot Graph/
+//

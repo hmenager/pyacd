@@ -1,0 +1,9 @@
+
+ID dbiblast-split-acsecond
+AP seqret
+CL qapblastsplit-acc:P79755 test.out -auto
+FI test.out
+FZ = 649
+FP 1 /^>CO9_FUGRU P79755 /
+FP 1 /^>/
+//

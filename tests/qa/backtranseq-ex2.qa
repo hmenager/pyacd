@@ -1,0 +1,17 @@
+
+ID backtranseq-ex2
+UC This uses a drosophila sequence and codon table.
+AP backtranseq
+CL -cfile Edrome.cut
+IN tsw:ach2_drome
+IN
+FI ach2_drome.fasta
+FP /^>ACH2_DROME/
+FP /GAGAAGAAGAAC\n/
+FZ = 1832
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+//

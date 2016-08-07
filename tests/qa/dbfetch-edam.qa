@@ -1,0 +1,9 @@
+
+ID dbfetch-edam
+AP ontoget
+CL tdbfetch:edam:0352 stdout -auto
+FI stdout
+FC > 10
+FP /^id: EDAM_operation:0352\n/
+FP /local alignment/
+//

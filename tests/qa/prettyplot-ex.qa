@@ -1,0 +1,18 @@
+
+ID prettyplot-ex
+AP prettyplot
+CL -blocksperline=5 -boxcol -consensus -ratio=0.59
+IN ../../data/globins.msf
+IN cps
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI stdout
+FZ = 22
+FP /^Created prettyplot\.ps\n/
+FI prettyplot.ps
+FP /^%%Title: PLplot Graph\n/
+FP /^%%Pages: 1\n/
+//

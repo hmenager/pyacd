@@ -1,0 +1,22 @@
+
+ID cirdna-ex
+AP cirdna
+CL -graph cps
+IN ../../data/data.cirp
+IN
+IN
+IN
+IN
+FI stderr
+FC = 9
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI cirdna.ps
+FC = 658
+FP /^%%Title: PLplot Graph\n/
+FP /^%%Pages: 1\n/
+FI stdout
+FZ = 18
+FP /^Created cirdna\.ps\n/
+//

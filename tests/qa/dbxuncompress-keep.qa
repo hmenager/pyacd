@@ -1,0 +1,23 @@
+
+ID dbxuncompress-keep
+DL keep
+AP dbxuncompress
+PP cp ../dbxflat-all-keep/*de .
+CL embl -indexdir . -field des
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FP 0 /No '[^']+' index found/
+FI embl.pxde
+FC = 17
+FP /Compress     No\n/
+FI embl.xde
+FZ = 158208
+FP 2 /\000lactose\000/
+FI embl.dbxuncompress
+FC = 3
+FP /Index 'des' uncompressed\n/
+//

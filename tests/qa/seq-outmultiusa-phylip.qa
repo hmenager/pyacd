@@ -1,0 +1,10 @@
+
+ID seq-outmultiusa-phylip
+AP seqret
+CL -auto ../../data/dna.m-embl phylip::test.out
+FI test.out
+FZ = 495
+FP /^ 3 120\n/
+FP /^FASTAM1   ACGTACGTAC GTACGTACGT ACGTACGTAC GTACGTACGT ACGTACGTAC\n/
+FP 6 /^          [ACGT \-]+\n/
+//

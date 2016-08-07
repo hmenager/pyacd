@@ -1,0 +1,11 @@
+
+ID seq-outmulti-swiss
+AP seqret
+CL -auto ../../data/prot.m-swiss test.out -osf swiss
+FI test.out
+FZ =  810
+FP 3 /^ID   SWISSM[1-3] +Unreviewed; +[0-9]+ AA\.\n/
+FP /^ID   SWISSM2                 Unreviewed;          80 AA\.\n/
+FP /^SQ   SEQUENCE   60 AA;  7151 MW;  FF73258FFC19CF5B CRC64;/
+FP 3 /^\/\/\n/
+//

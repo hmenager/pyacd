@@ -1,0 +1,21 @@
+
+ID align-matcher-beginrev
+AP matcher
+CL -gapopen 5 -gapextend 1 -stdout -sbegin1 5 -srev1 -srev2
+IN ../../data/aligna.dna
+IN ../../data/alignb.dna
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI stdout
+FP /^# Identity: +10\/14 \(71\.4%\)/
+FP /^# Score: +38\n/
+FP 1 /^            20       \n/
+FP 1 /^ AFULL AAA--CCCGGGTTT\n/
+FP 1 /^ BFULL AAAGGCCCG--TTT\n/
+FP 1 /^        10           \n/
+FC = 43
+//

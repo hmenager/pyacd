@@ -1,0 +1,18 @@
+
+ID preg-ex
+AP preg
+IN tsw:*_rat
+IN IA[QWF]A
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI arf3_rat.preg
+FC = 31
+FP /^   2289    2292 regex:IA\[QWF\]A IAQA\n/
+FP /^# Total_sequences: 2\n/
+FP /^# Reported_sequences: 1\n/
+FP /^# Reported_hitcount: 1\n/
+//

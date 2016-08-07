@@ -1,0 +1,17 @@
+
+ID acdc-0011
+AP acdc
+PP EMBOSS_ACDROOT=../../acd
+PP export EMBOSS_ACDROOT
+CL qatest -help -verbose
+FI stderr
+FZ = 4978
+FP /^Version: EMBOSS:6\.\d+\.[\d+.]+\n/
+FP 31 /   boolean /
+FP  9 /   integer /
+FP 28 /   string /
+FP /   [-]testalen           string     asequence length \.\.\./
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+//

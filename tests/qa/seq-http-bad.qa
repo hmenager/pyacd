@@ -1,0 +1,13 @@
+
+ID seq-http-bad
+ER 1
+AP seqret
+CL -auto -out test.out -osf embl http://emboss.open-bio.org/downloads/rod.none
+FI stderr
+FC = 3
+FP 0 /Warning: /
+FP 2 /Error: /
+FP 1 /Died: /
+FP /^Error: Cannot open HTTP connection 'http://emboss.open-bio.org/downloads/rod.none'\n/
+FP /^Error: Unable to read sequence 'http://emboss.open-bio.org/downloads/rod.none'\n/
+//

@@ -1,0 +1,19 @@
+
+ID getorf-ex
+AP getorf
+CL -minsize 300
+IN tembl:v00294
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI v00294.orf
+FZ = 876
+FP /^>V00294_1 \[735 - 1112\]/
+FP /^TGKRAV\n/
+FP /^>V00294_2 \[1 - 1110\]/
+FP /^RQVSRLESGQ\n/
+FP /^>V00294_3 \[465 - 49\]/
+//

@@ -1,0 +1,21 @@
+
+ID findkm-ex
+AP findkm
+CL -graph cps
+IN ../../data/enztest.dat
+IN
+FI stdout
+FZ = 18
+FP /^Created findkm\.ps\n/
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI enztest.findkm
+FP /^Vmax = 99\.70, Km = 4\.8946\d+\n/
+FI findkm.ps
+FC = 547
+FP /^%%Title: PLplot Graph\n/
+FP /^%%Pages: 1\n/
+//

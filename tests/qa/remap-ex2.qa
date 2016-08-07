@@ -1,0 +1,23 @@
+
+ID remap-ex2
+UC This is an example where all enzymes in the REBASE database are used,
+UC (but only the prototypes of the isoschizomers are reported by default).
+UC This is run with a small test version of the restriction enzyme database
+UC and so you will probably see more enzymes when you run this.
+AP remap
+PP EMBOSS_DATA=../rebaseextract-keep/
+PP export EMBOSS_DATA
+CL -notran -sbeg 1 -send 60
+IN tembl:j01636
+IN
+IN
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI j01636.remap
+FZ = 1850
+FP /^\s+Hin6I\s+2\s+HinP1I,HspAI\n/
+//

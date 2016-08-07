@@ -1,0 +1,10 @@
+
+ID seq-text-ig
+AP entret
+CL -auto ../../data/dna.ig -sf ig test.out
+FI test.out
+FZ = 141
+FC = 4
+FP /^;IG FORMAT DNA SEQUENCE, 100 bases\n/
+FP /^GTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGT1\n/
+//

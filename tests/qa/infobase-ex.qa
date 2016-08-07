@@ -1,0 +1,15 @@
+
+ID infobase-ex
+AP infobase
+IN
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI outfile.infobase
+FC = 18
+FP /A    A          T          adenine\n/
+FP /K    GT         M          keto_base\n/
+//

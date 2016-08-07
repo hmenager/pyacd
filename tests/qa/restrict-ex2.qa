@@ -1,0 +1,22 @@
+
+ID restrict-ex2
+UC This gives the lengths of the restriction fragments produced by
+UC cutting with all of the specified enzymes.
+AP restrict
+CL -fragments
+PP EMBOSS_DATA=../rebaseextract-keep/
+PP export EMBOSS_DATA
+IN tembl:x65923
+IN
+IN
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI x65923.restrict
+FP /^\s+11\s+14\s+[+]\s+TaqI\s+TCGA\s+11\s+13\s+11\s+14\s+\.\s+\.\s+\.\s+\.\n/
+FP /^\s+125\s+135\s+[+]\s+Hin4I\s+GAYNNNNNVTC\s+116\s+111\s+3\s+12\s+148\s+143\s+20\s+3\n/
+FP /^#\s+79/
+//

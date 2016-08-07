@@ -1,0 +1,26 @@
+
+ID supermatcher-wordlen7
+AP supermatcher
+CL ../../data/tropomyosin.fasta ../../data/aligna.dna
+CL -gapextend 1 -wordlen 7 -outfile align -auto
+FI supermatcher.error
+FP /.*BG089808/
+FP /.*BG147728/
+FI align
+FZ = 2850
+FP /Score: 41.0/
+FP /BE848719         102 ggtgttaaaacagtactcttctggttt-----agttt    133/
+FP /                     ||| |||||||      |....|||||     |.|||/
+FP /AFULL             20 ggt-ttaaaac------cccggggttttcccaaattt     49/
+FP /Score: 42.0/
+FP /AFULL             31 ccggggttttcccaaatttgggcc     54/
+FP /                     ||||||  |.|||.||     |||/
+FP /BI817778           1 ccgggg--taccctaa-----gcc     17/
+FP /Score: 55.0/
+FP /.*   3 gtaacc-------ggttaaacccg-ggtttaaaaccccggggttttccca     44/
+FP /.*     ||.|||       |||    .||| ||   ||||.|      .|..|||./
+FP /.* 740 gtgacctgaaggaggt----gccgcgg---aaaaac------atcaccct    776/
+FP /AFULL             45 aatt-------tgggccaattggc     61/
+FP /                     .|||       |||||||  ||||/
+FP /AF310722         852 cattcggggtctgggcca--tggc    873/
+//

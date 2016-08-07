@@ -1,0 +1,22 @@
+
+
+ID align-matcherprot-begin
+AP matcher
+CL -gapopen 5 -gapextend 1 -stdout -sbegin1 5
+IN ../../data/aligna.prot
+IN ../../data/alignb.prot
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI stdout
+FP /^# Identity: +40\/68 \(58\.8%\)/
+FP /^# Score: +195\n/
+FP 1 /^ AFULL FFIIIAALEEFFIIAEFL\n/
+FP 1 /^       ::::::: \. :::::\.:\.\n/
+FP 1 /^ BFULL FFIIIAADDLFFIIADFI\n/
+FP 1 /^               60        \n/
+FC = 47
+//

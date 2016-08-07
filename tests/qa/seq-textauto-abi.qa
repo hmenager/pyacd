@@ -1,0 +1,13 @@
+
+ID seq-textauto-abi
+AP entret
+CC Fails ... ABI reading functions use raw file pointer not the buffer
+CL -auto ../../data/abiview.abi test.out
+FI test.out
+FZ = 0
+FI stderr
+FP /Warning: Failed to read text from binary ABI file \.\.[\/\\]\.\.[\/\\]data[\/\\]abiview\.abi/
+FP 1 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+//

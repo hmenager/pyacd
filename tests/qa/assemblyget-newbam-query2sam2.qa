@@ -1,0 +1,10 @@
+
+ID assemblyget-newbam-query2sam2
+AP assemblyget
+CL bam::../assemblyget-bamquery2bam2-keep/chrY.bam:chrY
+CL -oformat sam stdout -auto -cbegin 1 -cend 57411600
+FI stdout
+FP 1 /^@RG	ID:0	CN:broad	DT:2008-07-12	LB:Solexa-5464	PI:335	PL:illumina	PU:0.*5	SM:NA07051/
+FP 1 /^@SQ	SN:chrY	LN:57772954	UR:.*fasta	M5:62f69d0e82a12af74bad85e2e4a8bd91	SP:Homo sapiens/
+FP /6340295	99	chrY\t57411391	255	51M\t=\t57411539	198	[ACTG]*	\?*.*610/
+//

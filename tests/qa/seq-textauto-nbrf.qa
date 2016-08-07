@@ -1,0 +1,10 @@
+
+ID seq-textauto-nbrf
+AP entret
+CL -auto ../../data/prot.nbrf test.out
+FI test.out
+FZ = 132
+FC = 6
+FP /^>P1;pir\n/
+FP /^ ABCDEFGHIK LMNPQRSTVW XYZACGTU\.-\n/
+//

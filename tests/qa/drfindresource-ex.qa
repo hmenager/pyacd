@@ -1,0 +1,15 @@
+
+ID drfindresource-ex
+AP drfindresource
+CL pathogens
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI drfindresource.drcat
+FC = 232
+FP 15 /^ID      \S+\n/
+FP 15 /^EDAMtpc 0783 \| Pathogens\n/
+//

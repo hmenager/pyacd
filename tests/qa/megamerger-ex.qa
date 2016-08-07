@@ -1,0 +1,22 @@
+
+ID megamerger-ex
+TI 300
+AP megamerger
+CL tembl:v00295 tembl:v00296
+IN
+IN
+IN report
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI report
+FC = 15
+FP /^V00295 overlap starts at 1\n/
+FP /^V00296 overlap starts at 3019\n/
+FI v00295.merged
+FZ = 4659
+FP /^tgtcaaaaataataataaccgggcaggccatgtctgcccgtatttcgcgtaaggaaatcc\n/
+FP /^ggcttaccggaaaaaaga\n/
+//

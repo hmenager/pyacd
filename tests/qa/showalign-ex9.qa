@@ -1,0 +1,15 @@
+
+ID showalign-ex9
+UC Display the sequences in alphabetic order:
+AP showalign
+CL -order=a
+IN ../../data/globins.msf
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI globins.showalign
+FP /HBB_HUMAN/
+//

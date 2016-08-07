@@ -1,0 +1,10 @@
+
+ID seqret-ncbi-lcl
+AP seqret
+CL ../../data/testids.ncbi:LOCALID test.out -auto
+FI test.out
+FP 1 /^>/
+FP /^>localid Local /
+FP /^L-CALID$/
+FZ = 53
+//

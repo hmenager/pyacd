@@ -1,0 +1,25 @@
+
+ID pepinfo-plot2
+AP pepinfo
+CL -nogeneralplot
+IN tsw:opsd_human
+IN cps
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI stdout
+FZ = 19
+FP /^Created pepinfo\.ps\n/
+FI opsd_human.pepinfo 
+FC = 1062
+FP 0 /^\s+4\s+T\s+1\n/
+FP 0 /^\s+4\s+T\s+0\n/
+FP 3 /^\s+4\s+T\s+0\.000\n/
+FI pepinfo.ps
+FC = 709
+FP /^%%Title: PLplot Graph\n/
+FP /^%%Pages: 1\n/
+//

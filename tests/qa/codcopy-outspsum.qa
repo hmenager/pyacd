@@ -1,0 +1,18 @@
+
+ID codcopy-outspsum
+AP codcopy
+DL keep
+CL -oformat spsum
+IN Eecoli.cut
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI eecoli.spsum
+FC = 2
+FP 1 /^(\d+\s+){63}\d+\n/
+FP /^Escherichia coli K12: 5045\n/
+FP /^.* 84455 .* 30454 51514 .* 39971 .* 44414 .* 365 .*\n/
+//

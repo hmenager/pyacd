@@ -1,0 +1,14 @@
+
+ID maskseq-ex
+UC Mask off bases 10 to 12 from a sequence 'prot.fasta' and write to the new sequence file 'prot2.seq':
+AP maskseq
+CL ../../data/prot.fasta prot2.seq -reg=10-12
+FI stderr
+FC = 1
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI prot2.seq
+FZ = 146
+FP /^ACDEFGHIKXXXPQRSTVWYACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWY\n/
+//

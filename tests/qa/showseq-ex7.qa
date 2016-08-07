@@ -1,0 +1,16 @@
+
+ID showseq-ex7
+UC Translate selected regions: 
+AP showseq
+CL tembl:x13776 -sbeg 1 -send 120 -format 5 -trans 25-49,66-76
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI x13776.showseq 
+FZ = 1221
+FP /R  S  P  P  A  G  R  R  V/
+FP /A  S  L/
+//

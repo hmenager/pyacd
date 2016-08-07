@@ -1,0 +1,10 @@
+
+ID seqret-ncbi-ddbj
+AP seqret
+CL ../../data/testids.ncbi:DDBJ test.out -auto
+FI test.out
+FP 1 /^>/
+FP /^>DDBJ D12345 /
+FP /^DDB-$/
+FZ = 49
+//

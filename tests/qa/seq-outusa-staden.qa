@@ -1,0 +1,9 @@
+
+ID seq-outusa-staden
+AP seqret
+CL -auto ../../data/dna.embl staden::test.out
+FI test.out
+FZ = 113
+FP /<EMBL---->/
+FP /^acgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgt\n/
+//

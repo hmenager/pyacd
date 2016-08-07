@@ -1,0 +1,9 @@
+
+ID dbxgcg-pirall-org
+AP seqret
+CL "qaxpirall-org:drosophila melanogaster" test.out -auto
+FI test.out
+FZ = 180
+FP 1 /^>CCFFDM /
+FP 1 /^>/
+//

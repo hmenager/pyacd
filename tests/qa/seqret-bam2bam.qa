@@ -1,0 +1,8 @@
+
+ID seqret-bam2bam
+AP seqret
+CL bam::../../data/index_test.bam -osformat bam check.bam -auto
+FI check.bam
+FZ = 440026
+FP /^\001/
+//

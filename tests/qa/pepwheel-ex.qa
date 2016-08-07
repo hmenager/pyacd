@@ -1,0 +1,18 @@
+
+ID pepwheel-ex
+AP pepwheel
+CL tsw:hbb_human -send 30
+IN cps
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI stdout
+FZ = 20
+FP /^Created pepwheel\.ps\n/
+FI pepwheel.ps
+FC = 575
+FP /^%%Title: PLplot Graph\n/
+FP /^%%Pages: 1\n/
+//

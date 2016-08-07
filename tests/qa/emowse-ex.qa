@@ -1,0 +1,18 @@
+
+ID emowse-ex
+AP emowse
+IN tsw:*
+IN ../../data/test.mowse
+IN
+IN
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI cru4_arath.emowse
+FC = 177
+FP /^1   UBR5_RAT/
+FP /1  : UBR5_RAT\s+1\.212e\+0+5 308026\.9   0\.750/
+//

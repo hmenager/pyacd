@@ -1,0 +1,17 @@
+
+ID needle-traceback3
+AP needle
+CL -auto -stdout
+CL asis::CDISRILQTHADAKVQVLDNQNVSNGCVSKILGRYYETG
+CL asis::CDISRILQ--------------VSNGCVSKILGRYYETG
+FC = 0
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI stdout
+FP /^# Identity: +25\/39 \(64\.1%\)/
+FP /^# Score: +115\.5\n/
+FP /^asis +1 CDISRILQTHADAKVQVLDNQNVSNGCVSKILGRYYETG/
+FP /^asis +1 CDISRILQ--------------VSNGCVSKILGRYYETG/
+FC = 37
+//

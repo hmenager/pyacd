@@ -1,0 +1,10 @@
+
+ID seq-textmultiauto-msf8
+AP entret
+CL -auto ../../data/dna.msf8 test.out
+FI test.out
+FZ = 1084
+FC = 30
+FP 3 /^ Name: fastam/
+FP /^fastam3  TACGTACGTA CGTACGTACG T\n/
+//

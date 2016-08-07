@@ -1,0 +1,10 @@
+
+ID seq-text-ncbi
+AP entret
+CL -auto ../../data/dna.ncbi -sf ncbi test.out
+FI test.out
+FZ = 145
+FC = 4
+FP /^>gnl\|N10002\|NCBI NCBI FORMAT DNA SEQUENCE\n/
+FP /^ACGTACGTACGTACGTACGT\n/
+//

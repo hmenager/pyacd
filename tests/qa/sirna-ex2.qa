@@ -1,0 +1,24 @@
+
+ID sirna-ex2
+UC Show the first two bases of the 23 base target region in brackets.
+UC These do not form part of the sequence to be ordered, but it is useful
+UC to see if the 23 base region starts with an 'AA'.
+AP sirna
+CL -context
+IN tembl:x65923
+IN 
+IN 
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI x65923.sirna
+FC = 118
+FP /\(AA\)GAAGAAGACAGGUCGGGCUdTdT AGCCCGACCUGUCUUCUUCdTdT/
+FP /^# Reported_sequences: 1\n/
+FP /^# Reported_hitcount: 85\n/
+FI x65923.fasta
+FZ = 6120
+FP /aaaagtgagaggtcagactccta/
+//

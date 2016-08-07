@@ -1,0 +1,12 @@
+
+ID dbiblast-split-testincfail
+ER 1
+AP seqret
+CL qapblastsplitinc:CO9_FUGRU test.out -auto
+FI stderr
+FZ = 130
+FP /Error: Unable to read sequence 'qapblastsplitinc:CO9_FUGRU'/
+FP 0 /Warning: /
+FP 1 /Error: /
+FP 1 /Died: /
+//

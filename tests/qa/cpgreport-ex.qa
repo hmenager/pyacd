@@ -1,0 +1,20 @@
+
+ID cpgreport-ex
+AP cpgreport
+CL tembl:u68037
+IN
+IN
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI u68037.cpgreport
+FP /CPGREPORT of U68037 from 1 to 1218/
+FP /U68037                   12     13    17          1 100\.0    -/
+FP /U68037                 1183   1193    26          2  72\.7   2\.00/
+FI u68037.gff
+FC = 11
+FP /^U68037\tcpgreport\tsequence_feature\t96\t1032\t630\t/
+//

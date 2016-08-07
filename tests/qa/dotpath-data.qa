@@ -1,0 +1,22 @@
+
+ID dotpath-data
+AP dotpath
+##
+## timeout 60 seconds on original test system
+##
+TI 400
+CL tembl:AF129756 tembl:BA000025 -word 20 -graph data
+FI dotpath1.dat
+FC = 254
+FP /^##Maintitle Dotpath: tembl-id:AF129756 vs tembl-id:BA000025\n/
+FP /^##Subtitle Mon 15 Jul 2013 12:00:00\n/
+FP /^Line x1 1\.000000 y1 193957\.000000 x2 153\.000000 y2 194109\.000000 colour 0\n/
+FI stdout
+FC = 1
+FP /^Created dotpath1\.dat\n/
+FI stderr
+FC = 1
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+//

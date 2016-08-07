@@ -1,0 +1,30 @@
+
+
+ID codcopy-transterm
+AP codcopy
+CL -format transterm
+IN ../codcopy-outtransterm/eecoli.transterm
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI eecoli.cut
+FC = 72
+FP 64 /^[ACGT][ACGT][ACGT]/
+FP 0 /Escherichia/
+FP 0 /gbbct/
+FP 0 /CUTG146/
+FP /^#CdsCount: 5045\n/
+FP /^#Coding GC 51\.81%\n/
+FP /^#1st letter GC 58\.93%\n/
+FP /^#2nd letter GC 40\.69%\n/
+FP /^#3rd letter GC 55\.80%\n/
+FP /^GAC    D     0\.370    19\.050  30454\n/
+FP /^GAT    D     0\.630    32\.220  51514\n/
+FP /^ATC    I     0\.420    25\.000  39971\n/
+FP /^CTG    L     0\.500    52\.820  84455\n/
+FP /^ATG    M     1\.000    27\.780  44414\n/
+FP /^TAG    \*     0\.070     0\.230    365\n/
+//

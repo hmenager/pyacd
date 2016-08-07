@@ -1,0 +1,10 @@
+
+ID seq-textmultiauto-ncbi
+AP entret
+CL -auto ../../data/dna.m-ncbi test.out
+FI test.out
+FZ = 594
+FC = 12
+FP 3 /^>/
+FP /^GGTTAACCGGTTAACCGGTTAACCGGTTAACCGGTTAACCGGTTAACCGGTTAACCGGTT\n/
+//

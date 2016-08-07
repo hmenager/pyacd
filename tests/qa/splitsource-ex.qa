@@ -1,0 +1,18 @@
+
+ID splitsource-ex
+UC Split a sequence into original subsequences
+AP splitsource
+CL ena:A01139
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI a01139.fasta
+FZ = 579
+FP /\A>A01139_1_1-81/
+FP /^>A01139_1_1-81 organism="Lactococcus lactis"/
+FP /^>A01139_2_82-279 organism="Hirudo medicinalis"/
+FP 2 /^>/
+//

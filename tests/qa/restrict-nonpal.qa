@@ -1,0 +1,20 @@
+
+ID restrict-nonpal
+UC Tests non-palindromic sites
+AP restrict
+PP EMBOSS_DATA=../rebaseextract-keep/
+PP export EMBOSS_DATA
+CL -enzymes BseYI
+IN asis:GCTGGGTTTCCCAGC 
+IN
+IN
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI asis.restrict
+FP /^\s+1\s+6\s+[-]\s+BseYI\s+CCCAGC\s+1\s+5\s+\.\s+\.\s+\.\s+\.\s+\.\s+\.\n/
+FP /^\s+10\s+15\s+[+]\s+BseYI\s+\CCCAGC\s+10\s+14\s+\.\s+\.\s+\.\s+\.\s+\.\s+\.\n/
+//

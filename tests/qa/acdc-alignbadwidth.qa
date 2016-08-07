@@ -1,0 +1,16 @@
+
+ID acdc-alignbadwidth
+AP acdc
+PP EMBOSS_ACDROOT=../../acd
+PP export EMBOSS_ACDROOT
+CL testalignok -awidth 9
+IN
+FI stderr
+FZ > 0
+FP 1 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FP /Warning: Alignment width \(-awidth=9\) too narrow, reset to 10\n/
+FI outfile.testalignok
+FZ = 0
+//

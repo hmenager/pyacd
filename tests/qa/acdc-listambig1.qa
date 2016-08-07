@@ -1,0 +1,17 @@
+
+ID acdc-listambig1
+AP acdc
+ER 1
+PP EMBOSS_ACDROOT=../../acd
+PP export EMBOSS_ACDROOT
+CL testlist 
+IN f
+FI stderr
+FZ > 0
+FP 0 /Warning: /
+FP 3 /Error: /
+FP 0 /Died: /
+FP /Error: 'f' is ambiguous \(fa,four,fb,five\)\n/
+FP /Error: Bad menu option 'f'\n/
+FP /Error: Unable to get reply from user - end of standard input\n/
+//

@@ -1,0 +1,10 @@
+
+ID seq-textmultiauto-acedb
+AP entret
+CL -auto ../../data/dna.m-acedb test.out
+FI test.out
+FZ = 420
+FC = 15
+FP /^DNA : "ACEDBM1"\n/
+FP /^ACGTACGTACGTACGTACGT\n/
+//

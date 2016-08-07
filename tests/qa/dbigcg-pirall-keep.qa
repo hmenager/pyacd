@@ -1,0 +1,68 @@
+
+
+#############################################
+# The qapirall database(s)
+#############################################
+
+# field sv not supported by PIR format data
+ID dbigcg-pirall-keep
+DL keep
+TI 120
+AP dbigcg
+CL -fields "acc,des,key,org"
+IN PIR
+IN PIR
+IN ../../pir
+IN
+IN
+IN
+IN
+FI stderr
+FC = 6
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI division.lkp
+FZ = 388
+FP s /\A.{300}\001\000pir1\.ref pir1\.seq\000/
+FI entrynam.idx
+FZ = 1260
+FP s /\A.{300}A31558/
+FI acnum.hit
+FZ = 672
+FP s /\A.{300}\033/
+FI acnum.trg
+FZ = 1392
+FP s /\A.{308}A00001/
+FI des.hit
+FZ = 1576
+FP s /\A.{300}\066/
+FI des.trg
+FZ = 3292
+FP s /\A.{308}0/
+FI keyword.hit
+FZ = 2196
+FP s /\A.{300}\005/
+FI keyword.trg
+FZ = 828
+FP s /\A.{308}ACETYLATED AMINO END/
+FI taxon.hit
+FZ = 768
+FP s /\A.{300}\$/
+FI taxon.trg
+FZ = 4944
+FP s /\A.{308}AILANTHUS SILKMOTH/
+FP /\000ANAS PLATYRHYNCHOS\000/
+FP /\000DOMESTIC DUCK\000/
+FI outfile.dbigcg
+FC = 64
+FP 4 /^filename: /
+FP /# Fields: 5\n/
+FP /# Files: 4\n/
+FP /#   File \d+: .*\/pir[\/\\]pir1\.seq\n/
+FP /Index acc: maxlen 6 items 78\n/
+FP /Index des: maxlen 14 items 136\n/
+FP /Index key: maxlen 25 items 16\n/
+FP /Index org: maxlen 35 items 108\n/
+FP /Total 4 files 60 entries \(0 duplicates\)\n/
+//

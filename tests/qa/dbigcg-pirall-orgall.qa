@@ -1,0 +1,9 @@
+
+ID dbigcg-pirall-orgall
+AP seqret
+CL "qapirall-org:*" test.out -auto
+FI test.out
+FZ = 10467
+FP 1 /^>CCHU /
+FP 60 /^>/
+//

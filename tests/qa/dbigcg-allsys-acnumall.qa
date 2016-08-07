@@ -1,0 +1,9 @@
+
+ID dbigcg-allsys-acnumall
+AP seqret
+CL "qangcgall-acc:*" test.out -auto
+FI test.out
+FZ = 2145074
+FP 1 /^>X13776 /
+FP 40 /^>/
+//

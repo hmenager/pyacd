@@ -1,0 +1,14 @@
+
+ID maskambigprot-ex
+AP maskambigprot
+IN ../../data/ambigprot.fasta
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI ambigprot.fasta
+FC = 2
+FP /^AXCDEFGHIXKLMNXPQRSTXVWXYXXaxcdefghixklmnxpqrstxvwxyxX\n/
+//

@@ -1,0 +1,12 @@
+
+ID wsdbfetch-uniprot
+TI 120
+RQ soapws
+CC requires (axis2C) SOAP webservices library enabled
+AP seqret
+CL fasta::twsdbfetch:uniprotkb:P06213 stdout -auto
+FI stdout
+FC = 25
+FP 1 /^>INSR_HUMAN/
+FP 1 /PS$/
+//

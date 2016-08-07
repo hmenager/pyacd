@@ -1,0 +1,9 @@
+
+ID dbxgcg-pirall-wild
+AP seqret
+CL "qaxpirall:c*" test.out -auto
+FI test.out
+FZ = 7969
+FP 49 /^>C/
+FP 49 /^>/
+//

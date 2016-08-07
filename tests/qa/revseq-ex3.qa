@@ -1,0 +1,14 @@
+
+ID revseq-ex3
+UC To create the reverse of 'tembl:x65923' in the file 'x65923.rev':
+AP revseq
+CL tembl:x65923 x65923.rev -nocomp
+FI stderr
+FC = 1
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI x65923.rev
+FZ = 563
+FP /^cagggtcgatggcgcttctacctcagctctttctcctt\n/
+//

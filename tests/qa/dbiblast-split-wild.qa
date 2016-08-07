@@ -1,0 +1,9 @@
+
+ID dbiblast-split-wild
+AP seqret
+CL "qapblastsplit:n*" test.out -auto
+FI test.out
+FZ = 516
+FP 2 /^>N/
+FP 2 /^>/
+//

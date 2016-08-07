@@ -1,0 +1,10 @@
+
+ID seq-outmulti-fitch
+AP seqret
+CL -auto ../../data/dna.m-embl test.out -osf fitch
+FI test.out
+FZ = 543
+FP 3 /^FASTAM[1-3], 120 bases\n/
+FP /^FASTAM1, 120 bases\n/
+FP /^ ACG TAC GTA CGT ACG TAC GT- --- ACG TAC GTA CGT ACG TAC GTA CGT ACG TAC GTA CGT\n/
+//

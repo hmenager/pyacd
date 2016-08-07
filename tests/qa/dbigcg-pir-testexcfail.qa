@@ -1,0 +1,12 @@
+
+ID dbigcg-pir-testexcfail
+ER 1
+AP seqret
+CL qapirexc-id:cchu test.out -auto
+FI stderr
+FZ = 120
+FP /Error: Unable to read sequence 'qapirexc-id:cchu'/
+FP 0 /Warning: /
+FP 1 /Error: /
+FP 1 /Died: /
+//

@@ -1,0 +1,18 @@
+
+ID align-stretcher-msfgap
+AP stretcher
+CL -gapopen 5 -gapextend 1 -stdout -sbegin2 4
+CL -aformat msf
+IN ../../data/aligna.dna
+IN ../../data/alignb.dna
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI stdout
+FP 1 /^AFULL +GGCCAATTGGCATG\n/
+FP 1 /^BFULL +~{17}CGGG\.{9}CC\.{14}TTT~\n/
+FC = 17
+//

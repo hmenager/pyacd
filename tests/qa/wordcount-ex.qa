@@ -1,0 +1,15 @@
+
+ID wordcount-ex
+AP wordcount
+CL tembl:u68037 -wordsize=3
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI u68037.wordcount
+FZ = 432
+FP /\Actg\s+54\n/
+FP /^aaa\s+1\Z/
+//

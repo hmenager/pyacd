@@ -1,0 +1,20 @@
+
+ID pepwindow-local
+AP pepwindow
+PP EMBOSS_DATA=../aaindexextract-keep/
+PP export EMBOSS_DATA
+CL tsw:opsd_human
+IN ps
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI stdout
+FZ = 21
+FP /^Created pepwindow\.ps\n/
+FI pepwindow.ps
+FC = 305
+FP /^%%Title: PLplot Graph\n/
+FP /^%%Pages: 1\n/
+//

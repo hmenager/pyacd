@@ -1,0 +1,9 @@
+
+ID dbigcg-nextlast
+AP seqret
+CL qangcg-id:Z69719 test.out -auto
+FI test.out
+FZ = 34577
+FP 1 /^>Z69719 /
+FP 1 /^>/
+//

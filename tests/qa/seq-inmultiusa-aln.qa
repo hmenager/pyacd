@@ -1,0 +1,11 @@
+
+ID seq-inmultiusa-aln
+AP seqret
+CL -auto aln::../../data/globins.m-aln test.out -osf swiss
+FI test.out
+FP 1 /^ID   HBB_HUMAN  .* 167 AA\.\n/
+FP 1 /^ID   HBA_HUMAN  .* 167 AA\.\n/
+FP 7 /^ID   /
+FP 7 /^SQ   SEQUENCE   \d+ AA;  \d+ MW;  \S+ CRC64;\n/
+FP 1 /^SQ   SEQUENCE   167 AA;  15867 MW;  BEAE9EB4529C39C3 CRC64;\n/
+//

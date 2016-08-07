@@ -1,0 +1,10 @@
+
+ID seq-inmultiauto-ncbi
+AP seqret
+CL -auto ../../data/dna.m-ncbi test.out -osf embl
+FI test.out
+FP 1 /^ID   N30001; .* 144 BP\.\n/
+FP 1 /^ID   N30002; .* 144 BP\.\n/
+FP 1 /^ID   N30003; .* 144 BP\.\n/
+FP 3 /Sequence 144 BP; 36 A; 36 C; 36 G; 36 T; 0 other;/
+//

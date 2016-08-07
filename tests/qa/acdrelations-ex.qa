@@ -1,0 +1,19 @@
+
+ID acdrelations-ex
+AQ acdrelations
+PP mkdir ./acdfiles
+PP cp ../../../emboss/acd/antigenic.acd ./acdfiles
+QQ rm -rf ./acdfiles
+CL -intypefile ../../../emboss/acd/knowntypes.standard
+IN
+IN acdfiles
+IN .
+FI stderr
+FC = 5
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI antigenic.acd
+FC = 50
+FP 5 /relations: /
+//

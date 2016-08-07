@@ -1,0 +1,80 @@
+
+#############################################
+# The qanxflatall database
+#############################################
+
+ID dbxflat-all-keep
+DL keep
+AP dbxflat
+CL -fields "id,acc,sv,des,key,org"
+IN embl
+IN emblresource
+IN embl
+IN 
+IN ../../embl
+IN
+IN
+FI stderr
+FC = 8
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI outfile.dbxflat
+FC = 34
+FP /^Processing file: .*rod\.dat\nentries: 44 \(6\)/
+FP 13 /^Processing file: /
+FP 1 /^Entry idlen 15 OK/
+FP 5 /^Field \S+ \S+ \d+ OK/
+FP 5 /^Field \S+ /
+FI embl.ent
+FC = 17
+FP /^# Number of files: 13\n/
+FP /^rod\.dat\n/
+FP 13 /^[a-z0-9]+\.dat\n/
+FI embl.pxac
+FZ = 288
+FP 1 /^Count        158\n/
+FP 1 /^Fullcount    163\n/
+FI embl.pxde
+FZ = 291
+FP 1 /^Count        223\n/
+FP 1 /^Fullcount    445\n/
+FI embl.pxid
+FZ = 286
+FP 1 /^Count        53\n/
+FP 1 /^Fullcount    53\n/
+FI embl.pxkw
+FZ = 287
+FP 1 /^Count        79\n/
+FP 1 /^Fullcount    94\n/
+FI embl.pxsv
+FZ = 286
+FP 1 /^Count        53\n/
+FP 1 /^Fullcount    53\n/
+FI embl.pxtx
+FZ = 291
+FP 1 /^Count        148\n/
+FP 1 /^Fullcount    701\n/
+FI embl.xac
+FZ = 7084
+FP /\000l48662\000/
+FP /\000z46957\000/
+FP /\000u68037\000/
+FI embl.xde
+FZ = 15973
+FP 2 /\000lactose\000/
+FI embl.xid
+FZ = 2559
+FP /\000l48662\000/
+FP /\000z46957\000/
+FP /\000u68037\000/
+FI embl.xkw
+FZ = 6843
+FP 2 /\000leghemoglobin\000/
+FI embl.xsv
+FZ = 2589
+FP /\000h45989\.1\000/
+FI embl.xtx
+FZ = 17498
+FP 2 /\000octopoda\000/
+//

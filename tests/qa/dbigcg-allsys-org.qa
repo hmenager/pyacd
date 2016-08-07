@@ -1,0 +1,9 @@
+
+ID dbigcg-allsys-org
+AP seqret
+CL qangcgall-org:Mus test.out -auto
+FI test.out
+FZ = 475
+FP 1 /^>L48662 /
+FP 1 /^>/
+//

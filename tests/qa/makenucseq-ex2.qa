@@ -1,0 +1,19 @@
+
+ID makenucseq-ex2
+UC Providing a codon usage file specifies the sequence composition.
+UC This Pseudomonas aeruginosa file specifies a high GC content.
+AP makenucseq
+IN Epseae.cut
+IN
+IN
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI makeseq.fasta
+FC = 300
+FP 100 /^>EMBOSS_[0-9][0-9][0-9]/
+FP /\A>EMBOSS_001\ngggcgtctg.*gtcaacttc\ngcgcggcag.*gtgcgcg\n/
+//

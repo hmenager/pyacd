@@ -1,0 +1,22 @@
+
+
+ID notab-ex
+AP notab
+IN ../../data/tabfile.txt
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI tabfile.notab
+FC = 9
+FP /^a       b       c       d\n/
+FP /^ab      cd      ef      g\n/
+FP /^abc     def     ghi     j\n/
+FP /^abcd    efgh    ijkl    m\n/
+FP /^abcde   fghij   klmno   p\n/
+FP /^abcdef  ghijkl  mnopqr  s\n/
+FP /^abcdefg hijklmn opqrstu v\n/
+FP /^abcdefgh        ijklmnop\n/
+//

@@ -1,0 +1,9 @@
+
+ID dbxflatall-last
+AP seqret
+CL qanxflatall-id:Z69719 test.out -auto
+FI test.out
+FZ = 34396
+FP 1 />Z69719 /
+FP 1 />/
+//

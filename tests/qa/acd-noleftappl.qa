@@ -1,0 +1,14 @@
+
+ID acd-noleftappl
+AP acdc
+ER 1
+PP EMBOSS_ACDROOT=../../acd
+PP export EMBOSS_ACDROOT
+CL noleftappl
+FI stderr
+FZ > 0
+FP /Error: File .*noleftappl\.acd line 3: \(noleftappl\) Failed to find '\[' for application noleftappl\n/
+FP 0 /Warning: /
+FP 1 /Error: /
+FP 0 /Died: /
+//

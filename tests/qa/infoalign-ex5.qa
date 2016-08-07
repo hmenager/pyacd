@@ -1,0 +1,15 @@
+
+ID infoalign-ex5
+UC Display the name and number of gaps within a sequence:
+AP infoalign
+CL ../../data/globins.msf -only -name -gaps
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI globins.infoalign
+FC = 7
+FP /^HBA_HORSE\s+2\n/
+//

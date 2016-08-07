@@ -1,0 +1,16 @@
+
+ID edamname-ex2
+AP edamname
+CL "*sequence_set*" -subclasses
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI edamname.obo
+FC = 291
+FP /^id: EDAM_data:1234\n/
+FP 22 /^id: /
+FP 5 /^name: Sequence set/
+//

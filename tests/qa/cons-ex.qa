@@ -1,0 +1,15 @@
+
+ID cons-ex
+AP cons
+IN ../../data/dna.msf
+IN aligned.cons
+FI stderr
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FC = 2
+FI aligned.cons
+FZ = 134
+FP /\A>EMBOSS_001\n/
+FP 2 /^ACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGT\n/
+//

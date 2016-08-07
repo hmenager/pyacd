@@ -1,0 +1,8 @@
+
+ID seq-in-gifasta
+AP seqret
+CL -auto ../../data/ncbi.gifasta -sf gifasta test.out -osf swiss
+FI test.out
+FP /^ID   .* 8 AA\.\n/
+FP /^SQ   SEQUENCE   8 AA;  950 MW;  61E059CB04176058 CRC64;/
+//

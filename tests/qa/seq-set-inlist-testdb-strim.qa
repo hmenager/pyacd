@@ -1,0 +1,11 @@
+
+ID seq-set-inlist-testdb-strim
+AQ seqretset
+CL -auto @../../data/testdb.list -sbegin 11 -send -11 test.out -osf fasta
+FI test.out
+FP 4 /^>/
+FP />ACGTseq [^\n]+\nGGGGTTTTAAACCCGGTTACTGCCAATTTGGGCCCCAAAA\n/
+FP />TCGAseq [^\n]+\nGGGGAAAATTTCCCGGAATCAGCCTTAAAGGGCCCCTTTT\n/
+FP />TGACseq [^\n]+\nAAAACCCCTTTGGGAACCTGCAGGTTCCCAAAGGGGTTTT\n/
+FP />AGTCseq [^\n]+\nTTTTCCCCAAAGGGTTCCAGCTGGAACCCTTTGGGGAAAA\n/
+//

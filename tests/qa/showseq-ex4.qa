@@ -1,0 +1,15 @@
+
+ID showseq-ex4
+UC Number the sequence lines in the margin: 
+AP showseq
+CL tembl:x13776 -sbeg 1 -send 100 -format 1 -number
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI x13776.showseq 
+FZ = 212
+FP /^        1 ggtacc/
+//

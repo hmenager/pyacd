@@ -1,0 +1,10 @@
+
+ID seqall-end-fasta
+AP seqret
+CL "tembl:v0029*" -send 100 -out test.out -auto
+FI test.out
+FZ = 517
+FP 3 /^>/
+FP /^ccggaagagagtcaattcagggtggtgaatgtgaaaccagtaacgttatacgatgtcgca\n/
+FP /^gagtatgccggtgtctcttatcagaccgtttcccgcgtgg\n/
+//

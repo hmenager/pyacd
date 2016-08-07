@@ -1,0 +1,16 @@
+
+# change the examples to use these files
+ID pasteseq-ex
+UC To insert the sequence 'tsw:flav_nossm' after position 67 in sequence 'tsw:amir_pseae' and write the results to the file 'amir_pseae.fasta': 
+AP pasteseq
+CL tsw:amir_pseae tsw:flav_nossm -pos=67
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI amir_pseae.fasta
+FZ = 275
+FP /^FQNRHHDSKKIGLFYGTZTGKTESVAEIIDEFGDEVVTLDIDEIAALLAAGTPRTTLVAL\n/
+//

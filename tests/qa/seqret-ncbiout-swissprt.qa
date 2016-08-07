@@ -1,0 +1,10 @@
+
+ID seqret-ncbiout-swissprt
+AP seqret
+CL ../../data/testids.ncbi:SWISS_PRT test.out -osf ncbi -auto
+FI test.out
+FP 1 /^>/
+FP /^>sp\|P01234\|SWISS_PRT swissprot /
+FP /^SWISSPR-T$/
+FZ = 67
+//

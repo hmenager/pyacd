@@ -1,0 +1,15 @@
+
+ID compseq-ex3
+UC To count the frequencies of trinucleotides in frame 2 of a sequence and use a previously prepared compseq output to show the expected frequencies:
+AP compseq
+CL tembl:x65923 -word 3 result3.comp -frame 2 -in ../../data/prev.comp
+FI stderr
+FC = 1
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI result3.comp
+FZ = 2698
+FP /^Total count\s+172\n/
+FP /^AAA\s+7\s+0\.0406977\s+0\.0329457\s+1\.2352955\n/
+//

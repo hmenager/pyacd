@@ -1,0 +1,9 @@
+
+ID seq-infeat-swiss-topir
+AP seqret
+CL -feat tsw:laci_ecoli pir::test.out -auto
+FI test.out
+FZ = 1923
+FP /^F;6-25\/Binding site: H-T-H motif, DNA_contact\n/
+FP /^F;74-89\/Region: alpha_helix\n/
+//

@@ -1,0 +1,14 @@
+
+ID seqret-ex2
+UC Display the contents of the sequence on the screen:
+AP seqret
+IN tembl:x65923
+IN stdout
+FI stdout
+FP /X65923/
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+//

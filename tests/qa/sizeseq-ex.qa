@@ -1,0 +1,16 @@
+
+ID sizeseq-ex
+AP sizeseq
+CL -osformat swiss
+IN ../../data/globins.fasta
+IN
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI globins.swiss
+FC = 49
+FP /\AID   HBA_HUMAN               Reviewed;         141 AA.\n/
+//

@@ -1,0 +1,29 @@
+
+ID cpgplot-ex
+AP cpgplot
+CL tembl:u68037 -graph cps
+IN
+IN
+IN
+IN
+IN
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI stdout
+FZ = 19
+FP /^Created cpgplot\.ps\n/
+FI u68037.cpgplot
+FP /U68037 from 1 to 1218/
+FP /Observed\/Expected ratio > 0\.60/
+FP /Length 406 \(104\.\.509\)/
+FP /Length 329 \(596\.\.924\)/
+FI u68037.gff
+FP /^#!Type DNA\n/
+FP /^##sequence-region U68037 1 924\n/
+FI cpgplot.ps
+FP /^%%Title: PLplot Graph/
+//

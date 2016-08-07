@@ -1,0 +1,10 @@
+
+###########################################################################
+
+# first entry in first file
+ID seqret-dbidfilefirst
+AP seqret
+CL -auto tembl:H45989 test.out
+FI test.out
+FP 1 /\A>H45989 /
+//

@@ -1,0 +1,13 @@
+
+ID seqret-query-filename-wildnofile
+AP seqret
+CL -auto -out test.out -osf embl "../../data/*.nofiles"
+ER 1
+FI stderr
+FC = 3
+FP /^Error: Failed to open filename '\.\./\.\./data/\*\.nofiles'/
+FP /^Error: Unable to read sequence '\.\./\.\./data/\*\.nofiles'/
+FP 0 /Warning: /
+FP 2 /Error: /
+FP 1 /Died: /
+//

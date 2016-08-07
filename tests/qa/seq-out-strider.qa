@@ -1,0 +1,11 @@
+
+ID seq-out-strider
+AP seqret
+CL -auto ../../data/dna.embl test.out -osf strider
+FI test.out
+FZ = 166
+FP /^; ### from DNA Strider ;-\)\n/
+FP /^; DNA sequence  EMBL, 100 bases\n/
+FP /^;\n/
+FP /^acgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtac\n/
+//

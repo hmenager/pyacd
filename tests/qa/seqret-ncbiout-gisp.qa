@@ -1,0 +1,10 @@
+
+ID seqret-ncbiout-gisp
+AP seqret
+CL ../../data/testids.ncbi:GISWISS_PRT test.out -osf ncbi -auto
+FI test.out
+FP 1 /^>/
+FP /^>gi\|234567\|sp\|P01234\|GISWISS_PRT gi /
+FP /^GISWISSPR-T$/
+FZ = 71
+//

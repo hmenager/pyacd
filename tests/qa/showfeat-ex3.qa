@@ -1,0 +1,16 @@
+
+ID showfeat-ex3
+UC Display just positions and names of CDS features - this can be used as a regions file in showseq:
+AP showfeat
+CL -typematch CDS -width 0 -noid -nodesc -noscale -pos 
+IN tembl:x65921
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI x65921.showfeat 
+FZ = 54
+FP /CDS/
+//

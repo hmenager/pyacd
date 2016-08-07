@@ -1,0 +1,21 @@
+
+ID patmatdb-ex
+AP patmatdb
+IN tsw:*
+IN st[ty]s
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI cru4_arath.patmatdb 
+FC = 80
+FP /^# Sequence: HD_TAKRU     from: 1   to: 3148\n# HitCount: 1\n/
+FP /^Length = 4\n/
+FP /^Start = position 1038 of sequence\n/
+FP /^End = position 1041 of sequence\n/
+FP /^STPASSTTSSAVDP\n/
+FP /^# Reported_sequences: 3\n/
+FP /^# Reported_hitcount: 3\n/
+//

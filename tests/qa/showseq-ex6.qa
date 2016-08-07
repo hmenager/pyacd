@@ -1,0 +1,18 @@
+
+ID showseq-ex6
+UC Make selected regions uppercase.
+UC (Use '-slower' to force the rest of the sequence to be lowercase). 
+AP showseq
+CL tembl:x13776 -sbeg 1 -send 100 -format 1 -slower
+CL -upper "8-24,65-81"
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI x13776.showseq 
+FZ = 205
+FP /^          ggtaccgCTGGCCGAGCATCTGCTcgatcaccaccagccgggcgacgggaactgcacgat\n/
+FP /^          ctacCTGGCGAGCCTGGAGCAcgagcgggttcgcttcgta\n/
+//

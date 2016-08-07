@@ -1,0 +1,21 @@
+
+ID water-ex
+AP water
+CL tsw:hba_human tsw:hbb_human
+IN
+IN
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI hba_human.water 
+FZ > 1175
+FP /^# Score: 293\.5\n/
+FP /^HBA_HUMAN +3 +LSPADKTNVKAAWGKVGAHAGEYGAEALERMFLSFPTTKTYFPHF-DLS- +50\n/
+FP /^HBB_HUMAN +4 +LTPEEKSAVTALWGKV--NVDEVGGEALGRLLVVYPWTQRFFESFGDLST +51\n/
+FP /^HBA_HUMAN +51 +----HGSAQVKGHGKKVADALTNAVAHVDDMPNALSALSDLHAHKLRVDP +96\n/
+FP /^# Identity: +63/145 \(43\.4%\)\n/
+FP /^# Similarity: +88/145 \(60\.7%\)\n/
+//

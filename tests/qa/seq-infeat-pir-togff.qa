@@ -1,0 +1,11 @@
+
+ID seq-infeat-pir-togff
+AP seqret
+CL -feat ../../data/featprot.fasta -ufo ../../data/feat.pir gff::test.out -auto
+FI test.out
+FC = 67
+FZ = 5645
+## active site two locations with copied annotation (note and comment)
+FP /^OPSD_HUMAN\tPIR\tbiological_region\t38\t90\t\.\t\.\t\.\tID=OPSD_HUMAN\.24;featflags=type:active_site_residue;note=Cys%2C His;comment=status experimental\n/
+FP /^OPSD_HUMAN\tPIR\tactive_site_residue\t90\t90\t\.\t\.\t\.\tParent=OPSD_HUMAN.24\n/
+//

@@ -1,0 +1,9 @@
+
+ID dbxfasta-swiss-idsecond
+AP seqret
+CL qapxfasta-id:Q1KKT3_FUGRU test.out -auto
+FI test.out
+FZ = 465
+FP 1 /^>Q1KKT3_FUGRU /
+FP 1 /^>/
+//

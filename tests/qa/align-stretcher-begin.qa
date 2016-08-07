@@ -1,0 +1,26 @@
+
+ID align-stretcher-begin
+AP stretcher
+CL -gapopen 16 -gapextend 4 -stdout -sbegin1 5
+IN ../../data/aligna.dna
+IN ../../data/alignb.dna
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI stdout
+FP /^# Identity: +8\/60 \(13\.3%\)/
+FP /^# Score: +-180\n/
+FP 1 /^           10        20        30        40        50    \n/
+FP 1 /^ AFULL AACCGGTTAAACCCGGGTTTAAAACCCCGGGGTTTTCCCAAATTTGGGCC\n/
+FP 1 /^       :: :::                                            \n/
+FP 1 /^ BFULL AAACGG--------------------------------------------\n/
+FP 1 /^           60    \n/
+FP 1 /^ AFULL AATTGGCATG\n/
+FP 1 /^           : : : \n/
+FP 1 /^ BFULL ----GCCTTT\n/
+FP 1 /^             10  \n/
+FC = 47
+//

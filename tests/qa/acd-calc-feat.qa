@@ -1,0 +1,27 @@
+
+ID acd-calc-feat
+AP acdc
+PP EMBOSS_ACDROOT=../../acd
+PP export EMBOSS_ACDROOT
+CL qatestcalcfeat ../../data/feat.emft
+IN
+IN
+IN
+IN
+IN
+IN
+IN
+FI stderr
+FC = 2
+FP 7 /:/
+FP 1 /FLength \[32987\]: /
+FP 1 /FName: /
+FP 1 /FBegin \[1\]: /
+FP 1 /FEnd \[32987\]: /
+FP 1 /FProtein \[N\]:/
+FP 1 /FNucleic \[Y\]: /
+FP 1 /FSize \[62\]: /
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+//

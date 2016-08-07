@@ -1,0 +1,17 @@
+
+ID qual-sdb
+AP seqret
+CL ../../data/hba.fa
+CL -stdout -auto -sf fasta -sdb fred
+## noid.fa has no sequence ID
+## This upsets the feature reading
+## Error GFF Group field for table ''
+FI stderr
+FC = 0
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI stdout
+FC = 4
+FP /^>HBA_HUMAN/
+//

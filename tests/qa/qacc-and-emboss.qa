@@ -1,0 +1,8 @@
+
+ID qacc-and-emboss
+AP seqret
+CL "qanxflat-acc{x01958 & m11905}" stdout -auto
+FI stdout
+FP 1 /^>/
+FP 1 /^>M11905/
+//

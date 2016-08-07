@@ -1,0 +1,15 @@
+
+ID compseq-ex2
+UC To count the frequencies of hexanucleotides, without outputting the results of hexanucleotides that do not occur in the sequence:
+AP compseq
+CL tembl:x65923 -word 6 result6.comp -nozero
+FI stderr
+FC = 1
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI result6.comp
+FZ = 18690
+FP /^Total count\s+513\n/
+FP /^AAAAAA\s+6\s+0\.0116959\s+0\.0002441\s+47\.9064327\n/
+//

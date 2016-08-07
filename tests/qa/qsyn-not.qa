@@ -1,0 +1,9 @@
+
+ID qsyn-not
+AP ontoget
+CL "edam-{nam:rna ! des:sequence}" stdout -auto
+FI stdout
+FP 0 /def:.*sequence /
+FP 6 /def:.*sequences/
+FP 25 /^id: /
+//

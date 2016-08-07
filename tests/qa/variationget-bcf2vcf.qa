@@ -1,0 +1,14 @@
+
+ID variationget-bcf2vcf
+AP variationget
+CL bcf::../../data/valid-4.1.bcf -oformat vcf check.vcf
+FI stderr
+FC = 1
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI check.vcf
+FC = 37
+FP /19	14370	rs6054257	G	A	29	PASS	NS=3;DP=14;AF=0.5;DB;H2	GT:GQ:DP:HQ	0|0:48:1:/
+FP 10 /20\t[0-9]*/
+//

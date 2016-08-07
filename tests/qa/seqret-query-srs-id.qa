@@ -1,0 +1,11 @@
+
+ID seqret-query-srs-id
+CC Requires a local SRS installation
+RQ srs
+AP seqret
+CL -auto -out test.out -osf embl qasrs-ID:AB000095
+FI test.out
+FZ = 3701
+FP /^ID   AB000095 /
+FP 1 /^ID /
+//

@@ -1,0 +1,20 @@
+
+ID wosstopic-ex
+UC Search for programs with 'codon' in their topic:
+AP wosstopic
+CL codon
+FI stderr
+FC = 1
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI stdout
+FP 7 /^[a-z]\S+ /
+FP /^cai /
+FP /^chips /
+FP /^cusp /
+FP /^cutgextract /
+FP /^syco /
+FP 0 /seqret /
+FC = 9
+//

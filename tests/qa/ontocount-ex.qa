@@ -1,0 +1,14 @@
+
+ID ontocount-ex
+AP ontocount
+CL edam:1234
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI stdout
+FC = 1
+FP /^1\n/
+//

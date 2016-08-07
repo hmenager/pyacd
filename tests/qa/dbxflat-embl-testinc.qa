@@ -1,0 +1,9 @@
+
+ID dbxflat-embl-testinc
+AP seqret
+CL qanxflatinc-id:U68037 test.out -auto
+FI test.out
+FZ = 1318
+FP 1 /^>U68037 /
+FP 1 /^>/
+//

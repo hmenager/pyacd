@@ -1,0 +1,9 @@
+
+ID seq-outmulti-clustal
+AP seqret
+CL -auto ../../data/dna.m-embl test.out -osf clustal
+FI test.out
+FZ = 664
+FP /^CLUSTAL W \(1\.83\) multiple sequence alignment\n/
+FP /^FASTAM2         ACGTACGTACGTACGTACGT----ACGTACGTACGTACGTACGTACGTACGTACGTACGT\n/
+//

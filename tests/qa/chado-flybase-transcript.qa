@@ -1,0 +1,12 @@
+
+ID chado-flybase-transcript
+RQ postgresql
+AP featcopy
+CL tflybase:FBtr0076663 -auto
+FI 3l.gff
+FP /^3L/
+## sequence-region range: 8400369 8404675
+FP 1 /^##sequence-region 3L/
+FI stderr
+FC < 5
+//

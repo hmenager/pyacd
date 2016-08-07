@@ -1,0 +1,12 @@
+
+ID assemblyget-bam2bam2-keep
+AP assemblyget
+CL bam::../../data/index_test.bam -oformat bam index_test.bam -auto
+DL keep
+FI index_test.bam
+FZ = 597748
+FP /.*/
+FI index_test.bam.bai
+FZ = 1621416
+FP /^BAI\001/
+//

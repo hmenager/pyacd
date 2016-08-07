@@ -1,0 +1,13 @@
+
+ID embossdata-ex
+UC Display the directories searched for EMBOSS data files:
+AP embossdata
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI stdout
+FP /Exists\n/
+//

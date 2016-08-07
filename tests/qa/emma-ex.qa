@@ -1,0 +1,34 @@
+
+ID emma-ex
+RQ clustalw
+AP emma
+IN ../../data/globins.fasta
+IN
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+##
+## stdout is written by clustalw, invoked by emma
+##
+## exact output file contents depend on the clustalw version
+## this is for clustalw 1.82, built from
+## ftp://ftp.ebi.ac.uk/pub/software/unix/clustalw/clustalw1.82.UNIX.tar.gz
+## file size 606683 date 'Feb  6  2001'
+##
+## \r? is to test on cygwin systems using a native windows clustalw
+##
+FI stdout
+FC > 50
+FP /^Sequences \(1:2\) Aligned\. Score:  83\r?\n/
+FP /^Alignment Score 4164\r?\n/
+FP /^GCG-Alignment file created +\S+\s*\Z/
+FI hbb_human.aln
+FZ = 1262
+FP /^--------VHLTPEEKSAVTALWGKVN--VDEVGGEALGRLLVVYPWTQRFFESFGDLST\n/
+FI hbb_human.dnd
+FZ = 186
+FP /^HBB_HUMAN:0\.08080,\nHBB_HORSE:0\.08359\)\n/
+//

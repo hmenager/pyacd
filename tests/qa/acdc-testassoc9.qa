@@ -1,0 +1,17 @@
+
+ID acdc-testassoc9
+AP acdc
+PP EMBOSS_ACDROOT=../../acd
+PP export EMBOSS_ACDROOT
+## Numbered -sformat for first sequence makes -send global
+CL testassoc  tembl:v00294 tembl:x13776 -sformat1 embl -send -1001 -ctest "fred"
+IN
+IN
+FI stderr
+FZ > 0
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FP /Asequence end 113:/
+FP /Bsequence end 1167:/
+//

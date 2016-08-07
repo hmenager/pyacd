@@ -1,0 +1,15 @@
+
+ID entret-ex
+AP entret
+CL tembl:x65923
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI x65923.entret
+FZ = 3810
+FP /^FT   CDS             57\.\.458\n/
+FP /^\/\/\Z/
+//

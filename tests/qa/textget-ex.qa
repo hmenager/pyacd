@@ -1,0 +1,14 @@
+
+ID textget-ex
+AP textget
+CL "srs:unilib:99"
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI outfile.text
+FC = 37
+FP /^> 99\n/
+//

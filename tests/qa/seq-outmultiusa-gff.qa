@@ -1,0 +1,11 @@
+
+ID seq-outmultiusa-gff
+AP seqret
+CL -auto ../../data/dna.m-embl gff::test.out
+FI test.out
+FZ = 864
+FP 3 /^##sequence-region FASTAM[1-3] 1 120\n/
+FP 3 /^#\!Type DNA\n/
+FP /^##sequence-region FASTAM2 1 120\n/
+FP 3 /^##FASTA\n/
+//

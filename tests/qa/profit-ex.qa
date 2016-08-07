@@ -1,0 +1,18 @@
+
+
+ID profit-ex
+AP profit
+## changed to a matrix file which produces some results
+##IN ../../data/globins.prophecy
+IN ../../data/outfile.prophecy
+IN tsw:*
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI outfile.profit
+FZ = 180
+FP /^HBB_HUMAN/
+//

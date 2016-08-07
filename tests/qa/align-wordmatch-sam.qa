@@ -1,0 +1,17 @@
+
+ID align-wordmatch-sam
+AP wordmatch
+CL -wordsize 7 -stdout -auto -aformat sam -sformat2 fastq-sanger
+CL ../../data/illumina_adapter_primer.fa -nodumpfeat 
+CL ../../data/test1_illumina.fastq
+FI stderr
+FI wordmatch.log
+FP /Average match length: 7.38/
+FC = 32
+FI stdout
+FP /^FC12044_91407_8_200_10_437.*CTGCTTG	SXSXXXX	AS:i:7	NM:i:0/
+FI Illumina_Genomici_DNA_Adapters1_1.gff
+FC = 0
+FI FC12044_91407_8_200_406_24.gff
+FC = 0
+//

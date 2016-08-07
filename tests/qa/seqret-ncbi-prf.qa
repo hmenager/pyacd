@@ -1,0 +1,10 @@
+
+ID seqret-ncbi-prf
+AP seqret
+CL ../../data/testids.ncbi:PRF test.out -auto
+FI test.out
+FP 1 /^>/
+FP /^>PRF Protein /
+FP /^PRF$/
+FZ = 58
+//

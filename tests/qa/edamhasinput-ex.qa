@@ -1,0 +1,18 @@
+
+ID edamhasinput-ex
+AP edamhasinput
+CL sequence
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI edamhasinput.obo
+FC = 388
+FP /^id: EDAM_operation:2507\n/
+FP 26 /^id: /
+FP 26 /^namespace: operation/
+FP 5 /^relationship: has_input EDAM_data:2044 (\{[^\}]+\} )?\! Sequence/
+FP 3 /^relationship: has_input EDAM_data:0863 (\{[^\}]+\} )?\! Sequence alignment/
+//

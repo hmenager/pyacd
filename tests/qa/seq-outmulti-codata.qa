@@ -1,0 +1,9 @@
+
+ID seq-outmulti-codata
+AP seqret
+CL -auto ../../data/dna.m-embl test.out -osf codata
+FI test.out
+FZ = 1410
+FP 3 /^ENTRY           FASTAM[1-3] \n/
+FP 3 /^\/\/\/\n/
+//

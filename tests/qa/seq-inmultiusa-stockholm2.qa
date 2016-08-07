@@ -1,0 +1,10 @@
+
+ID seq-inmultiusa-stockholm2
+AP seqret
+CL -auto stockholm::../../data/PF00032_seed.pfam2 test.out -osf swiss
+FI test.out
+FZ = 2304
+FP 9 /^ID/
+FP /^ID   PETD_SYNP2\/65-160       Reviewed;         116 AA\.\n/
+FP /^SQ   SEQUENCE   116 AA;  12467 MW;  B077FB597F735C49 CRC64;/
+//

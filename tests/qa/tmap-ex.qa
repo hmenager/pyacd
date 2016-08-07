@@ -1,0 +1,22 @@
+
+ID tmap-ex
+AP tmap
+CL ../../data/opsd.msf -out tmap.res -graph cps
+FI stderr
+FC = 1
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI stdout
+FZ = 16
+FP /^Created tmap\.ps\n/
+FI tmap.res
+FZ = 2337
+FP 3 /^     43      70        1 YMF.*KLRT\n/
+FP /^# Reported_sequences: 3\n/
+FP /^# Reported_hitcount: 21\n/
+FI tmap.ps
+FC = 1409
+FP /^%%Title: PLplot Graph\n/
+FP /^%%Pages: 1\n/
+//

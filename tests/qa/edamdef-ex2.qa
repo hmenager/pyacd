@@ -1,0 +1,20 @@
+
+ID edamdef-ex2
+AP edamdef
+CL multiple -subclasses
+## maybe change this example ... Identifier now has 'multiple' in definition
+## so we get all identifiers
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI edamdef.obo
+FC = 7759
+FP /^id: EDAM_data:1234\n/
+FP 586 /^id: /
+FP 26 /^def: .*multiple /
+FP 1 /^def: .*multiple\)/
+FP 1 /^def: Multiple /
+//

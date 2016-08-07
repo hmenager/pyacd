@@ -1,0 +1,9 @@
+
+ID seqret-query-direct-des2
+AP seqret
+CL -auto -out test.out -osf embl "embl::../../embl/rod.dat:DES:*norvegicus*"
+FI test.out
+FZ = 11907
+FP /^ID   Z46957; /
+FP 5 /^ID/
+//

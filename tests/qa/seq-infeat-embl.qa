@@ -1,0 +1,22 @@
+
+ID seq-infeat-embl
+TI 120
+AP seqret
+CL -feat ../../data/feat.fasta -ufo ../../data/feat.emft embl::test.out -auto
+FI test.out
+FZ = 78245
+## one_of to order
+FP /^FT   polyA_signal    order\(368\.\.373,459\.\.464\)\n/
+## group to order
+FP /^FT   misc_feature    order\(226\.\.288,688\.\.754\)\n/
+## Internal quotes
+FP /^FT                   ""amiE"" gene"\n/
+## Bad features type (CODS) to misc_feature
+FP /^FT   misc_feature    135\.\.1292\n/
+## Case fix for tag /Translation
+FP /^FT                   \/translation="MSANSL/
+## Case fix for type Cds
+FP /^FT   CDS             1289\.\.1879\n/
+## Cleanup of extra white space 'positive  regulator'
+FP /\/note="aliphatic amidase regulator, positive regulator of\n/
+//

@@ -1,0 +1,11 @@
+
+ID seq-in-pdbnucseq
+AP seqret
+CL -auto ../../data/133d.pdb -sf pdbnucseq test.out -osf embl
+CC PDBNUC format reads single seqres
+FI test.out
+FZ = 390
+FP 2 /^ID   133D_[A-Z]; .* 5 BP\.\n/
+FP 1 /^ID   133D_A; .* 5 BP\.\n/
+FP /^SQ   Sequence 5 BP; 0 A; 2 C; 3 G; 0 T; 0 other;/
+//

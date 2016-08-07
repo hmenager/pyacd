@@ -1,0 +1,8 @@
+
+ID infoalign-ex9
+AP infoalign
+CL -auto tembl:v00296 -out test.out
+FI test.out
+FC = 2
+FP /tembl-id:V00296\s+V00296\s+3078\s+3078\s+0\s+0\s+3078\s+0\s+0\s+0\.0+\s+1\.0+\s+E.*/
+//

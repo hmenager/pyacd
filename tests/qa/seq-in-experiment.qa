@@ -1,0 +1,8 @@
+
+ID seq-in-experiment
+AP seqret
+CL -auto ../../data/xb63c7.s1.exp -sf experiment test.out -osf embl
+FI test.out
+FP /^ID   .* 439 BP\.\n/
+FP /^SQ   Sequence 439 BP; 162 A; 53 C; 61 G; 153 T; 10 other;/
+//

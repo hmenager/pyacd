@@ -1,0 +1,21 @@
+
+ID align-stretcher-partrev
+AP stretcher
+CL -gapopen 16 -gapextend 4 -stdout -srev1 -srev2
+IN ../../data/aligna.dna
+IN ../../data/alignapart.dna
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI stdout
+FP /^# Identity: +47\/65 \(72\.3%\)/
+FP /^# Score: +115\n/
+FP 1 /^           10         \n/
+FP 1 /^ AFULL TTTAACCGGTTACGT\n/
+FP 1 /^ APART TTTAACCGGTT----\n/
+FP 1 /^       10             \n/
+FC = 48
+//

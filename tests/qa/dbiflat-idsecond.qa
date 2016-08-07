@@ -1,0 +1,9 @@
+
+ID dbiflat-idsecond
+AP seqret
+CL qanflat-id:M11903 test.out -auto
+FI test.out
+FZ = 861
+FP 1 /^>M11903 /
+FP 1 /^>/
+//

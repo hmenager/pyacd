@@ -1,0 +1,19 @@
+
+###############################################################################
+#
+# tests related to variation formats, VCF/BCF
+#
+###############################################################################
+
+ID variationget-vcf2bcf
+AP variationget
+CL ../../data/valid-4.1.vcf -oformat bcf check.bcf
+FI stderr
+FC = 1
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI check.bcf
+FZ > 1180
+FP 0 /abcdefg/
+//

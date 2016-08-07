@@ -1,0 +1,20 @@
+
+ID transeq-ex6
+UC To translate a sequence in all six forward and reverse frames:
+AP transeq
+CL tembl:x13776 amir.pep -frame=6
+FI stderr
+FC = 1
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI amir.pep
+FZ = 4922
+FP /^>X13776_1/
+FP /^>X13776_2/
+FP /^>X13776_3/
+FP /^>X13776_4/
+FP /^>X13776_5/
+FP /^>X13776_6/
+FP /^LEELVGGHPQIGKSE\*QGQRSGLQRALPGCCGKDQVERDAGAQHADQEVDHRHLPTADLA\n/
+//

@@ -1,0 +1,9 @@
+
+ID dbigcg-pir-testinc
+AP seqret
+CL qapirinc-id:cchu test.out -auto
+FI test.out
+FZ = 153
+FP 1 /\A>CCHU /
+FP 1 /^>/
+//

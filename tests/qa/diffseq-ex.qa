@@ -1,0 +1,28 @@
+
+ID diffseq-ex
+AP diffseq
+CL tembl:x65923 tembl:ay411291
+IN
+IN
+IN
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI x65923.diffseq
+FZ = 1624
+FP /^# X65923 overlap starts at 57\n/
+FP /^# AY411291 overlap starts at 1\n/
+FP /^X65923 284-284 Length: 1\n/
+FP /^Sequence: c\nFeature: gene 1-402 gene='FAU' locus_tag='HCM4175'\n/
+FP /^# Overlap_end: 458 in X65923\n/
+FP /^# Overlap_end: 402 in AY411291\n/
+FI AY411291.diffgff
+FC = 6
+FP /^AY411291\tdiffseq\tsequence_conflict\t228\t228\t1\t[+]\t\.\tID=AY411291\.1;note=SNP in X65923;replace=t/
+FI X65923.diffgff
+FC = 6
+FP /^X65923\tdiffseq\tsequence_conflict\t284\t284\t1\t[+]\t\.\tID=X65923\.1;note=SNP in AY411291;replace=c\n/
+//

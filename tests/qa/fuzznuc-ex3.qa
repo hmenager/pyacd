@@ -1,0 +1,22 @@
+
+ID fuzznuc-ex3
+AP fuzznuc
+CL -pname test
+IN tembl:L46634
+IN @../../data/nucsimple.pat
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI l46634.fuzznuc
+FC = 48
+FP /^# HitCount: 13\n/
+FP /^    429     438       [+] test1:cg\(2\)c\(3\)taac        \. cggccctaac\n/
+FP /^    801     810       [+] test2:cctagc\(3\)ta          \. cctagcccta\n/
+FP 8 /^ +\d+ +\d+       [+-] test1:+/
+FP 5 /^ +\d+ +\d+       [+-] test2:+/
+FP /^# Reported_sequences: 1\n/
+FP /^# Reported_hitcount: 13\n/
+//

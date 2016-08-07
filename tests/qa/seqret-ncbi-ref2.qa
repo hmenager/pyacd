@@ -1,0 +1,10 @@
+
+ID seqret-ncbi-ref2
+AP seqret
+CL ../../data/testids.ncbi:NM_012488.1 test.out -auto
+FI test.out
+FP 1 /^>/
+FP /^>NM_012488\.1 NM_012488\.1 /
+FP /^REFSEQ$/
+FZ = 70
+//

@@ -1,0 +1,15 @@
+
+ID showseq-ex
+AP showseq
+CL tembl:x13776 -sbeg 1 -send 100
+IN
+IN
+FI stderr
+FC = 12
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI x13776.showseq 
+FZ = 729
+FP 2 /^\s+\|=+\|\n\s+promoter note="/
+//

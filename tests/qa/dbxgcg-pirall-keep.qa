@@ -1,0 +1,78 @@
+
+
+#############################################
+# The qapirall database(s)
+#############################################
+
+# fields seqvn not supported by PIR format data
+ID dbxgcg-pirall-keep
+DL keep
+TI 120
+AP dbxgcg
+CL -fields "id,acc,des,key,org"
+IN pir
+IN pirresource
+IN pir
+IN ../../pir
+IN
+IN
+IN
+FI stderr
+FC = 6
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI outfile.dbxgcg
+FC = 15
+FP 4 /^Processing file: /
+FP 4 /^Processing file: pir[1-9]\.seq\n/
+FP 1 /^Processing file: pir3\.seq\nentries: 57 \(3\) /
+FP 1 /^Entry idlen \d+ OK/
+FP 4 /^Field \S+ \S+ \d+ OK/
+FP 4 /^Field \S+ /
+FI pir.ent
+FC = 8
+FP 1 /^# Number of files: 4\n/
+FP 1 /^Reference 2 filename database\n/
+FP 4 /^pir[1-9]\.seq pir[1-9]\.ref\n/
+FI pir.pxac
+FZ = 287
+FP 1 /^Count        78\n/
+FP 1 /^Fullcount    93\n/
+FI pir.pxde
+FZ = 289
+FP 1 /^Count        136\n/
+FP 1 /^Fullcount    319\n/
+FI pir.pxid
+FZ = 286
+FP 1 /^Count        60\n/
+FP 1 /^Fullcount    60\n/
+FI pir.pxkw
+FZ = 287
+FP 1 /^Count        16\n/
+FP 1 /^Fullcount    474\n/
+FI pir.pxtx
+FZ = 289
+FP 1 /^Count        108\n/
+FP 1 /^Fullcount    117\n/
+FI pir.xac
+FZ = 6029
+FP 1 /\000a00011\000/
+FP 1 /\000a04607\000/
+FI pir.xde
+FZ = 10399
+FP 1 /\000fragments\000/
+FP 2 /\000fragment/
+FI pir.xid
+FZ = 3018
+FP 1 /\000ccms\000/
+FP 2 /\000cchu\000/
+FI pir.xkw
+FZ = 8101
+FP 1 /\000heme\000/
+FI pir.xtx
+FZ = 8353
+FP 2 /\000domestic_horse\000/
+FP 1 /\000domestic_duck\000/
+FP 1 /\000equus_quagga\000/
+//

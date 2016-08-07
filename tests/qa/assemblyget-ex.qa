@@ -1,0 +1,16 @@
+
+###############################################################################
+#
+# test related to assembly formats, SAM/BAM and MIRA's MAF
+#
+###############################################################################
+
+ID assemblyget-ex
+AP assemblyget
+CL bam::../../data/samspec1.4example.bam -oformat sam -auto
+FI 4example.sam
+FC = 9
+FP 7 /ref/
+FP 1 /r001	163	ref	7	30	8M2I4M1D3M	=	37	39	TTAGATAAAGGATACTG/
+FP 1 /r001	83	ref	37	30	9M	=	7	-39	CAGCGCCAT/
+//

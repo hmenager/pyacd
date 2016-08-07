@@ -1,0 +1,9 @@
+
+ID seqret-query-direct-name
+AP seqret
+CL -auto -out test.out -osf embl embl::../../embl/rod.dat:L48662
+FI test.out
+FZ = 1483
+FP /^ID   L48662;/
+FP 1 /^ID/
+//

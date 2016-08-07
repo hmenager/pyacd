@@ -1,0 +1,25 @@
+
+ID checktrans-ex
+AP checktrans
+IN ../../data/paamir.pep
+IN
+IN
+IN
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI paamir_1.checktrans
+FZ = 132
+FP /Total STOPS:\s+7\n/
+FP /^\s+7\s+635\s+357\s+278-634\s+PAAMIR_1_7\n/
+FI paamir_1.fasta
+FZ = 375
+FP /\A>PAAMIR_1_7\n/
+FP /^PPARRRWRRWRVTWQRGRWWSRLTSPASIRPPAGPSSRPAMVSSRRTRPSPPGPRRPTGR\n/
+FI paamir_1.gff
+FC = 6
+FP /^PAAMIR_1\t\S+\t\S+\t278\t634\t\./
+//

@@ -1,0 +1,14 @@
+
+ID acd-dupname
+AP acdc
+ER 1
+PP EMBOSS_ACDROOT=../../acd
+PP export EMBOSS_ACDROOT
+CL dupname
+FI stderr
+FZ > 0
+FP 0 /Warning: /
+FP 1 /Error: /
+FP 0 /Died: /
+FP /Error: File .*dupname\.acd line 14: \(outtest\) Name 'outtest' not unique at line 16\n/
+//

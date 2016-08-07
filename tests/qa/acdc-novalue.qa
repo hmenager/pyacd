@@ -1,0 +1,14 @@
+
+ID acdc-novalue
+AP acdc
+## nullok attribute is false
+PP EMBOSS_ACDROOT=../../acd
+PP export EMBOSS_ACDROOT
+CL qatest tembl:x13776 tembl:x13776 x.x -auto -testalen
+ER 1
+FI stderr
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 1 /Died: /
+FP /Died: Value required for '-testalen'\n/
+//

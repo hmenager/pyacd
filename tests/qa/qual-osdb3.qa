@@ -1,0 +1,14 @@
+
+ID qual-osdb3
+AP seqret
+CL ../../data/hba.fa
+CL -stdout -auto -sf fasta -sdb jim -osdb fred -osf ncbi
+FI stderr
+FC = 0
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI stdout
+FC = 4
+FP /^>gnl[|]fred[|]HBA_HUMAN /
+//

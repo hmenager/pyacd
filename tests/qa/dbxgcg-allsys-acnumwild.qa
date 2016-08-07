@@ -1,0 +1,9 @@
+
+ID dbxgcg-allsys-acnumwild
+AP seqret
+CL "qanxgcgall-acc:x*" test.out -auto
+FI test.out
+FZ = 18988
+FP 11 /^>[A-Z0-9]+ X/
+FP 11 /^>/
+//

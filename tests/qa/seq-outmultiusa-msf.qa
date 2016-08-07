@@ -1,0 +1,15 @@
+
+ID seq-outmultiusa-msf
+AP seqret
+CL -auto ../../data/dna.m-embl msf::test.out
+FI test.out
+FZ = 880
+FP /^!!NA_MULTIPLE_ALIGNMENT 1\.0\n/
+FP /^  test\.out MSF: 120 Type: N [0-9\/]+ CompCheck: 3196 \.\.\n/
+FP /^  Name: FASTAM1    Len: 120  Check: 8587 Weight: 1\.00\n/
+FP /^  Name: FASTAM2    Len: 120  Check: 6178 Weight: 1\.00\n/
+FP /^  Name: FASTAM3    Len: 120  Check: 8431 Weight: 1\.00\n/
+FP /^\/\/\n/
+FP /^           1                                               50\n/
+FP 3 /^FASTAM3    [ACGT\-]+\n/
+//

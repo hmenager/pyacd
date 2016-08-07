@@ -1,0 +1,14 @@
+
+ID acd-badqualname
+AP acdc
+ER 1
+PP EMBOSS_ACDROOT=../../acd
+PP export EMBOSS_ACDROOT
+CL badqualname
+FI stderr
+FZ > 0
+FP 0 /Warning: /
+FP 1 /Error: /
+FP 0 /Died: /
+FP /Error: File .*badqualname\.acd line 5: Bad or missing qualifier alphabetic name 'sequence1'\n/
+//

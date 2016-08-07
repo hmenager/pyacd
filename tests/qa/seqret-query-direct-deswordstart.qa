@@ -1,0 +1,9 @@
+
+ID seqret-query-direct-deswordstart
+AP seqret
+CL -auto -out test.out -osf embl embl::../../embl/rod.dat:DES:Mus
+FI test.out
+FZ = 1483
+FP /^ID   L48662; /
+FP 1 /^ID/
+//

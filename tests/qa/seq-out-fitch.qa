@@ -1,0 +1,9 @@
+
+ID seq-out-fitch
+AP seqret
+CL -auto ../../data/dna.embl test.out -osf fitch
+FI test.out
+FZ = 152
+FP /^EMBL, 100 bases\n/
+FP /^ acg tac gta cgt acg tac gta cgt acg tac gta cgt acg tac gta cgt acg tac gta cgt\n/
+//

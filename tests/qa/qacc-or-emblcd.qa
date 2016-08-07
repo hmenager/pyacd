@@ -1,0 +1,8 @@
+
+ID qacc-or-emblcd
+AP seqret
+CL "qanflat-id{m11903 | m11904 | m11905}" stdout -auto
+FI stdout
+FP 3 /^>/
+FP 3 /^>M1190/
+//

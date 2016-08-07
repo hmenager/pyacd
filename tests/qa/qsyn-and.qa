@@ -1,0 +1,8 @@
+
+ID qsyn-and
+AP ontoget
+CL "edam-{des:cdna & des:mrna}" stdout -auto
+FI stdout
+FP 1 /def: .*mRNA.*EST.*cDNA/
+FP 1 /^id: /
+//

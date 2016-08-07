@@ -1,0 +1,8 @@
+
+# last entry in last file
+ID seqret-dbacfilelast
+AP seqret
+CL -auto tembl-acc:U23808 test.out
+FI test.out
+FP 1 /\A>U23808 U23808\.2 /
+//

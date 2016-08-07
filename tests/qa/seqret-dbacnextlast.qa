@@ -1,0 +1,7 @@
+
+ID seqret-dbacnextlast
+AP seqret
+CL -auto tembl-acc:Z52466 test.out
+FI test.out
+FP 1 /\A>Z52466 Z52466\.1 /
+//

@@ -1,0 +1,13 @@
+
+ID jembossctl-ex
+CC for jemboss installations
+CC can only be run through tomcat so simply exits here
+AP jembossctl
+CL jctl.file
+ER 255
+FI stderr
+FC = 0
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+//

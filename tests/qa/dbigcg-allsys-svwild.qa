@@ -1,0 +1,9 @@
+
+ID dbigcg-allsys-svwild
+AP seqret
+CL "qangcgall-sv:x*" test.out -auto
+FI test.out
+FZ = 5043
+FP 3 /^>X/
+FP 3 /^>/
+//

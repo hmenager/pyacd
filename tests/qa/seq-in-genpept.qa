@@ -1,0 +1,12 @@
+
+ID seq-in-genpept
+AP seqret
+CL -auto ../../data/acn78416.genpept -sf genpept test.out -osf swiss
+CC reference number and range only, no details parsed
+FI test.out
+FC = 28
+FP 2 /^RN   /
+FP /^ID   .* 225 AA\.\n/
+FP /^DT   21-MAR-2009, entry version 1.\n/
+FP /^SQ   SEQUENCE   225 AA;  25874 MW;  EDD076FAC2CFFD74 CRC64;\n/
+//

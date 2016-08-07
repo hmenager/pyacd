@@ -1,0 +1,9 @@
+
+ID seq-inprot-pearson
+AP infoseq
+CL -nocolumn -delimiter "\t"
+CL -auto ../../data/ncbi.gifasta -sprot -sf pearson -outfile test.out
+FI test.out
+FC = 2
+FP /^pearson::\S+\t-\tgi\|123456\t-\tP\t8\t/
+//

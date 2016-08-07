@@ -1,0 +1,10 @@
+
+ID seqret-ncbi-pat
+AP seqret
+CL ../../data/testids.ncbi:12345 test.out -auto
+FI test.out
+FP 1 /^>/
+FP /^>12345 Patent/
+FP /^PAT-K$/
+FZ = 39
+//

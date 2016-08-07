@@ -1,0 +1,9 @@
+
+ID dbigcg-allsys-orgwild2
+AP seqret
+CL "qangcgall-org:mus*" test.out -auto
+FI test.out
+FZ = 4276
+FP 1 /^>L48662/
+FP 2 /^>/
+//

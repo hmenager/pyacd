@@ -1,0 +1,10 @@
+
+ID qsyn-idlist-mix2
+AP seqret
+CL "tsw{P68871, HBA_HUMAN}" stdout -auto
+FI stdout
+FP 0 /^>HIRA_TAKRU/
+FP 1 /^>HBA_HUMAN/
+FP 1 /^>HBB_HUMAN/
+FP 2 /^>/
+//

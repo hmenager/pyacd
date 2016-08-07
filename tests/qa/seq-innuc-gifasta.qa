@@ -1,0 +1,9 @@
+
+ID seq-innuc-gifasta
+AP infoseq
+CL -nocolumn -delimiter "\t"
+CL -auto ../../data/ncbinuc.gifasta -snuc -sf gifasta -outfile test.out
+FI test.out
+FC = 2
+FP /^gifasta::\S+\t-\t123456\t-\tN\t8\t/
+//

@@ -1,0 +1,18 @@
+
+ID ontoget-ex2
+AP ontoget
+CL edam:0850 -subclasses
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI 0850.obo
+FP /^id: EDAM_data:1234\n/
+FP 12 /^id: /
+FP 4 /^is_a: EDAM_data:0850/
+FP 2 /^is_a: EDAM_data:1235/
+FP 3 /^relationship: /
+FC = 151
+//

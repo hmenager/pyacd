@@ -1,0 +1,32 @@
+
+ID diffseq-rev-fwd
+AP diffseq
+CL asis::aaaactttttgccccgtagggg asis::ccccaggggtaaaaatttt -word 4
+CL -sid1 reva -sid2 fwdb  -srev1
+IN
+IN
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI reva.diffseq
+FZ = 1339
+FP /^# reva overlap starts at 1\n/
+FP /^# fwdb overlap starts at 1\n/
+FP /^reva 16-18 Length: 3 \(Reversed\)\nSequence: tac\nSequence: a\nfwdb 5-5 Length: 1\n/
+FP /^reva 11-11 Length: 1 \(Reversed\)\nSequence: c\nSequence: t\nfwdb 10-10 Length: 1\n/
+FP /^reva 5-5 Length: 1 \(Reversed\)\nSequence: g\nSequence: \nfwdb 15 Length: 0\n/
+FP /^# Overlap_end: 22 in reva\n/
+FP /^# Overlap_end: 19 in fwdb\n/
+FI reva.diffgff
+FC = 8
+FP /^reva\tdiffseq\tsequence_conflict\t16\t18\t1\t[-]\t\.\tID=reva\.1;note=fwdb;replace=a/
+FP /^reva\tdiffseq\tsequence_conflict\t11\t11\t1\t[-]\t\.\tID=reva\.2;note=SNP in fwdb;replace=t/
+FP /^reva\tdiffseq\tsequence_conflict\t5\t5\t1\t[-]\t\.\tID=reva\.3;note=Insertion of 1 bases in reva;replace=/
+FI fwdb.diffgff
+FC = 7
+FP /^fwdb\tdiffseq\tsequence_conflict\t5\t5\t1\t[+]\t\.\tID=fwdb\.1;note=reva;replace=tac\n/
+FP /^fwdb\tdiffseq\tsequence_conflict\t10\t10\t1\t[+]\t\.\tID=fwdb\.2;note=SNP in reva;replace=c\n/
+//

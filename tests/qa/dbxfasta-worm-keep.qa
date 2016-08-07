@@ -1,0 +1,49 @@
+
+#############################################
+# The qawfasta database
+#############################################
+
+ID dbxfasta-worm-keep
+DL keep
+AP dbxfasta
+IN worm
+IN dbxresource
+IN simple
+IN ../../data
+IN wormpep.clone.*
+IN
+IN
+IN
+FI stderr
+FC = 13
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI outfile.dbxfasta
+FC = 8
+FP 2 /Processing file: /
+FP 2 /Processing file: wormpep\.clone\./
+FP 1 /Processing file: wormpep\.clone\.ZK637\nentries: 66 \(15\) /
+FP 1 /^Entry idlen \d+ OK/
+FP 1 /^Field \S+ \S+ \d+ OK/
+FP 1 /^Field \S+ /
+FI worm.ent
+FC = 6
+FP 1 /# Number of files: 2\n/
+FP 1 /^wormpep\.clone\.AB\n/
+FP 1 /^wormpep\.clone\.ZK637\n/
+FI worm.pxac
+FZ = 286
+FP 1 /^Count        66\n/
+FP 1 /^Fullcount    66\n/
+FI worm.pxid
+FZ = 286
+FP 1 /^Count        66\n/
+FP 1 /^Fullcount    66\n/
+FI worm.xid
+FZ = 3794
+FP 1 /\000ah10\.1\000/
+FI worm.xac
+FZ = 3794
+FP 1 /\000ah10\.1\000/
+//

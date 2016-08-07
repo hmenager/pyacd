@@ -1,0 +1,15 @@
+
+ID nam-rsempty
+AP showdb
+ER 1
+PP EMBOSSRC=../../rc
+PP export EMBOSSRC
+PP EMBOSS_BADFILE=../../rc/rsempty.rc
+PP export EMBOSS_BADFILE
+FI stderr
+FZ > 0
+FP 0 /Warning: /
+FP 2 /Error: /
+FP 1 /Died: /
+FP /Error: File .*rsempty\.rc line 3: Resource 'empty' has no attributes\n/
+//

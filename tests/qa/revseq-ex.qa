@@ -1,0 +1,15 @@
+
+ID revseq-ex
+UC To create the reverse complement (reverse sense) of 'tembl:x65923' in the file 'x65923.rev':
+AP revseq
+CL tembl:x65923 x65923.rev
+FI stderr
+FC = 1
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI x65923.rev
+FZ = 573
+FP /^>X65923 X65923\.1 Reversed: H\.sapiens fau mRNA\n/
+FP /^gtcccagctaccgcgaagatggagtcgagaaagaggaa\n/
+//

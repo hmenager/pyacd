@@ -1,0 +1,20 @@
+
+ID cutgextract-species
+AP cutgextract
+DL keep
+PP mkdir CODONS
+PP EMBOSS_DATA=./
+PP export EMBOSS_DATA
+CL -species "Aedes *"
+IN ../../data
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+DI CODONS
+FI outfile.cutgextract
+FC = 3
+FP 3 /^Writing .*\.cut/
+//

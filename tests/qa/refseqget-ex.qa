@@ -1,0 +1,17 @@
+
+ID refseqget-ex
+AP refseqget
+CL -of embl
+IN tembl:em498477
+IN test.out
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI test.out
+FC = 37
+FP /     aattatttat attatggtat gagattagct cgtactcaag atggtggcac aaattatNNN       900\n/
+FP /     NNNNNNNNNN NNNNNNNNNN NNNNNNNNNN NNNNNNNNNN NNNNNNNNta tgctagatta       960\n/
+FP /     cacacttgtt gatttaacag catttgattc tggtacacat agtattacag c               1791\n/
+//

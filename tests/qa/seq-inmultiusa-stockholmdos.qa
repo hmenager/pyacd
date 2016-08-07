@@ -1,0 +1,10 @@
+
+ID seq-inmultiusa-stockholmdos
+AP seqret
+CL -auto stockholm::../../data/dosfile.sth test.out -osf swiss
+FI test.out
+FZ = 1234
+FP 8 /^ID/
+FP /^ID   YA80_HAEIN              Reviewed;          30 AA\.\n/
+FP /^SQ   SEQUENCE   30 AA;  2175 MW;  3B8F297C2C1E4614 CRC64;/
+//

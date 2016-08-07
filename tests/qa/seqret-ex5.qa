@@ -1,0 +1,15 @@
+
+ID seqret-ex5
+UC Write the result in GCG format by specifying the format
+UC in the output USA at the prompt.
+AP seqret
+IN tembl:x65923
+IN gcg::x65923.gcg
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI x65923.gcg
+FP /X65923/
+//

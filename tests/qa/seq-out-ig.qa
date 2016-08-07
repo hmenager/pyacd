@@ -1,0 +1,10 @@
+
+ID seq-out-ig
+AP seqret
+CL -auto ../../data/dna.embl test.out -osf ig
+FI test.out
+FZ = 145
+FP /;EMBL FORMAT DNA SEQUENCE, 100 bases\n/
+FP /EMBL\n/
+FP /gtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgt1\n/
+//

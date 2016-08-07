@@ -1,0 +1,15 @@
+
+ID acd-calc-string
+AP acdc
+PP EMBOSS_ACDROOT=../../acd
+PP export EMBOSS_ACDROOT
+CL qatestcalcstring "abc def"
+IN
+FI stderr
+FC = 2
+FP 1 /:/
+FP 1 /Length \[7\]: /
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+//

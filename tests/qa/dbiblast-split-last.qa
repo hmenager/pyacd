@@ -1,0 +1,9 @@
+
+ID dbiblast-split-last
+AP seqret
+CL qapblastsplit-id:TM21_FUGRU test.out -auto
+FI test.out
+FZ = 287
+FP 1 /^>TM21_FUGRU /
+FP 1 /^>/
+//

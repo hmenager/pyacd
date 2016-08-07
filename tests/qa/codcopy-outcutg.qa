@@ -1,0 +1,24 @@
+
+ID codcopy-outcutg
+AP codcopy
+DL keep
+CL -oformat cutg
+IN Eecoli.cut
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI eecoli.cutg
+FC = 28
+FP 16 /^[ACGU][ACGU][ACGU]/
+FP /^Escherichia coli K12 \[gbbct\]: 5045 CDS's \(1598893 codons\)\n/
+FP /^UUG 13\.7\( 21948\)  UCG  8\.9\( 14256\)  UAG  0\.2\(   365\)  UGG 15\.3\( 24468\)\n/
+FP /^CUG 52\.8\( 84455\)  CCG 23\.2\( 37150\)  CAG 28\.8\( 46100\)  CGG  5\.4\(  8619\)\n/
+FP /^AUC 25\.0\( 39971\)  ACC 23\.4\( 37354\)  AAC 21\.6\( 34554\)  AGC 16\.0\( 25632\)\n/
+FP /^AUG 27\.8\( 44414\)  ACG 14\.4\( 22977\)  AAG 10\.2\( 16305\)  AGG  1\.2\(  1944\)\n/
+FP /^GUU 18\.4\( 29410\)  GCU 15\.4\( 24549\)  GAU 32\.2\( 51514\)  GGU 24\.8\( 39714\)\n/
+FP /^GUC 15\.2\( 24336\)  GCC 25\.5\( 40761\)  GAC 19\.0\( 30454\)  GGC 29\.4\( 47013\)\n/
+FP /^Coding GC 51\.81% 1st letter GC 58\.93% 2nd letter GC 40\.69% 3rd letter GC 55\.80%\n/
+//

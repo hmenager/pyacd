@@ -1,0 +1,16 @@
+
+
+ID nospace-ex
+AP nospace
+IN ../../data/seqspace.txt
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI seqspace.nospace
+FC = 46
+FP /^>X13776\n/
+FP /^ggtaccgctggccgagcatctgctcgatcaccaccagccgggcgacggga\n/
+//

@@ -1,0 +1,19 @@
+
+ID sigcleave-multi
+AP sigcleave
+IN tsw:a*
+IN
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI ach2_drome.sig
+FP /^[(]1[)] Score 13\.739 length 13 at residues 29->41\n/
+FP /^ Sequence: LLVLLLLCETVQA\n/
+FP 28 /^ Sequence: /
+FP 5 /^# No scores over 3\.50\n/
+FP 17 /^# Reporting scores over 3\.50\n/
+FP 17 /^# Sequence: /
+//

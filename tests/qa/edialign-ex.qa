@@ -1,0 +1,31 @@
+
+ID edialign-ex
+AP edialign
+IN ../../data/vtest.seq
+IN
+IN
+FI vtest.fasta
+FC = 12
+FP /ldtapC-LFSDGSPQKAAYVLWDQTILQQDITPLPSHethsaqkgELLAliCglraAKPW\n/
+FP /pghqkghsaeargnrmADQAARKAAITETPDTSTLL-----\n/
+FP /rpgl-CqVFADATPTGWGLVMGHQRMRGTFSAPLPIHta------ELLAa-Cf---ARSR\n/
+FP /SGANIIg-----------------------------------------------------\n/
+FP /----------------TDNSGRTSLYADSPSVPSHLpdrvh\n/
+FP 3 /^>/
+FI vtest.edialign
+FC = 76
+FP 4 /^HTL2 +/
+FP /HTL2 +1   ldtapC-LFS DGSPQKAAYV LWDQTILQQD ITPLPSHeth saqkgELLAl \n/
+FP / +0000000999 9999999999 9999999999 9999999000 0000000000 \n/
+FP / +0000000000 0077777777 7000000000 0000000000 0000000000 \n/
+FP / +0000000000 0000000000 0000000000 0000001111 1111111111 \n/
+FP / +1111110000 0 \n/
+FP /\n/
+FP /\n/
+FP /\n/
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+//

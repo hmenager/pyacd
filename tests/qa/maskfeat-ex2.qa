@@ -1,0 +1,16 @@
+
+ID maskfeat-ex2
+UC Change to lower-case a feature whose type is "repeat_region" from position 2331 to 2356. Note that '-supper' is used to make the whole sequence upper-case before the lower-case masking:
+AP maskfeat
+CL tembl:ab000360 -tolower -supper
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI ab000360.fasta
+FZ = 2685
+FP /^>AB000360 /
+FP /^gtgtgtgtgtgtgtgtAAAGTCACTTCTTTCTACCCTTTTCAATGTGCTAATGCTCTTTT\n/
+//

@@ -1,0 +1,18 @@
+
+ID seqxref-ex
+AP seqxref
+CL tembl:x13776
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI x13776.seqxref
+FC = 20
+FP /^#tembl-id:X13776: 20\n/
+FP 19 /[^:\s]+:[^:\s]+\n/
+FP 3 /^UniProtKB/Swiss-Prot:/
+FP 3 /^PDB:/
+FP /^taxon:287\n/
+//

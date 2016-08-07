@@ -1,0 +1,9 @@
+
+ID dbxfasta-worm-idfirst
+AP seqret
+CL qawxfasta-id:AC3.1 test.out -auto
+FI test.out
+FZ = 426
+FP 1 /^>AC3\.1 /
+FP 1 /^>/
+//

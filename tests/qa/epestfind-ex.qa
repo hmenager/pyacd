@@ -1,0 +1,24 @@
+
+ID epestfind-ex
+AP epestfind
+CL -graph cps -invalid
+IN ../../data/exu2_drops.sw
+IN 
+IN 
+IN 
+FI stderr
+FC = 6
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI stdout
+FZ = 21
+FP /^Created epestfind\.ps\n/
+FI exu2_drops.epestfind
+FZ = 3194
+FP /238 KMVYEMALQLIESESTESPESFESPESSESSEAEVK 273/
+FI epestfind.ps
+FC = 523
+FP /^%%Title: PLplot Graph\n/
+FP /^%%Pages: 1\n/
+//

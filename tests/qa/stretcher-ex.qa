@@ -1,0 +1,21 @@
+
+# update example
+ID stretcher-ex
+AP stretcher
+CL tsw:hba_human tsw:hbb_human
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI hba_human.stretcher
+FZ > 1442
+FP /^# Matrix: EBLOSUM62\n/
+FP /^# Gap_penalty: 12\n/
+FP /^# Extend_penalty: 2\n/
+FP /^# Identity: +65/149 \(43\.6%\)\n/
+FP /^# Score: 277\n/
+FP /^HBA_HU MV-LSPADKTNVKAAWGKVGAHAGEYGAEALERMFLSFPTTKTYFPHF-D\n/
+FP /^HBB_HU MVHLTPEEKSAVTALWGKV--NVDEVGGEALGRLLVVYPWTQRFFESFGD\n/
+//

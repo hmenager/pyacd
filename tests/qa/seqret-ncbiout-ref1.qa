@@ -1,0 +1,10 @@
+
+ID seqret-ncbiout-ref1
+AP seqret
+CL ../../data/testids.ncbi:REF_12345 test.out -osf ncbi -auto
+FI test.out
+FP 1 /^>/
+FP /^>ref\|NP_007225\.1\|REF_12345 NCBI /
+FP /^REFSEQ$/
+FZ = 58
+//

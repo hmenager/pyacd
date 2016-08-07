@@ -1,0 +1,17 @@
+
+ID showpep-ex
+AP showpep
+CL tsw:laci_ecoli -sbeg 1 -send 100
+IN
+IN
+FI stderr
+FC = 7
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI laci_ecoli.showpep 
+FZ = 1599
+FP 1 /^\s+\|=+\|\n\s+polypeptide_domain note="/
+FP 1 /^\s+\|=+\|\s+\|=+\|\n\s+DNA_contact note="/
+FP 2 /^\s+\|\n\s+mutated_variant_site note="/
+//

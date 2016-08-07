@@ -1,0 +1,9 @@
+
+ID dbiflat-embl-testexcall
+AP seqret
+CL "qanflatexc-id:*" test.out -auto
+FI test.out
+FZ = 2842113
+FP 1 /^>X13776 /
+FP 47 /^>/
+//

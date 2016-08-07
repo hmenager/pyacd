@@ -1,0 +1,12 @@
+
+ID seq-ftp-ioffset
+AP seqret
+CL -auto -out test.out -osf embl ftp://emboss.open-bio.org/pub/EMBOSS/testdata/rod.dat -ioffset 1864
+FI test.out
+FZ = 11907
+FP /^ID   Z46957; /
+FP /^ID   U68037; /
+FP 5 /^ID/
+FI stderr
+FZ = 0
+//

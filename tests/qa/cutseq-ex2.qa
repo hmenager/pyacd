@@ -1,0 +1,14 @@
+
+ID cutseq-ex2
+UC To remove the first 20 bases from 'tembl:x13776' and write it to 'jsh.seq': 
+AP cutseq
+CL tembl:x13776 -from=1 -to=20 -out=jsh.seq
+FI stderr
+FC = 1
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI jsh.seq
+FZ = 2275
+FP /^tgctcgatcaccaccagccgggcgacgggaactgcacgatctacctggcgagcctggagc\n/
+//

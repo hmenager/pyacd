@@ -1,0 +1,14 @@
+
+#####################################################
+# Testing NCBI formatted ID lines are correctly split
+#####################################################
+
+ID seqret-ncbi-gb
+AP seqret
+CL ../../data/testids.ncbi:GENBANK test.out -auto
+FI test.out
+FP 1 /^>/
+FP /^>GENBANK G12345 /
+FP /^GENBANK$/
+FZ = 58
+//

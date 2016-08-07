@@ -1,0 +1,9 @@
+
+ID dbiflat-last
+AP seqret
+CL qanflat-id:Z46957 test.out -auto
+FI test.out
+FZ = 1568
+FP 1 /^>Z46957 /
+FP 1 /^>/
+//

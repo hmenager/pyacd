@@ -1,0 +1,17 @@
+
+ID makeprotseq-ex2
+AP makeprotseq
+IN ../pepstats-keep/laci_ecoli.pepstats
+IN
+IN
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI makeseq.fasta
+FC = 300
+FP 100 /^>EMBOSS_[0-9][0-9][0-9]/
+FP /\A>EMBOSS_001\neqngievef.*avpdkallvv\nnllvla.*kssnv\n>/
+//

@@ -1,0 +1,18 @@
+
+ID est2genome-mode-reverse2
+TI 200
+AP est2genome
+CL -mode reverse
+IN ../../data/pax6_cdna.fasta
+IN ../../data/z83307.seq
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI pax6.est2genome
+FZ = 47
+FP /Note requested reversed est and forward genome/
+FP 0 /^Exon/
+//

@@ -1,0 +1,15 @@
+
+ID feattext-ex
+AP feattext
+IN ../../data/paamir.gff3
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI x13776.feattext
+FC = 15
+FP /X13776\tEMBL\tdatabank_entry\t1\t2167\t\.\t\+\t\.\tID=X13776\.1;organism=Pseudomonas aeruginosa;map=38 min;strain=PAC;isolate=PAC 1;mol_type=genomic DNA;db_xref=taxon:287\n/
+FP /X13776\tEMBL\tsequence_feature\t1\t1\t\.\t\+\t.\tID=X13776.8;note=last base of an XhoI site\n/
+//

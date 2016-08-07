@@ -1,0 +1,12 @@
+
+ID seqret-query-direct-orgfail
+ER 1
+AP seqret
+CL -auto -out test.out -osf embl embl::../../embl/rod.dat:ORG:HOMO
+FI stderr
+FZ = 137
+FP /^Error: Unable to read sequence 'embl::\.\.\/\.\.\/embl\/rod\.dat:ORG:HOMO'/
+FP 0 /Warning: /
+FP 1 /Error: /
+FP 1 /Died: /
+//

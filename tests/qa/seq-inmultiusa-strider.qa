@@ -1,0 +1,10 @@
+
+ID seq-inmultiusa-strider
+AP seqret
+CL -auto strider::../../data/dna.m-strider test.out -osf embl
+FI test.out
+FP 1 /^ID   STRIDERM1; .* 144 BP\.\n/
+FP 1 /^ID   STRIDERM2; .* 144 BP\.\n/
+FP 1 /^ID   STRIDERM3; .* 144 BP\.\n/
+FP 3 /Sequence 144 BP; 36 A; 36 C; 36 G; 36 T; 0 other;/
+//

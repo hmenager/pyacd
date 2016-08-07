@@ -1,0 +1,57 @@
+
+#############################################
+# The qapblast database(s)
+#############################################
+
+ID dbiblast-allsys-keep
+DL keep
+AP dbiblast
+CL -fields "acc,sv,des"
+IN swnew
+IN ../../data
+IN
+IN
+IN
+IN
+IN
+IN
+FI stderr
+FC = 8
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI division.lkp
+FZ = 322
+FP s /\A.{300}\001\000swnew\.pin\000/
+FI entrynam.idx
+FZ = 480
+FP s /\A.{300}CO9_FUGRU\000/
+FI acnum.hit
+FZ = 336
+FP s /\A.{300}\006/
+FI acnum.trg
+FZ = 426
+FP s /\A.{308}O42493\001/
+FI des.hit
+FZ = 576
+FP s /\A.{300}\006/
+FI des.trg
+FZ = 1839
+FP s /\A.{308}1\000/
+FI seqvn.hit
+FZ = 300
+FP s /\A.{300}$/
+FI seqvn.trg
+FZ = 300
+FP s /\A.{300}$/
+FI outfile.dbiblast
+FC = 39
+FP 1 /^filename: /
+FP /# Fields: 4\n/
+FP /# Files: 1\n/
+FP /#   File 1: .*\/data[\/\\]swnew\n/
+FP /Index acc: maxlen 6 items 9\n/
+FP /Index sv: maxlen 0 items 0\n/
+FP /Index des: maxlen 19 items 57\n/
+FP /Total 1 files 9 entries \(0 duplicates\)\n/
+//

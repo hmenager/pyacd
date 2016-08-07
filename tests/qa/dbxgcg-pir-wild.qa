@@ -1,0 +1,9 @@
+
+ID dbxgcg-pir-wild
+AP seqret
+CL "qaxpir:c*" test.out -auto
+FI test.out
+FZ = 7969
+FP 49 /^>C/
+FP 49 /^>/
+//

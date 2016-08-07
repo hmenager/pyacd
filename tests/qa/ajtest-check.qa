@@ -1,0 +1,26 @@
+
+#######################################
+# EMBOSS make check
+#######################################
+
+ID ajtest-check
+AQ ajtest
+IN tembl:x13776
+IN ../../data/globins.msf
+IN stdout
+IN abc.seq
+IN abc.gff
+FI stderr
+FC = 2
+FP 1 /Warning: /
+FP 1 /Warning: No features written /
+FP 0 /Error: /
+FP 0 /Died: /
+FI kim1.out
+FZ = 4585
+FP /^ID   X13776; SV 1; linear; genomic DNA; STD; PRO; 2167 BP\.\n/
+FI abc.seq
+FC = 0
+FI abc.gff
+FC = 0
+//

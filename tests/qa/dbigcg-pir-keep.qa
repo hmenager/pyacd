@@ -1,0 +1,43 @@
+
+
+#############################################
+# The qapir database(s)
+#############################################
+
+ID dbigcg-pir-keep
+DL keep
+TI 120
+AP dbigcg
+IN PIR
+IN PIR
+IN ../../pir
+IN
+IN
+IN
+IN
+FI stderr
+FC = 6
+FP 0 /Warning:/
+FP 0 /Error: /
+FP 0 /Died: /
+FI division.lkp
+FZ = 388
+FP s /\A.{300}\001\000pir1\.ref pir1\.seq\000/
+FI entrynam.idx
+FZ = 1260
+FP s /\A.{300}A31558/
+FI acnum.hit
+FZ = 672
+FP s /\A.{300}\033/
+FI acnum.trg
+FZ = 1392
+FP s /\A.{308}A00001/
+FI outfile.dbigcg
+FC = 45
+FP 4 /^filename: /
+FP /# Fields: 2\n/
+FP /# Files: 4\n/
+FP /#   File \d+: .*\/pir[\/\\]pir1\.seq\n/
+FP /Index acc: maxlen 6 items 78\n/
+FP /Total 4 files 60 entries \(0 duplicates\)\n/
+//

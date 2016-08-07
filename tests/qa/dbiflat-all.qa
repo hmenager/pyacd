@@ -1,0 +1,9 @@
+
+ID dbiflat-all
+AP seqret
+CL "qanflat:*" test.out -auto
+FI test.out
+FZ = 5586
+FP 1 /^>L48662 /
+FP 6 /^>/
+//

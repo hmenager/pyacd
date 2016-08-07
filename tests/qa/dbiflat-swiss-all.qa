@@ -1,0 +1,9 @@
+
+ID dbiflat-swiss-all
+AP seqret
+CL "qapflat:*" test.out -auto
+FI test.out
+FZ = 4683
+FP 1 /^>Q2KT90_TAKRU /
+FP 9 /^>/
+//

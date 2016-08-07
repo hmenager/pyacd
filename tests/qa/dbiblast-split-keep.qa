@@ -1,0 +1,42 @@
+
+#############################################
+# The qapblastsplit database(s)
+#############################################
+
+ID dbiblast-split-keep
+DL keep
+AP dbiblast
+IN swsplit
+IN ../../data
+IN swsplit.*.pin
+IN
+IN
+IN P
+IN
+IN
+FI stderr
+FC = 8
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI division.lkp
+FZ = 410
+FP s /\A.{300}\001\000swsplit\.00\.pin\000/
+FI entrynam.idx
+FZ = 480
+FP s /\A.{300}CO9_FUGRU\000/
+FI acnum.hit
+FZ = 336
+FP s /\A.{300}\006/
+FI acnum.trg
+FZ = 426
+FP s /\A.{308}O42493\001/
+FI outfile.dbiblast
+FC = 50
+FP 5 /^filename: /
+FP /# Fields: 2\n/
+FP /# Files: 5\n/
+FP /#   File 1: .*\/data[\/\\]swsplit\.00\.pin\n/
+FP /Index acc: maxlen 6 items 9\n/
+FP /Total 5 files 9 entries \(0 duplicates\)\n/
+//

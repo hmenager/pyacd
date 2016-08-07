@@ -1,0 +1,10 @@
+
+ID seqret-query-srswww-id
+AP seqret
+CC Requires http access to EBI SRS server
+CL -auto -out test.out -osf sw qasrswww-ID:last_ecoli
+FI test.out
+FZ = 4534
+FP /^ID   LAST_ECOLI +Reviewed; +228 AA\.\n/
+FP 1 /^ID /
+//

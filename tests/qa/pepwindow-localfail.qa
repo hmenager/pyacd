@@ -1,0 +1,15 @@
+
+ID pepwindow-localfail
+AP pepwindow
+ER 1
+PP EMBOSS_DATA=../aaindexextract-keep/
+PP export EMBOSS_DATA
+CL tsw:opsd_human -datafile fail780101
+IN ps
+FI stderr
+FC = 3
+FP /^Error: Unable to open data file 'fail780101' for input\n/
+FP 0 /Warning: /
+FP 1 /Error: /
+FP 1 /Died: /
+//

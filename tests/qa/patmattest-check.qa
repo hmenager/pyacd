@@ -1,0 +1,16 @@
+
+ID patmattest-check
+AQ patmattest
+CC No documentation, no example
+IN tembl:x13776
+IN ACA
+IN
+FI stdout
+FC = 93
+FP /^ACA\n15 matches found\n/
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+//

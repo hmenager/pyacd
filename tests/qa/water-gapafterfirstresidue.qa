@@ -1,0 +1,10 @@
+
+ID water-gapafterfirstresidue
+AP water
+CL asis:catt asis:cgatt stdout -auto -gapopen 1 -gapextend 1
+FI stdout 
+FZ > 15
+FP /# Score: 19/
+FP /.*c-att/
+FP /.*cgatt/
+//

@@ -1,0 +1,9 @@
+
+ID seqret-bam2sam
+AP seqret
+CL bam::../../data/samspec1.4example.bam -osformat sam stdout -auto
+FI stdout
+FC = 8
+FP 1 /r001.*TTAGATAAAGGATACTG/
+FP 1 /r001.*CAGCGCCAT/
+//

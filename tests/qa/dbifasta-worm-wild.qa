@@ -1,0 +1,9 @@
+
+ID dbifasta-worm-wild
+AP seqret
+CL "qawfasta:a*" test.out -auto
+FI test.out
+FZ = 19764
+FP 40 /^>A[^\n]+\n[^>]/
+FP 40 /^>/
+//

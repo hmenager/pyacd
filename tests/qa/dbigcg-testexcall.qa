@@ -1,0 +1,9 @@
+
+ID dbigcg-testexcall
+AP seqret
+CL "qangcgexc-id:*" test.out -auto
+FI test.out
+FZ = 1744803
+FP 1 /^>X65923 /
+FP 30 /^>/
+//

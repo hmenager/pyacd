@@ -1,0 +1,26 @@
+
+ID fuzztran-ex
+AP fuzztran
+CL -opt
+IN tembl:Z46957
+IN RA
+IN f
+IN
+IN
+FI stderr
+FC = 31
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI z46957.fuzztran
+FC = 44
+FP /^# HitCount: 9\n/
+FP /^    919     924       [+]       2 pattern:RA        .      1    307    308 RA         \n/
+FP /^    752     757       [+]       2 pattern:RA        .      2    251    252 RA         \n/
+FP /^     72      77       [+]       2 pattern:RA        .      3     24     25 RA         \n/
+FP 6 /^.* 1 +\d+ +\d+ RA +\n/
+FP 2 /^.* 2 +\d+ +\d+ RA +\n/
+FP 1 /^.* 3 +\d+ +\d+ RA +\n/
+FP /^# Reported_sequences: 1\n/
+FP /^# Reported_hitcount: 9\n/
+//

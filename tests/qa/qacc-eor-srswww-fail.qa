@@ -1,0 +1,11 @@
+
+ID qacc-eor-srswww-fail
+ER 1
+AP seqret
+CL "srs:uniprot-acc{p07464 ^ p77862}" stdout -auto
+FI stderr
+FP 0 /Warning: /
+FP 2 /Error: /
+FP 1 /Died: /
+FP /^Error: Query link operator '\^' not supported by access method 'srswww'/
+//

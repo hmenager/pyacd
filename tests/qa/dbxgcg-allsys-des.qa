@@ -1,0 +1,9 @@
+
+ID dbxgcg-allsys-des
+AP seqret
+CL qanxgcgall-des:fau test.out -auto
+FI test.out
+FZ = 561
+FP 1 /\A>X65923 /
+FP 1 /^>/
+//

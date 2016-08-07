@@ -1,0 +1,10 @@
+
+ID seq-innuc-sam
+AP infoseq
+CL -nocolumn -delimiter "\t"
+CL -auto ../../data/xxx.sam -sf sam -outfile test.out
+FI test.out
+FC = 3
+FP /^sam::\S+\t-\tread_28833_29006_6945\t-\tN\t35\t48\.57/
+FP /^sam::\S+\t-\tread_28701_28881_323b\t-\tN\t35\t57\.14/
+//

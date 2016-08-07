@@ -1,0 +1,14 @@
+
+ID align-wordmatch-same
+AP wordmatch
+CL tembl:v00294 tembl:v00294 -word 50 -auto
+FI v00294.wordmatch
+FC = 23
+FP /^ +1113 +V00294 +[+] +1\.\.1113 +V00294 +[+] +1\.\.1113\n/
+FI V00294.gff
+FZ = 180
+FP /^V00294\twordmatch\tsequence_feature\t1\t1113\t1\t/
+FI wordmatch.log
+FP /Number of patterns\/words found: 1064/
+FP /Sum of match lengths: 1113/
+//

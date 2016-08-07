@@ -1,0 +1,17 @@
+
+ID nam-badtype
+AP showdb
+ER 1
+PP EMBOSSRC=../../rc
+PP export EMBOSSRC
+PP EMBOSS_BADFILE=../../rc/badtype.rc
+PP export EMBOSS_BADFILE
+FI stderr
+FZ > 0
+FP 0 /Warning: /
+FP 3 /Error: /
+FP 1 /Died: /
+FP /Error: File .*badtype\.rc line 1: Invalid definition type 'this'\n/
+FP /Error: File .*badtype\.rc line 1: Invalid definition type 'badtype'\n/
+FP /Error: File .*\.embossrc line 2: Error\(s\) found in included file [$]emboss_badfile \(\.\.[\/\\]\.\.[\/\\]rc[\/\\]badtype.rc\)\n/
+//

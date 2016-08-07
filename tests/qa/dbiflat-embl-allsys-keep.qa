@@ -1,0 +1,67 @@
+
+ID dbiflat-embl-allsys-keep
+DL keep
+AP dbiflat
+CL -fields "acc,sv,des,key,org"
+IN EMBL
+IN
+IN ../../embl
+IN
+IN
+IN
+IN
+FI stderr
+FC = 6
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI division.lkp
+FZ = 586
+FP s /\A.{300}\001\000condiv\.dat\000/
+FI entrynam.idx
+FZ = 1519
+FP s /\A.{300}AACY020702065\301/
+FI acnum.hit
+FZ = 952
+FP s /\A.{300}\001/
+FI acnum.trg
+FZ = 3618
+FP s /\A.{308}AACY000000000\003/
+FI des.trg
+FZ = 7368
+FP s /\A.{308}1\000/
+FI des.hit
+FZ = 2196
+FP s /\A.{300}\011/
+FI keyword.trg
+FZ = 4408
+FP s /\A.{308}ACETYLTRANSFERASE\000/
+FI keyword.hit
+FZ = 676
+FP s /\A.{300}\021/
+FI seqvn.trg
+FZ = 1519
+FP s /\A.{308}AACY020702065\.1\001/
+FI seqvn.hit
+FZ = 512
+FP s /\A.{300}\001/
+FI taxon.trg
+FP s /\A.{308}AFRICAN CLAWED FROG\000/
+FZ = 5480
+FI taxon.hit
+FZ = 3104
+FP s /\A.{300}\023/
+FI outfile.dbiflat
+FC = 141
+FP /# Fields: 6\n/
+FP /#   Field 6: org\n/
+FP /# Files: 13\n/
+FP /Index acc: maxlen 13 items 158\n/
+FP /Index sv: maxlen 15 items 53\n/
+FP /Index des: maxlen 23 items 228\n/
+FP /Index key: maxlen 44 items 79\n/
+FP /Index org: maxlen 27 items 148\n/
+FP /Total 13 files 53 entries \(0 duplicates\)\n/
+FP 5 /^Index \S+ maxlen \d+ items \d+\n/
+FP 13 /^filename: /
+//

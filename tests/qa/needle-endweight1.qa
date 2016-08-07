@@ -1,0 +1,20 @@
+
+ID needle-endweight1
+AP needle
+CL -gapopen=8 -gapextend=8 -endopen=8 -endextend=8 -stdout
+CL -datafile=EBLOSUM50 -endweight
+IN asis::PAWHEAE
+IN asis::HEAGAWGHEE
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI stdout
+FP /^# Identity: +5\/11 \(45\.5%\)/
+FP /^# Score: +1\.0\n/
+FP /^asis               1 -(-P)|(P-)|(PA)-(A)|(-)W-HEAE      7\n/
+FP /^asis               1 HEAGAWGHE-E     10\n/
+FC = 42
+//

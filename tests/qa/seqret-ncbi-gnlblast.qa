@@ -1,0 +1,10 @@
+
+ID seqret-ncbi-gnlblast
+AP seqret
+CL ../../data/testids.ncbi:BLAST test.out -auto
+FI test.out
+FP 1 /^>/
+FP /^>Blast formatdb /
+FP /^BLAST$/
+FZ = 46
+//

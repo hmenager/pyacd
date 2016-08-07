@@ -1,0 +1,9 @@
+
+ID dbiflat-nextlast
+AP seqret
+CL qanflat-id:U68037 test.out -auto
+FI test.out
+FZ = 1318
+FP 1 /^>U68037 /
+FP 1 /^>/
+//

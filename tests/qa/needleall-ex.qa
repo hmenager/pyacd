@@ -1,0 +1,18 @@
+
+ID needleall-ex
+AP needleall
+CL -minscore 40 -stdout -auto
+CL ../../data/illumina_adapter_primer.fa
+CL ../../data/test1_illumina.fastq
+FI stderr
+FI needleall.error
+FP /Alignment score \(21.5\) is less than minimum score/
+FC = 752
+FI stdout
+FC = 26
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FZ > 1270
+FP /^Illumina_DpnII_Gex_PCR_Primer_2.*(41.0)/
+//

@@ -1,0 +1,15 @@
+
+ID transeq-ex3
+UC To translate a sequence in the first frame in the reverse sense (starting at the last frame 1 codon and proceeding to the start): 
+AP transeq
+CL tembl:x13776 amir.pep -frame=-1
+FI stderr
+FC = 1
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI amir.pep
+FZ = 820
+FP /^>X13776_4/
+FP /^SNQTALRNSTAPTYSRTSPSMMTIPLLLLFWSARIAQADGSFPSNS\*AIFRIGSRRFIAS\n/
+//

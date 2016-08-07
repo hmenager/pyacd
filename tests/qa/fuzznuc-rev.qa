@@ -1,0 +1,22 @@
+
+ID fuzznuc-rev
+AP fuzznuc
+CL -complement
+IN asis::GATAAAAAAAAAAAAAAAAAAAAAAAAGATAAAATATCGATA
+IN GATA
+IN test.out
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI test.out
+FC = 39
+FP /^# HitCount: 4\n/
+FP /^      1       4       [+] pattern:GATA        . GATA\n/
+FP /^     28      31       [+] pattern:GATA        . GATA\n/
+FP /^     39      42       [+] pattern:GATA        . GATA\n/
+FP /^     35      38       [-] pattern:GATA        . GATA\n/
+FP /^# Reported_sequences: 1\n/
+FP /^# Reported_hitcount: 4\n/
+//

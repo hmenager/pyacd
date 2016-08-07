@@ -1,0 +1,10 @@
+
+ID dbigcg-pirall-keyspace
+AP entret
+CL "qapirall-key:blocked amino end" test.out -auto
+FI test.out
+FZ = 11846
+FP 1 /^>P1;CCRT/
+FP 8 /^>/
+FP 8 /^C;Keywords:.*blocked amino end;/
+//

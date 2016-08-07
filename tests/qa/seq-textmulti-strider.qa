@@ -1,0 +1,10 @@
+
+ID seq-textmulti-strider
+AP entret
+CL -auto ../../data/dna.m-strider -sf strider test.out
+FI test.out
+FZ = 648
+FC = 21
+FP 3 /^; DNA sequence  STRIDERM/
+FP /^GGTTAACCGGTTAACCGGTTAACCGGTTAACCGGTTAACCGGTT\n/
+//

@@ -1,0 +1,52 @@
+
+
+
+#############################################
+# The qanxgcg database(s)
+#############################################
+
+ID dbxgcg-ex-keep
+DL keep
+TI 120
+AP dbxgcg
+IN embl
+IN emblresource
+IN embl
+IN ../../embl
+IN
+IN
+IN
+IN
+FI stderr
+FC = 12
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI outfile.dbxgcg
+FC = 22
+FP 9 /^Processing file: /
+FP 9 /^Processing file: eem_[a-z1-9]+\.seq\n/
+FP 1 /^Processing file: eem_hum1\.seq\nentries: 32 \(15\) /
+FP 1 /^Entry idlen \d+ OK/
+FP 1 /^Field \S+ \S+ \d+ OK/
+FP 1 /^Field \S+ /
+FI embl.ent
+FC = 13
+FP 1 /^Reference 2 filename database\n/
+FP 1 /^# Number of files: 9\n/
+FP 9 / eem_[a-z1-9]+\.ref\n/
+FI embl.pxac
+FZ = 286
+FP 1 /^Count        48\n/
+FP 1 /^Fullcount    48\n/
+FI embl.pxid
+FZ = 286
+FP 1 /^Count        40\n/
+FP 1 /^Fullcount    40\n/
+FI embl.xac
+FZ = 2546
+FP 1 /\000ab000095\000/
+FI embl.xid
+FZ = 2546
+FP 1 /\000x65923\000/
+//

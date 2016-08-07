@@ -1,0 +1,12 @@
+
+ID featseqset-end-embl
+AQ seqretset
+CL -feat @../../data/eclac.list -send 100 -out test.out -osf embl -auto
+FI test.out
+FZ = 32134
+FP 5 /^ID   /
+FP 5 /^FH   /
+FP /^ +caattcaggg tggtgaatgt gaaaccagta acgttatacg +100\n/
+FP /^ +gagtatgccg gtgtctctta tcagaccgtt tcccgcgtgg +100\n/
+FP /^FT   CDS             31\.\.>100\n/
+//

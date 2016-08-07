@@ -1,0 +1,21 @@
+
+ID align-matcher-markx2
+AP matcher
+CL -gapopen 5 -gapextend 1 -stdout -sbegin1 5 -send1 15 -sbegin2 2 -send2 -6
+CL -aformat markx2
+IN ../../data/aligna.dna
+IN ../../data/alignb.dna
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI stdout
+FP /^# Identity: +5\/6 \(83\.3%\)/
+FP /^# Score: +21\n/
+FP 1 /^           10\n/
+FP 1 /^ AFULL AACCGG\n/
+FP 1 /^ BFULL \.\.\.G\.\.\n/
+FC = 43
+//

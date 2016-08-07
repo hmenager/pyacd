@@ -1,0 +1,8 @@
+
+ID seq-inusa-gcg8
+AP seqret
+CL -auto gcg8::../../data/dna.gcg8 test.out -osf embl
+FI test.out
+FP /^ID   .* 100 BP\.\n/
+FP /^SQ   Sequence 100 BP; 25 A; 25 C; 25 G; 25 T; 0 other;/
+//

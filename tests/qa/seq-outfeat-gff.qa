@@ -1,0 +1,10 @@
+
+ID seq-outfeat-gff
+AP seqret
+CL -feat ../../data/feat.fasta -ufo ../../data/feat.emft gff::test.out -auto
+FI test.out
+FC = 648
+FZ = 58255
+## Internal quotes
+FP /\tCDS\t1289\t1879\t\.\t\+\t0\tID=AB036666\.87;.* of "amiE" /
+//

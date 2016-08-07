@@ -1,0 +1,7 @@
+
+ID dasregistry-featquery-type
+AP featcopy
+CL "tensembldasserver:Homo_sapiens_GRCh37_reference-{segment:11 & type:supercontig}" stdout -auto
+FI stdout
+FP 4 /supercontig/
+//

@@ -1,0 +1,9 @@
+
+ID dbxflat-id
+AP seqret
+CL qanxflat-id:M11905 test.out -auto
+FI test.out
+FZ = 654
+FP /\A>M11905 /
+FP 1 /^>/
+//

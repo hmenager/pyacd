@@ -1,0 +1,24 @@
+
+ID merger-ex
+AP merger
+IN tembl:v00295
+IN tembl:x51872
+IN
+IN
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI v00295.merger
+FZ > 1445
+FP /^# Score: 795\.0\n/
+FP /^V00295 +1301 +cgcttagcggccccggcccgctttccctgctgcgtcgtcaggtgaatgaa +1350\n/
+FP /^X51872 +1 [-]+gtgaatgaa +9\n/
+FI v00295.fasta
+FC = 54
+FZ = 3291
+FP 1 /^>/
+FP /^agcttccggccagcgccagcccgcccatggtaaccaccggcagagcggtcgac\n/
+FP /ggaaaaaaga\ncttcgtggg/
+//

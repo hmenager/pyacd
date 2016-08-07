@@ -1,0 +1,96 @@
+
+ID dbxedam-keep
+AP dbxedam
+DL keep
+IN
+IN
+IN
+IN ../../data/
+IN
+IN
+IN
+IN
+FI stderr
+FC = 12
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI outfile.dbxedam
+FC = 14
+FP 1 /Processing file: /
+FI edam.ent
+FC = 5
+FP 1 /Single filename database\n/
+FP /EDAM.obo\n/
+FI edam.pxac
+FC = 17
+FP /^Count +143\n/
+FP /^Fullcount +143\n/
+FI edam.pxde
+FC = 17
+FP /^Count +562\n/
+FP /^Fullcount +2167\n/
+FI edam.pxhasin
+FC = 17
+FP /^Count +2\n/
+FP /^Fullcount +2\n/
+FI edam.pxhasout
+FC = 17
+FP /^Count +2\n/
+FP /^Fullcount +2\n/
+FI edam.pxid
+FC = 17
+FP /^Count +143\n/
+FP /^Fullcount +143\n/
+FI edam.pxis
+FC = 17
+FP /^Count +90\n/
+FP /^Fullcount +225\n/
+FI edam.pxisfmt
+FC = 17
+FP /^Count +5\n/
+FP /^Fullcount +5\n/
+FI edam.pxisid
+FC = 17
+FP /^Count +1\n/
+FP /^Fullcount +1\n/
+FI edam.pxnm
+FC = 17
+FP /^Count +323\n/
+FP /^Fullcount +725\n/
+FI edam.pxns
+FC = 17
+FP /^Count +5\n/
+FP /^Fullcount +143\n/
+FI edam.xac
+FZ = 10926
+FP 2 /operation/
+FI edam.xde
+FZ = 44234
+FP 2 /\000fasta\000/
+FI edam.xhasin
+FZ = 2216
+FP 2 /\0000006\000/
+FI edam.xhasout
+FZ = 2216
+FP 2 /\0000006\000/
+FI edam.xid
+FZ = 4682
+FP 2 /\0001915\000/
+FI edam.xis
+FZ = 7385
+FP 2 /\0002069\000/
+FI edam.xisfmt
+FZ = 2342
+FP 2 /\0000006\000/
+FI edam.xisid
+FZ = 2174
+FP 2 /\0000006\000/
+FI edam.xnm
+FZ = 20835
+FP 2 /\000composition\000/
+FI edam.xns
+FZ = 3708
+FP 2 /operation/
+FP 2 /\0001422\000/
+//

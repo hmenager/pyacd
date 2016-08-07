@@ -1,0 +1,25 @@
+
+ID notseq-ex2
+UC Here is an example where the sequences to be excluded are saved to another file:
+AP notseq
+CL -junkout hb.seq
+IN ../../data/globins.fasta
+IN hb*
+IN mydata.seq
+FI stderr
+FC = 2
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI mydata.seq
+FZ = 581
+FP 0 /^>HBA_HUMAN/
+FP 0 /^>HBA_HORSE/
+FP 0 /^>HBB_HUMAN/
+FP 0 /^>HBB_HORSE/
+FP /^>GLB5_PETMA/
+FP /^>MYG_PHYCA/
+FP /^>LGB2_LUPLU/
+FI hb.seq
+FP /^>HBB_HUMAN/
+//

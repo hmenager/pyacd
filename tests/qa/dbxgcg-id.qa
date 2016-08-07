@@ -1,0 +1,9 @@
+
+ID dbxgcg-id
+AP seqret
+CL qanxgcg-id:X65923 test.out -auto
+FI test.out
+FZ = 561
+FP 1 /\A>X65923 /
+FP 1 /^>/
+//

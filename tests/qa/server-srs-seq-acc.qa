@@ -1,0 +1,15 @@
+
+ID server-srs-seq-acc
+AP entret
+CL srs:uniprot-acc:p10932 test.out
+FI stderr
+FC = 1
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FI test.out
+FC = 126
+FP 1 /^ID   /
+FP /^ID   AMIR_PSEAE              Reviewed;         196 AA\.$/
+FP /^DT   01-MAY-2013, entry version 98\.$/
+//

@@ -1,0 +1,10 @@
+
+ID dbxgcg-wild
+AP seqret
+CL "qanxgcg:a*" test.out -auto
+FI test.out
+FZ = 1251303
+FP 3 /^>AB/
+FP 9 /^>A/
+FP 9 /^>/
+//

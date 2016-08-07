@@ -1,0 +1,10 @@
+
+ID seq-textauto-strider
+AP entret
+CL -auto ../../data/dna.strider test.out
+FI test.out
+FZ = 168
+FC = 6
+FP /^; DNA sequence STRIDER, 100 bases\n/
+FP /^GTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGTACGT\n/
+//

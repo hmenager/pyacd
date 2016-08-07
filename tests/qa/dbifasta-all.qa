@@ -1,0 +1,9 @@
+
+ID dbifasta-all
+AP seqret
+CL "qanfasta:*" test.out -auto
+FI test.out
+FZ = 5586
+FP 1 /^>U68037 /
+FP 6 /^>/
+//

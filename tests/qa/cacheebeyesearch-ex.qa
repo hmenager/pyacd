@@ -1,0 +1,11 @@
+
+ID cacheebeyesearch-ex
+RQ soapws
+TI 180
+CC requires (axis2C) SOAP webservices library enabled
+AP cacheebeyesearch
+CL -cachefile ~/.embossdata/qatests.server.ebeye -auto
+QQ cp ~/.embossdata/qatests.server.ebeye .
+FI qatests.server.ebeye
+FP 1 /^DBNAME uniprot /
+//

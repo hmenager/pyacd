@@ -1,0 +1,17 @@
+
+ID align-wordfinder-sam
+AP wordfinder
+CL -lowmatch 7 -stdout -auto -aformat sam -sformat2 fastq-sanger
+CL ../../data/illumina_adapter_primer.fa
+CL ../../data/test1_illumina.fastq
+FI stderr
+FI wordfinder.error
+FP /Target 7 FC12044_91407_8_200_10_437 matches 4/
+FC = 70
+FI stdout
+FP 0 /Warning: /
+FP 0 /Error: /
+FP 0 /Died: /
+FC = 23
+FP /_8_200_303_427.*_DpnII_Gex_Adapters1_2\t8.*6H11M.*XXXIXFQXXXO.*NM:i:2/
+//

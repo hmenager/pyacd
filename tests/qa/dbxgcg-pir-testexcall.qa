@@ -1,0 +1,9 @@
+
+ID dbxgcg-pir-testexcall
+AP seqret
+CL "qaxpirexc-id:*" test.out -auto
+FI test.out
+FZ = 2498
+FP 1 /^>S11172 /
+FP 11 /^>/
+//
