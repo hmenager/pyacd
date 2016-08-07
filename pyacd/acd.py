@@ -1321,6 +1321,9 @@ PARAMETER_CLASSES['outdistance'] = OutDistanceParameter
 
 
 class OutFileParameter(Parameter):
+
+    type = OUTPUT
+
     def _init_attribute_defaults(self):
         super(OutFileParameter, self)._init_attribute_defaults()
         self.description = 'Output file'
