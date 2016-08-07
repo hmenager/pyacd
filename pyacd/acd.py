@@ -388,10 +388,16 @@ class Acd(object):
                 parameter.qualifiers.keys()]
 
     def parameter_by_name(self, name):
+        partial_matches = []
         for section in self.sections:
             for parameter in section.parameters:
                 if parameter.name==name:
                     return parameter
+                elif parameter.name.startswith(name):
+                    partial_matches.append(parameter)
+        if len(partial_matches)>0:
+            return max(partial_matches,key=lambda parameter: len(
+                parameter.name))
         return None
 
     def parameter_by_index(self, index):
@@ -400,10 +406,16 @@ class Acd(object):
             index]
 
     def parameter_by_qualifier_name(self, name):
-        return [parameter for section in self.sections for parameter in
-                section.parameters if
-                name in parameter.qualifiers.keys()]
-
+        results = []
+        if len(results)==0:
+            for section in self.sections:
+                for parameter in section.parameters:
+                    for qualifier_name in parameter.qualifiers.keys():
+                        if name==qualifier_name:
+                            results.append((parameter, qualifier_name))
+                        elif qualifier_name.startswith(name):
+                            results.append((parameter, qualifier_name))
+        return results
 
 class UnknownAcdPropertyException(Exception):
     """
