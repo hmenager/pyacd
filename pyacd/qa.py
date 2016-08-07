@@ -108,6 +108,7 @@ class Qa(object):
         """
         command_line_string = ' '.join([cl.command_line for cl in
                                         self.command_lines])
+        command_line_string = command_line_string.replace('=',' ')
         command_line_array = [param_value for
                               param_value in command_line_string.split(' ')
                               if param_value != '']
