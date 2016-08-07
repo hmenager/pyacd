@@ -50,6 +50,33 @@ class InputLine(object):
     def __init__(self, input_line=None):
         self.input_line = input_line
 
+class AmbiguousOptionParseException(Exception):
+    """
+    Exception thrown when an option can belong to multiple parameters
+    """
+    def __init__(self, option_name, parameters):
+        super(AmbiguousOptionParseException, self).__init__()
+        self.option_name = option_name
+        self.parameters = parameters
+
+    def __str__(self):
+        template = 'cannot map option {0} to a parameter, since it belongs ' \
+                   'to multiple parameters: {1}'
+        return template.format(self.option_name, [p.name for p in
+                                               self.parameters])
+
+class UnknownOptionParseException(Exception):
+    """
+    Exception thrown when an option doesn't belong to any parameter
+    """
+    def __init__(self, option_name):
+        super(UnknownOptionParseException, self).__init__()
+        self.option_name = option_name
+
+    def __str__(self):
+        template = 'cannot find a parameter for option {0}'
+        return template.format(self.option_name)
+
 class Qa(object):
     """
     QA test
