@@ -1,6 +1,8 @@
 import unittest
 from pyacd.qaparser import parse_cl_line, parse_cl_lines, parse_app_ref, \
-    parse_file_group, parse_qa, parse_file_pattern, parse_in_line, parse_in_lines
+    parse_file_group, parse_qa, parse_file_pattern, parse_in_line, \
+    parse_in_lines, parse_ti_line, parse_uc_line, parse_rq_line, \
+    parse_cc_line, parse_cc_lines
 from pyacd.parser import parse_acd
 
 
@@ -8,23 +10,23 @@ class TestParser(unittest.TestCase):
 
     def test_parse_cl_line(self):
         res = parse_cl_line('CL -sequence test.fasta')
-        self.assertEqual(res.command_line, ' -sequence test.fasta')
+        self.assertEqual(res.command_line, '-sequence test.fasta')
 
     def test_parse_cl_lines(self):
         res = parse_cl_lines('CL -sequence test.fasta\nCL -sequence2 '
                             'test2.fasta')
-        self.assertEqual(res.cl_lines[0].command_line, ' -sequence test.fasta')
-        self.assertEqual(res.cl_lines[1].command_line, ' -sequence2 '
+        self.assertEqual(res.cl_lines[0].command_line, '-sequence test.fasta')
+        self.assertEqual(res.cl_lines[1].command_line, '-sequence2 '
                                                        'test2.fasta')
 
     def test_parse_in_line(self):
         res = parse_in_line('IN toto.txt')
-        self.assertEqual(res.input_line, ' toto.txt')
+        self.assertEqual(res.input_line, 'toto.txt')
 
     def test_parse_in_lines(self):
         res = parse_in_lines('IN toto.txt\nIN tutu.dat')
-        self.assertEqual(res.in_lines[0].input_line, ' toto.txt')
-        self.assertEqual(res.in_lines[1].input_line, ' tutu.dat')
+        self.assertEqual(res.in_lines[0].input_line, 'toto.txt')
+        self.assertEqual(res.in_lines[1].input_line, 'tutu.dat')
 
     def test_parse_apref_lines(self):
         res = parse_app_ref('AP name')
@@ -60,6 +62,39 @@ class TestParser(unittest.TestCase):
         self.assertEqual(res.line_count_test, {'operator':'=', 'value':2})
         self.assertEqual(res.size_test, {'operator': '>', 'value': 45})
 
+    def test_parse_ti(self):
+        res = parse_ti_line('''
+        TI 120
+        ''')
+        self.assertEqual(res, 120)
+
+    def test_parse_uc(self):
+        res = parse_uc_line('''
+        UC example from SAM paper(Bioinformatics 2009 August)
+        ''')
+        self.assertEqual(res, 'example from SAM paper(Bioinformatics 2009 August)')
+
+    def test_parse_rq(self):
+        res = parse_rq_line('''
+        RQ primer32
+        ''')
+        self.assertEqual(res, 'primer32')
+
+    def test_parse_cc(self):
+        res = parse_cc_line('''
+        CC primer32
+        ''')
+        self.assertEqual(res, 'primer32')
+
+    def test_parse_cc_lines(self):
+        res = parse_cc_lines('''
+        CC multiple
+        CC lines
+        ''')
+        self.assertEqual(res.comment_lines[0], 'multiple')
+        self.assertEqual(res.comment_lines[1], 'lines')
+
+
     def test_parse_qa_simple(self):
         res = parse_qa('''
         ID test-1
@@ -71,10 +106,10 @@ class TestParser(unittest.TestCase):
         ''')
         self.assertEqual(res.id, 'test-1')
         self.assertEqual(res.application_ref.name, 'test')
-        self.assertEqual(res.command_lines[0].command_line, ' -u test -v test2')
-        self.assertEqual(res.command_lines[1].command_line, ' -w -x')
-        self.assertEqual(res.input_lines[0].input_line, ' toto.txt')
-        self.assertEqual(res.input_lines[1].input_line, ' tutu.dat')
+        self.assertEqual(res.command_lines[0].command_line, '-u test -v test2')
+        self.assertEqual(res.command_lines[1].command_line, '-w -x')
+        self.assertEqual(res.input_lines[0].input_line, 'toto.txt')
+        self.assertEqual(res.input_lines[1].input_line, 'tutu.dat')
 
     def test_parse_qa_cai(self):
         qatest_text = '''
@@ -201,3 +236,40 @@ class TestParser(unittest.TestCase):
         FP 1 /^>THIO_SHIFL/
         FP 1 /^>THIO_ECOLI/
         //''')
+
+    def test_wsdbfetch_noentry(self):
+        res = parse_qa('''ID wsdbfetch-noentry
+        RQ soapws
+        TI 120
+        CC requires (axis2C) SOAP webservices library enabled
+        AP seqret
+        CL fasta::twsdbfetch:uniprotkb:abcdefg stdout -auto
+        ER 1
+        FI stderr
+        FC = 2
+        FP 1 /Unable to read sequence/
+        ''')
+
+    def test_wsdbfetch_uniprot(self):
+        res = parse_qa('''ID wsdbfetch-uniprot
+        TI 120
+        RQ soapws
+        CC requires (axis2C) SOAP webservices library enabled
+        AP seqret
+        CL fasta::twsdbfetch:uniprotkb:P06213 stdout -auto
+        FI stdout
+        FC = 25
+        FP 1 /^>INSR_HUMAN/
+        FP 1 /PS$/''')
+
+    def testebeye_emblrel_con_multifield(self):
+        res = parse_qa('''ID ebeye-emblrel_con-multifield
+        RQ soapws
+        CC requires (axis2C) SOAP webservices library enabled
+        AP textget
+        CL "tebeye:emblrelease_con-{keywords:Aspergillus fumigatus & description:BAC}"
+        CL stdout -auto
+        FI stdout
+        FP /BX649216/
+        FP /Aspergillus fumigatus BAC pilot project supercontig/
+        ''')
