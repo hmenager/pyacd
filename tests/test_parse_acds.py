@@ -10,7 +10,7 @@ from pyacd.parser import parse_acd
 ACDTEST_DIR = os.path.join(os.path.dirname(os.path.realpath(__file__)), \
                           '../tests/acd')
 
-def get_tests():
+def get_acds_list():
     tests = []
     acd_list = glob(ACDTEST_DIR+'/*.acd')
     for acd_path in acd_list:
@@ -20,13 +20,14 @@ def get_tests():
 
 class TestParseAcd(unittest.TestCase):
 
-    @parameterized.expand(get_tests())
+    @parameterized.expand(get_acds_list())
     def parse_command_line(self, acd_path):
         try:
             acd_string = open(acd_path, 'r').read()
             acd_object = parse_acd(acd_string)
-            print acd_object.application.name, acd_object.parameter_names(), \
-                [section.name for section in acd_object.sections]
+            # sections count
+            self.assertEqual(acd_string.count('endsection'),
+                             len(acd_object.desc_sections()))
         except Exception as exc:
             print "Failure parsing ACD file {0}".format(acd_path)
             raise exc
