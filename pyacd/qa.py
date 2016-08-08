@@ -115,8 +115,8 @@ class Qa(object):
                               param_value in command_line_string.split(' ')
                               if param_value != '']
         job_order = {}
-        for parameter_name in acd_def.parameter_names():
-            job_order[parameter_name]={'value':None}
+        for parameter in acd_def.desc_parameters():
+            job_order[parameter.name]={'value':None}
         """dictionary describing the parameter values passed to the job"""
         cl_chunks = iter(command_line_array)
         parameters_count = 0
@@ -177,11 +177,11 @@ class Qa(object):
                 if parameter.qualifiers.get('parameter')==True:
                     parameters_count += 1
         input_lines_array = [line.input_line for line in self.input_lines]
-        for parameter_name in acd_def.parameter_names():
+        for parameter in acd_def.desc_parameters():
             if len(input_lines_array)==0:
                 break
-            if job_order[parameter_name]['value'] is None:
-                job_order[parameter_name]['value']=input_lines_array.pop(0)
+            if job_order[parameter.name]['value'] is None:
+                job_order[parameter.name]['value']=input_lines_array.pop(0)
         for key in job_order.keys():
             if job_order[key]=={'value':None}:
                 del job_order[key]
