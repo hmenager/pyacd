@@ -10,16 +10,20 @@ from pyacd.qaparser import parse_cl_line, parse_cl_lines, parse_app_ref, \
     parse_cc_line, parse_cc_lines
 from pyacd.parser import parse_acd
 
-QATEST_TARGET_DIR = os.path.join(os.path.dirname(os.path.realpath(__file__)), \
+QATEST_DIR = os.path.join(os.path.dirname(os.path.realpath(__file__)), \
                                  '../tests/qa')
+ACDTEST_DIR = os.path.join(os.path.dirname(os.path.realpath(__file__)), \
+                          '../tests/acd')
+
+
 def get_tests():
     tests = []
-    test_map = load(open(QATEST_TARGET_DIR + '/qa_tests.yml', 'r'))
+    test_map = load(open(QATEST_DIR + '/qa_tests.yml', 'r'))
     for test in test_map.keys():
         qa_name = test
         acd_name = test_map[qa_name]
-        qa_path = QATEST_TARGET_DIR + '/' + qa_name + '.qa'
-        acd_path = QATEST_TARGET_DIR + '/' + acd_name + '.acd'
+        qa_path = QATEST_DIR + '/' + qa_name + '.qa'
+        acd_path = ACDTEST_DIR + '/' + acd_name + '.acd'
         tests.append([acd_path, qa_path])
     return  tests
 
