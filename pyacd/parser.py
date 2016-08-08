@@ -2,7 +2,8 @@
   parser module for EMBOSS ACD files
 """
 from .acd import get_parameter, Attribute, Section, Application, Acd, PARAMETER_CLASSES
-from pyparsing import Word, QuotedString, Group, ZeroOrMore, oneOf, Suppress, restOfLine, alphanums
+from pyparsing import Word, QuotedString, Group, ZeroOrMore, oneOf, Suppress,\
+    restOfLine, alphanums, Forward
 
 NAME = Word(alphanums)
 VALUE = QuotedString('"', multiline=True)
@@ -15,26 +16,26 @@ ATTRIBUTE.setParseAction(_get_attribute)
 ATTRIBUTES_LIST = Group(ZeroOrMore(ATTRIBUTE)).setResultsName('attributes')
 
 DATATYPE = oneOf(PARAMETER_CLASSES.keys())
-PARAMETER = Group(DATATYPE('datatype') + Suppress(':') + NAME('name') + Suppress('[') +
-                  ATTRIBUTES_LIST('properties') + Suppress(']'))
-def _get_parameter(tokens):
+PARAMETER = DATATYPE('datatype') + Suppress(':') + NAME('name') + \
+            Suppress('[') + ATTRIBUTES_LIST('properties') + Suppress(']')
+def _get_parameter(token):
     """ return Parameter object from tokens """
-    token = tokens[0]
     return get_parameter(token['name'], token['datatype'], token['properties'])
 PARAMETER.setParseAction(_get_parameter)
 PARAMETERS_LIST = Group(ZeroOrMore(PARAMETER)).setResultsName('parameters')
 
-SECTION = Group(
-    Suppress('section:') + NAME('name') + Suppress('[')
-    + ATTRIBUTES_LIST('properties') + Suppress(']') + \
-    PARAMETERS_LIST('parameters') + Suppress('endsection:') + Suppress(NAME))
-def _get_section(tokens):
+SECTIONS_LIST = Forward()
+SECTION = Suppress('section:') + NAME('name') + Suppress('[') + \
+          ATTRIBUTES_LIST('properties') + Suppress(']') + PARAMETERS_LIST(
+    'parameters') + SECTIONS_LIST('sections') + Suppress('endsection:') + \
+          Suppress(NAME)
+def _get_section(token):
     """ return Section object from tokens """
-    token = tokens[0]
     return Section(token['name'], properties=token['properties'],
-                   parameters=token['parameters'])
+                   parameters=token['parameters'], subsections=token[
+            'sections'])
 SECTION.setParseAction(_get_section)
-SECTIONS_LIST = Group(ZeroOrMore(SECTION))
+SECTIONS_LIST << Group(ZeroOrMore(SECTION))
 
 APPLICATION = Suppress('application') + ':' + NAME('name') + Suppress('[') \
               + ATTRIBUTES_LIST('properties') + Suppress(']')
@@ -48,7 +49,7 @@ ACD = APPLICATION('application') + SECTIONS_LIST('sections')
 ACD.ignore('#' + restOfLine)
 def _get_acd(token):
     """ return Acd object from tokens """
-    return Acd(token['application'], token['sections'])
+    return Acd(token['application'], token['sections'][0])
 ACD.setParseAction(_get_acd)
 
 def parse_attribute(string):
