@@ -369,7 +369,6 @@ SEQUENCE_FORMATS = {
                 'description': 'Treecon output format'},
 }
 
-
 class Acd(object):
     """
     ACD description
@@ -378,9 +377,20 @@ class Acd(object):
         self.application = application
         self.sections = sections or []
 
-    def parameter_names(self):
-        return [parameter.name for section in self.sections for parameter in
-                section.parameters]
+    def desc_parameters(self):
+        parameters = []
+        for section in self.sections:
+            for parameter in section.desc_parameters():
+                parameters.append(parameter)
+        return parameters
+
+    def desc_sections(self):
+        sections = []
+        for section in self.sections:
+            for subsection in section.desc_sections():
+                sections.append(subsection)
+            sections.append(section)
+        return sections
 
     def qualifier_names(self):
         return [qualifier for section in self.sections for parameter in
@@ -555,7 +565,7 @@ class Section(ElementWithAttributes):
     """
     ACD parameters section block
     """
-    def __init__(self, name, properties=None, parameters=None):
+    def __init__(self, name, properties=None, parameters=None, subsections=None):
         """
         :param name: name of the section
         :type name: basestring
@@ -567,7 +577,24 @@ class Section(ElementWithAttributes):
         self.name = name
         self.properties = properties or []
         self.parameters = parameters or []
+        self.subsections = subsections or []
 
+    def desc_parameters(self):
+        parameters = []
+        for section in self.subsections:
+            for parameter in section.desc_parameters():
+                parameters.append(parameter)
+        for parameter in self.parameters:
+            parameters.append(parameter)
+        return parameters
+
+    def desc_sections(self):
+        sections = []
+        for section in self.subsections:
+            for section in section.desc_sections():
+                sections.append(section)
+            sections.append(section)
+        return sections
 
 INPUT = 'input parameter type'
 """ input parameter type """
