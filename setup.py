@@ -16,7 +16,8 @@ setup(
     url='https://github.com/hmenager/pyacd.git',
     packages=['pyacd'],
     install_requires=[
-          'pyparsing'
+          'pyparsing',
+          'ruamel.yaml'
     ],
     license="BSD",
     entry_points={
