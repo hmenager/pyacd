@@ -6,24 +6,16 @@ from pyparsing import Optional, Suppress, Word, OneOrMore, ZeroOrMore, \
 from .qa import ApplicationRef, FilePattern, FileGroup, Qa, CommandLine, \
     InputLine
 
-# CL_PARAMETER = Optional((Suppress('--') | Suppress('-')) + Word(
-#     alphas)('name')) + Word(printables)('value')
-# CL_PARAMETERS = OneOrMore(Group(CL_PARAMETER(
-#      'parameter')))('parameters')
-
-TEST_ID = Suppress("ID") + Word(alphanums + '-')('id')
+TEST_ID = Suppress("ID") + Word(alphanums + '-' + '_')('id')
 
 APPLICATION_REF = oneOf(['AP', 'AA', 'AQ']) + Word(alphas)('appname') + \
                   Optional(
     Suppress('AB') + Word(alphas)('embassypack'))
-#APPLICATION_REF = Suppress("AP") + Word(alphas)('appname')
-#APPLICATION_REF = Suppress('AA') + Word(alphas)('appname') + \
-#                     Suppress('AB') + Word(alphas)('embassypack')
 def _get_application_ref(token):
     return ApplicationRef(token['appname'], token.get('embassypack',None))
 APPLICATION_REF.setParseAction(_get_application_ref)
 
-CL_LINE = Suppress("CL") + restOfLine('line')
+CL_LINE = Suppress("CL ") + restOfLine('line')
 def _get_cl_line(token):
     return CommandLine(token['line'])
 CL_LINE.setParseAction(_get_cl_line)
@@ -33,7 +25,7 @@ def _get_cl_lines(token):
     return token['cl_lines']
 CL_LINES.setParseAction(_get_cl_lines)
 
-IN_LINE = Suppress("IN") + restOfLine('line')
+IN_LINE = Suppress("IN ") + restOfLine('line')
 def _get_in_line(token):
     return InputLine(token['line'])
 IN_LINE.setParseAction(_get_in_line)
@@ -76,11 +68,55 @@ def _get_file_groups(token):
     return token['files']
 FILE_GROUPS.setParseAction(_get_file_groups)
 
-QA = TEST_ID + \
-     Optional(Suppress('TI') & Word(nums)('time_limit')) & \
-     Optional(Suppress('UC') & restOfLine('annotations')) & \
-     Optional(Suppress('RQ') & restOfLine('requirements')) & \
-     Optional(Suppress('CC') & restOfLine('comment')) + \
+TI_LINE = Suppress('TI ') & Word(nums)('time_limit')
+def _get_time_limit(token):
+    return int(token['time_limit'])
+TI_LINE.setParseAction(_get_time_limit)
+
+UC_LINE = Suppress('UC ') & restOfLine('annotation_line')
+def _get_annotation(token):
+    return token.get('annotation_line')
+UC_LINE.setParseAction(_get_annotation)
+
+UC_LINES = Group(ZeroOrMore(UC_LINE))('annotation_lines')
+def _get_annotations(token):
+    return token['annotation_lines']
+UC_LINES.setParseAction(_get_annotations)
+
+RQ_LINE = Suppress('RQ ') & restOfLine('requirements')
+def _get_requirements(token):
+    return token.get('requirements')
+RQ_LINE.setParseAction(_get_requirements)
+
+CC_LINE = Suppress('CC ') & restOfLine('comment_line')
+def _get_comment(token):
+    return token.get('comment_line')[0]
+CC_LINE.setParseAction(_get_comment)
+
+CC_LINES = Group(ZeroOrMore(CC_LINE))('comment_lines')
+def _get_comments(token):
+    return token['comment_lines']
+CC_LINES.setParseAction(_get_comments)
+
+PP_LINE = Suppress('PP ') & restOfLine('preprocess_line')
+def _get_preprocess(token):
+    return token.get('preprocess_line')[0]
+PP_LINE.setParseAction(_get_preprocess)
+
+PP_LINES = Group(ZeroOrMore(PP_LINE))('preprocess_lines')
+def _get_preprocesss(token):
+    return token['preprocess_lines']
+PP_LINES.setParseAction(_get_preprocesss)
+
+
+QA = TEST_ID & \
+     Group(Optional(TI_LINE) & \
+     Optional(Suppress('DL keep')) & \
+     Optional(Suppress('ER ') + Word(nums)('error_code')) & \
+     Optional(RQ_LINE) & \
+     CC_LINES & \
+     PP_LINES & \
+     UC_LINES) & \
      APPLICATION_REF('appref') & CL_LINES & IN_LINES & FILE_GROUPS
 def _get_qa(token):
     return Qa(token['id'],token.get('uc',None),token['appref'], command_lines=token[
@@ -108,6 +144,22 @@ def parse_file_pattern(string):
 def parse_file_group(string):
     return FILE_GROUP.parseString(string)[0]
 
+def parse_ti_line(string):
+    return TI_LINE.parseString(string)[0]
+
+def parse_uc_line(string):
+    return UC_LINE.parseString(string)[0]
+
+def parse_rq_line(string):
+    return RQ_LINE.parseString(string)[0]
+
+def parse_cc_line(string):
+    return CC_LINE.parseString(string)[0]
+
+def parse_cc_lines(string):
+    return CC_LINES.parseString(string)
+
 def parse_qa(string):
     """ parse a QA test item (one test case for one application)"""
     return QA.parseString(string)[0]
+
