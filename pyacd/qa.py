@@ -1,4 +1,4 @@
-from acd import BooleanParameter
+from acd import BooleanParameter, ToggleParameter
 
 class ApplicationRef(object):
     """
@@ -132,7 +132,8 @@ class Qa(object):
                 name = chunk[1:]
                 parameter = acd_def.parameter_by_name(name)
                 if parameter is not None:
-                    if isinstance(parameter, BooleanParameter):
+                    if isinstance(parameter, BooleanParameter) or isinstance(
+                            parameter, ToggleParameter):
                         parameter_value = True
                     else:
                         parameter_value = cl_chunks.next()
@@ -157,14 +158,20 @@ class Qa(object):
                         if len(parameters)==1:
                             parameter = parameters[0][0]
                             qualifier_name = parameters[0][1]
-                            parameter_value = cl_chunks.next()
+                            if isinstance(parameters[0][2], bool):
+                                parameter_value = True
+                            else:
+                                parameter_value = cl_chunks.next()
                             job_order[parameter.name][qualifier_name] = parameter_value
                         elif len(parameters)>1:
                             # ambiguous qualifier name
                             if index is not None:
                                 parameter = parameters[index][0]
                                 qualifier_name = parameters[index][1]
-                                parameter_value = cl_chunks.next()
+                                if isinstance(parameters[index][2], bool):
+                                    parameter_value = True
+                                else:
+                                    parameter_value = cl_chunks.next()
                                 job_order[parameter.name][qualifier_name] = parameter_value
                             else:
                                 raise AmbiguousOptionParseException(name,
