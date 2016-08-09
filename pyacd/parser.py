@@ -34,12 +34,12 @@ def _get_variable(token):
     return Variable(token['name'], token['value'])
 VARIABLE.setParseAction(_get_variable)
 
-PARAMETERS_AND_SECTIONS_LIST = Forward()
+SECTION_CHILDREN_LIST = Forward()
 
 SECTIONS_LIST = Forward()
 SECTION = Suppress('section:') + NAME('name') + Suppress('[') + \
           ATTRIBUTES_LIST('properties') + Suppress(']') + \
-          PARAMETERS_AND_SECTIONS_LIST('children') + Suppress('endsection:') + \
+          SECTION_CHILDREN_LIST('children') + Suppress('endsection:') + \
           Suppress(NAME)
 def _get_section(token):
     """ return Section object from tokens """
@@ -48,7 +48,7 @@ def _get_section(token):
 SECTION.setParseAction(_get_section)
 SECTIONS_LIST << Group(ZeroOrMore(SECTION))
 
-PARAMETERS_AND_SECTIONS_LIST << Group(ZeroOrMore(SECTION | PARAMETER | VARIABLE))
+SECTION_CHILDREN_LIST << Group(ZeroOrMore(SECTION | PARAMETER | VARIABLE))
 
 APPLICATION = Suppress('application') + ':' + NAME('name') + Suppress('[') \
               + ATTRIBUTES_LIST('properties') + Suppress(']')
