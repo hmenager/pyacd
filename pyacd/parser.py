@@ -2,8 +2,9 @@
   parser module for EMBOSS ACD files
 """
 from .acd import get_parameter, Attribute, Section, Application, Acd, PARAMETER_CLASSES
-from pyparsing import Word, QuotedString, Group, ZeroOrMore, oneOf, Suppress,\
-    restOfLine, alphanums, Forward
+from pyparsing import Word, QuotedString, quotedString, Group, ZeroOrMore, \
+    oneOf, Suppress,\
+    restOfLine, alphanums, Forward, removeQuotes
 
 NAME = Word(alphanums)
 VALUE = QuotedString('"', multiline=True)
@@ -24,6 +25,11 @@ def _get_parameter(token):
 PARAMETER.setParseAction(_get_parameter)
 PARAMETERS_LIST = Group(ZeroOrMore(PARAMETER)).setResultsName('parameters')
 
+VARIABLE = Suppress('variable: ') + Word(alphanums)('name') + quotedString(
+    'value').addParseAction(removeQuotes)
+            #TODO do something with acd
+# variables
+
 PARAMETERS_AND_SECTIONS_LIST = Forward()
 
 SECTIONS_LIST = Forward()
@@ -38,7 +44,7 @@ def _get_section(token):
 SECTION.setParseAction(_get_section)
 SECTIONS_LIST << Group(ZeroOrMore(SECTION))
 
-PARAMETERS_AND_SECTIONS_LIST << Group(ZeroOrMore(SECTION | PARAMETER))
+PARAMETERS_AND_SECTIONS_LIST << Group(ZeroOrMore(SECTION | PARAMETER | VARIABLE))
 
 APPLICATION = Suppress('application') + ':' + NAME('name') + Suppress('[') \
               + ATTRIBUTES_LIST('properties') + Suppress(']')
