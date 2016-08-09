@@ -202,6 +202,15 @@ class Qa(object):
                                                                      match in
                                                                      parameters])
                             else:  # len(parameters)==0
+                                #if absolutely no matching parameter found,
+                                # it may be an abbreviation for a global
+                                # qualifier
+                                if [gq for gq in ['auto', 'stdout',
+                                                         'debug', 'filter',
+                                                         'help', 'options']
+                                    if gq.startswith(name)]:
+                                        continue
+                                #if not, raise an error
                                 raise UnknownOptionParseException(name)
             else:
                 # parameter values by position on the command line
