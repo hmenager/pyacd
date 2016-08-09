@@ -24,18 +24,21 @@ def _get_parameter(token):
 PARAMETER.setParseAction(_get_parameter)
 PARAMETERS_LIST = Group(ZeroOrMore(PARAMETER)).setResultsName('parameters')
 
+PARAMETERS_AND_SECTIONS_LIST = Forward()
+
 SECTIONS_LIST = Forward()
 SECTION = Suppress('section:') + NAME('name') + Suppress('[') + \
-          ATTRIBUTES_LIST('properties') + Suppress(']') + PARAMETERS_LIST(
-    'parameters') + SECTIONS_LIST('sections') + Suppress('endsection:') + \
+          ATTRIBUTES_LIST('properties') + Suppress(']') + \
+          PARAMETERS_AND_SECTIONS_LIST('children') + Suppress('endsection:') + \
           Suppress(NAME)
 def _get_section(token):
     """ return Section object from tokens """
     return Section(token['name'], properties=token['properties'],
-                   parameters=token['parameters'], subsections=token[
-            'sections'])
+                   children=token['children'])
 SECTION.setParseAction(_get_section)
 SECTIONS_LIST << Group(ZeroOrMore(SECTION))
+
+PARAMETERS_AND_SECTIONS_LIST << Group(ZeroOrMore(SECTION | PARAMETER))
 
 APPLICATION = Suppress('application') + ':' + NAME('name') + Suppress('[') \
               + ATTRIBUTES_LIST('properties') + Suppress(']')

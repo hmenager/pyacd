@@ -565,7 +565,7 @@ class Section(ElementWithAttributes):
     """
     ACD parameters section block
     """
-    def __init__(self, name, properties=None, parameters=None, subsections=None):
+    def __init__(self, name, properties=None, children=None):
         """
         :param name: name of the section
         :type name: basestring
@@ -576,8 +576,14 @@ class Section(ElementWithAttributes):
         """
         self.name = name
         self.properties = properties or []
-        self.parameters = parameters or []
-        self.subsections = subsections or []
+        children = children or []
+        self.parameters = []
+        self.subsections = []
+        for child in children:
+            if isinstance(child, Section):
+                self.subsections.append(child)
+            else:
+                self.parameters.append(child)
 
     def desc_parameters(self):
         parameters = []
