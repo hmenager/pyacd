@@ -136,8 +136,9 @@ class Qa(object):
                         parameter_value = True
                     else:
                         parameter_value = cl_chunks.next()
+                    if parameter.qualifiers.get('parameter') == True:
+                        parameters_count += 1
                     job_order[parameter.name]['value'] = parameter_value
-                    parameters_count += 1
                 else:
                     if name.startswith('no') and acd_def.parameter_by_name(
                             name[2:]) is not None:
