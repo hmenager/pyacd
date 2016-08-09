@@ -1718,8 +1718,8 @@ class GraphParameter(Parameter):
         self.description = 'Graph device for a general graph'
         self.attributes.update({'sequence': False,
                                 'nullok': False,
-                                'nulldefault': False,
-                                'gprompt': False,
+                                'nulldefault': False})
+        self.qualifiers.update({'gprompt': False,
                                 'gdesc': '',
                                 'gtitle': '',
                                 'gsubtitle': '',
@@ -1727,7 +1727,6 @@ class GraphParameter(Parameter):
                                 'gytitle': '',
                                 'goutfile': '',
                                 'gdirectory': ''})
-
 
 PARAMETER_CLASSES['graph'] = GraphParameter
 
@@ -1742,8 +1741,8 @@ class XYGraphParameter(Parameter):
         self.attributes.update({'sequence': False,
                                 'multiple': 1,
                                 'nullok': False,
-                                'nulldefault': False,
-                                'gprompt': False,
+                                'nulldefault': False})
+        self.qualifiers.update({'gprompt': False,
                                 'gdesc': '',
                                 'gtitle': '',
                                 'gsubtitle': '',
