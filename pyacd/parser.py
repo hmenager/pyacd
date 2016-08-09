@@ -1,7 +1,8 @@
 """
   parser module for EMBOSS ACD files
 """
-from .acd import get_parameter, Attribute, Section, Application, Acd, PARAMETER_CLASSES
+from .acd import get_parameter, Attribute, Section, Application, Acd, \
+    PARAMETER_CLASSES, Variable
 from pyparsing import Word, QuotedString, quotedString, Group, ZeroOrMore, \
     oneOf, Suppress,\
     restOfLine, alphanums, Forward, removeQuotes
@@ -25,10 +26,13 @@ def _get_parameter(token):
 PARAMETER.setParseAction(_get_parameter)
 PARAMETERS_LIST = Group(ZeroOrMore(PARAMETER)).setResultsName('parameters')
 
+# variables
 VARIABLE = Suppress('variable: ') + Word(alphanums)('name') + quotedString(
     'value').addParseAction(removeQuotes)
-            #TODO do something with acd
-# variables
+def _get_variable(token):
+    """ return Section object from tokens """
+    return Variable(token['name'], token['value'])
+VARIABLE.setParseAction(_get_variable)
 
 PARAMETERS_AND_SECTIONS_LIST = Forward()
 

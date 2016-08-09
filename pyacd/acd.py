@@ -556,6 +556,10 @@ class Application(ElementWithAttributes):
         if attributes is not None:
             self.set_attributes(attributes)
 
+class Variable(object):
+    def __init__(self, name, expression):
+        self.name = name
+        self.expression = expression
 
 class Section(ElementWithAttributes):
     """
@@ -575,11 +579,14 @@ class Section(ElementWithAttributes):
         children = children or []
         self.parameters = []
         self.subsections = []
+        self.variables = []
         for child in children:
             if isinstance(child, Section):
                 self.subsections.append(child)
-            else:
+            elif isinstance(child, Parameter):
                 self.parameters.append(child)
+            elif isinstance(child, Variable):
+                self.variables.append(child)
 
     def desc_parameters(self):
         parameters = []
