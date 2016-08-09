@@ -167,7 +167,11 @@ class Qa(object):
                                 parameter_value = cl_chunks.next()
                                 job_order[parameter.name][qualifier_name] = parameter_value
                             else:
-                                raise AmbiguousOptionParseException(name, parameters)
+                                raise AmbiguousOptionParseException(name,
+                                                                    [match[0]
+                                                                     for
+                                                                     match in
+                                                                     parameters])
                         else: #len(parameters)==0
                             # testing for a no-prefixed qualifier
                             parameters = acd_def.parameter_by_qualifier_name(
@@ -186,7 +190,10 @@ class Qa(object):
                                         qualifier_name] = False
                                 else:
                                     raise AmbiguousOptionParseException(name,
-                                                                    parameters)
+                                                                    [match[0]
+                                                                     for
+                                                                     match in
+                                                                     parameters])
                             else:  # len(parameters)==0
                                 raise UnknownOptionParseException(name)
             else:
