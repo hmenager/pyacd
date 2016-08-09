@@ -145,6 +145,12 @@ class Qa(object):
                             name[2:])
                         job_order[parameter.name]['value'] = False
                     else:
+                        index = None
+                        if name[-1].isdigit():
+                            #if digits are used for explicit ordering of
+                            # qualifiers
+                            index = int(name[-1])-1
+                            name = name[:-1]
                         parameters = acd_def.parameter_by_qualifier_name(
                             name)
                         if len(parameters)==1:
@@ -154,7 +160,13 @@ class Qa(object):
                             job_order[parameter.name][qualifier_name] = parameter_value
                         elif len(parameters)>1:
                             # ambiguous qualifier name
-                            raise AmbiguousOptionParseException(name, parameters)
+                            if index is not None:
+                                parameter = parameters[index][0]
+                                qualifier_name = parameters[index][1]
+                                parameter_value = cl_chunks.next()
+                                job_order[parameter.name][qualifier_name] = parameter_value
+                            else:
+                                raise AmbiguousOptionParseException(name, parameters)
                         else: #len(parameters)==0
                             # testing for a no-prefixed qualifier
                             parameters = acd_def.parameter_by_qualifier_name(
@@ -166,7 +178,13 @@ class Qa(object):
                                     qualifier_name] = False
                             elif len(parameters) > 1:
                                 # ambiguous qualifier name
-                                raise AmbiguousOptionParseException(name,
+                                if index is not None:
+                                    parameter = parameters[index][0]
+                                    qualifier_name = parameters[index][1]
+                                    job_order[parameter.name][
+                                        qualifier_name] = False
+                                else:
+                                    raise AmbiguousOptionParseException(name,
                                                                     parameters)
                             else:  # len(parameters)==0
                                 raise UnknownOptionParseException(name)
