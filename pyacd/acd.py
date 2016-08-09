@@ -418,9 +418,11 @@ class Acd(object):
         for parameter in self.desc_parameters():
             for qualifier_name in parameter.qualifiers.keys():
                 if name==qualifier_name:
-                    results.append((parameter, qualifier_name))
+                    results.append((parameter, qualifier_name,
+                                    parameter.qualifiers[qualifier_name]))
                 elif qualifier_name.startswith(name):
-                    results.append((parameter, qualifier_name))
+                    results.append((parameter, qualifier_name,
+                                    parameter.qualifiers[qualifier_name]))
         return results
 
 class UnknownAcdPropertyException(Exception):
