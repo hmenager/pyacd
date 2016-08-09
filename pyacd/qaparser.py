@@ -118,6 +118,10 @@ QA = TEST_ID & \
      PP_LINES & \
      UC_LINES) & \
      APPLICATION_REF('appref') & CL_LINES & IN_LINES & FILE_GROUPS
+
+#ignore comment lines
+QA.ignore('#' + restOfLine)
+
 def _get_qa(token):
     return Qa(token['id'],token.get('uc',None),token['appref'], command_lines=token[
         'cl_lines'], input_lines=token['in_lines'])
