@@ -4,10 +4,7 @@ import os
 from nose_parameterized import parameterized
 from ruamel.yaml import load
 
-from pyacd.qaparser import parse_cl_line, parse_cl_lines, parse_app_ref, \
-    parse_file_group, parse_qa, parse_file_pattern, parse_in_line, \
-    parse_in_lines, parse_ti_line, parse_uc_line, parse_rq_line, \
-    parse_cc_line, parse_cc_lines
+from pyacd.qaparser import parse_qa
 from pyacd.parser import parse_acd
 
 QATEST_DIR = os.path.join(os.path.dirname(os.path.realpath(__file__)), \
