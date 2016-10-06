@@ -16,6 +16,7 @@ ACDTEST_DIR = os.path.join(os.path.dirname(os.path.realpath(__file__)), \
 def get_tests():
     tests = []
     test_map = load(open(QATEST_DIR + '/qa_tests.yml', 'r'))
+    #test_map = {'fuzztran-ex':'fuzztran'}
     for test in test_map.keys():
         qa_name = test
         acd_name = test_map[qa_name]
@@ -37,5 +38,6 @@ class TestParseCommandLine(unittest.TestCase):
             job_order = qa_test.parse_command_lines(acd_object)
             return job_order
         except Exception as exc:
-            print "Failure parsing QA test {0} for ACD {1}".format(qa_path, acd_path)
+            print "Failure parsing QA test {0} for ACD {1}".format(qa_path,
+         acd_path)
             raise exc

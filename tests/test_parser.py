@@ -111,80 +111,35 @@ class TestParser(unittest.TestCase):
         """)
         self.assertEqual(section.name,"input")
 
-    def test_parse_application(self):
-        application = parse_application("""
-            application: seqret [
-              documentation: "Read and write (return) sequences"
-              groups: "Data retrieval, Edit"
-                relations: "EDAM_topic:0090 Data search and retrieval"
-                relations: "EDAM_operation:1813 Sequence retrieval"
-                relations: "EDAM_operation:2121 Sequence file processing"
-            ]
-        """)
-        self.assertEqual(application.name, "seqret")
-        self.assertEqual(application.attributes['documentation'], 'Read and write (return) sequences')
-        self.assertEqual(application.attributes['groups'], 'Data retrieval, Edit')
-        self.assertEqual(application.attributes['relations'], ['EDAM_topic:0090 Data search and retrieval',
-                                                               'EDAM_operation:1813 Sequence retrieval',
-                                                               'EDAM_operation:2121 Sequence file processing'])
+    def test_parse_section_with_var(self):
+        section = parse_section('''
+section: output [
+  information: "Output section"
+  type: "page"
+]
 
-    def test_parse_acd(self):
-        my_acd = parse_acd("""
-        application: seqret [
-          documentation: "Read and write (return) sequences"
-          groups: "Data retrieval, Edit"
-            relations: "EDAM_topic:0090 Data search and retrieval"
-            relations: "EDAM_operation:1813 Sequence retrieval"
-            relations: "EDAM_operation:2121 Sequence file processing"
-        ]
 
-        section: input [
-          information: "Input section"
-          type: "page"
-        ]
+variable: isdual "@($(display) == D)"
 
-          boolean: feature [
-            information: "Use feature information"
-            relations: "EDAM_data:2527 Parameter"
-          ]
+  xygraph: graph [
+    standard: "@($(display) != none)"
+    multiple: "@( $(isdual) ? 2 : 4)"
+    nullok: "Y"
+    nulldefault: "@($(display) == none)"
+    relations: "EDAM_data:2167 Nucleic acid density plot"
+    sequence: "Y"
+  ]
 
-          seqall: sequence [
-            parameter: "Y"
-            type: "gapany"
-            features: "$(feature)"
-            relations: "EDAM_data:0849 Sequence record"
-          ]
+  report: outfile [
+    standard: "@($(display) == none)"
+    taglist: "float:a float:c float:g float:t float:at float:gc"
+    rformat: "table"
+    knowntype: "density output"
+    nullok: "Y"
+    nulldefault: "@($(display) != none)"
+    relations: "EDAM_data:2167 Nucleic acid density plot"
+  ]
 
-        endsection: input
-
-        section: advanced [
-          information: "Advanced section"
-          type: "page"
-        ]
-
-          boolean: firstonly [
-            default: "N"
-            information: "Read one sequence and stop"
-            relations: "EDAM_data:2527 Parameter"
-          ]
-
-        endsection: advanced
-
-        section: output [
-          information: "Output section"
-          type: "page"
-        ]
-
-          seqoutall: outseq [
-            parameter: "Y"
-            features: "$(feature)"
-            relations: "EDAM_data:0849 Sequence record"
-          ]
-
-        endsection: output
-        """)
-        self.assertEqual(my_acd.application.name, "seqret")
-        self.assertEqual(len(my_acd.sections), 3)
-        self.assertEqual(my_acd.sections[0].name, "input")
-        self.assertEqual(my_acd.sections[1].name, "advanced")
-        self.assertEqual(my_acd.sections[2].name, "output")
+endsection: output
+''')
+        print section
