@@ -14,6 +14,7 @@ setup(
     author='Hervé Ménager',
     author_email='hmenager@pasteur.fr',
     url='https://github.com/hmenager/pyacd.git',
+    download_url='https://github.com/hmenager/pyacd/tarball/0.1',
     packages=['pyacd'],
     install_requires=[
           'pyparsing',
