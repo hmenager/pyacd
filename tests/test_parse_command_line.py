@@ -48,10 +48,6 @@ class TestParseCommandLine(unittest.TestCase):
             qa_test = parse_qa(qa_string)
             job_order = qa_test.parse_command_lines(acd_object)
         except Exception as exc:
-            import traceback
-            print '-'*60
-            traceback.print_exc(file=sys.stdout)
-            print '-'*60
             print "Failure parsing QA test {0} for ACD {1}".format(qa_name,
          acd_path)
             raise exc
