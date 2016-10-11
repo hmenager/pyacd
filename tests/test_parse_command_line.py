@@ -26,6 +26,9 @@ def get_tests():
             if qa_line.startswith('//'):
                 acd_path = ACDTEST_DIR + '/' + app_name + '.acd'
                 tests.append([acd_path, qa_string, qa_name, app_name])
+                qa_string = ''
+                qa_name = ''
+                app_name = ''
     return  tests
 
 
