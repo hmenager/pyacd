@@ -7,8 +7,7 @@ from ruamel.yaml import load
 
 from pyacd.parser import parse_acd
 
-ACDTEST_DIR = os.path.join(os.path.dirname(os.path.realpath(__file__)), \
-                          '../tests/acd')
+ACDTEST_DIR = '/usr/share/EMBOSS/acd'
 
 def get_acds_list():
     tests = []
@@ -21,7 +20,7 @@ def get_acds_list():
 class TestParseAcd(unittest.TestCase):
 
     @parameterized.expand(get_acds_list())
-    def parse_command_line(self, acd_path):
+    def test_parse_command_line(self, acd_path):
         try:
             acd_string = open(acd_path, 'r').read()
             acd_object = parse_acd(acd_string)
@@ -31,3 +30,4 @@ class TestParseAcd(unittest.TestCase):
         except Exception as exc:
             print "Failure parsing ACD file {0}".format(acd_path)
             raise exc
+
