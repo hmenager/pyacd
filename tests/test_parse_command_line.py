@@ -7,37 +7,38 @@ from ruamel.yaml import load
 from pyacd.qaparser import parse_qa
 from pyacd.parser import parse_acd
 
-QATEST_DIR = os.path.join(os.path.dirname(os.path.realpath(__file__)), \
-                                 '../tests/qa')
-ACDTEST_DIR = os.path.join(os.path.dirname(os.path.realpath(__file__)), \
-                          '../tests/acd')
-
+QATEST_PATH = '/usr/share/EMBOSS/test/qatest.dat'
+ACDTEST_DIR = '/usr/share/EMBOSS/acd'
 
 def get_tests():
+    qa_string = ''
+    qa_name = ''
+    app_name = ''
     tests = []
-    test_map = load(open(QATEST_DIR + '/qa_tests.yml', 'r'))
-    #test_map = {'fuzztran-ex':'fuzztran'}
-    for test in test_map.keys():
-        qa_name = test
-        acd_name = test_map[qa_name]
-        qa_path = QATEST_DIR + '/' + qa_name + '.qa'
-        acd_path = ACDTEST_DIR + '/' + acd_name + '.acd'
-        tests.append([acd_path, qa_path])
+    with open(QATEST_PATH, 'r') as qa_lines:
+        for qa_line in qa_lines:
+            if qa_line.startswith('ID '):
+                qa_name = qa_line[3:-1]
+            if qa_line.startswith('AP '):
+                app_name = qa_line[3:-1]
+            qa_string += qa_line
+            if qa_line.startswith('//'):
+                acd_path = ACDTEST_DIR + '/' + app_name + '.acd'
+                tests.append([acd_path, qa_string, qa_name])
     return  tests
 
 
 class TestParseCommandLine(unittest.TestCase):
 
     @parameterized.expand(get_tests())
-    def parse_command_line(self, acd_path, qa_path):
+    def test_parse_command_line(self, acd_path, qa_string, qa_name):
         try:
-            qa_string = open(qa_path, 'r').read()
             acd_string = open(acd_path, 'r').read()
             acd_object = parse_acd(acd_string)
             qa_test = parse_qa(qa_string)
             job_order = qa_test.parse_command_lines(acd_object)
             return job_order
         except Exception as exc:
-            print "Failure parsing QA test {0} for ACD {1}".format(qa_path,
+            print "Failure parsing QA test {0} for ACD {1}".format(qa_name,
          acd_path)
             raise exc
