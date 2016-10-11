@@ -33,11 +33,14 @@ class TestParseCommandLine(unittest.TestCase):
     @parameterized.expand(get_tests())
     def test_parse_command_line(self, acd_path, qa_string, qa_name):
         try:
+            if not(os.path.isfile(acd_path)):
+                raise unittest.SkipTest('ACD file {0} does not exist, skipping test on {1}'\
+                    .format(acd_path, qa_name))
             acd_string = open(acd_path, 'r').read()
             acd_object = parse_acd(acd_string)
             qa_test = parse_qa(qa_string)
-            job_order = qa_test.parse_command_lines(acd_object)
-            return job_order
+            #job_order = qa_test.parse_command_lines(acd_object)
+            #return job_order
         except Exception as exc:
             print "Failure parsing QA test {0} for ACD {1}".format(qa_name,
          acd_path)
