@@ -1,9 +1,0 @@
-
-ID dbxfasta-worm-last
-AP seqret
-CL qawxfasta-id:ZK637.15 test.out -auto
-FI test.out
-FZ = 205
-FP 1 /^>ZK637\.15 /
-FP 1 /^>/
-//

@@ -1,9 +1,0 @@
-
-ID seq-innuc-pearson
-AP infoseq
-CL -nocolumn -delimiter "\t"
-CL -auto ../../data/ncbinuc.gifasta -snuc -sf pearson -outfile test.out
-FI test.out
-FC = 2
-FP /^pearson::\S+\t-\tgi\|123456\t-\tN\t8\t/
-//

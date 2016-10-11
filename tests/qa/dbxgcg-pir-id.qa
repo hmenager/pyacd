@@ -1,9 +1,0 @@
-
-ID dbxgcg-pir-id
-AP seqret
-CL qaxpir-id:cchu test.out -auto
-FI test.out
-FZ = 153
-FP 1 /\A>CCHU /
-FP 1 /^>/
-//

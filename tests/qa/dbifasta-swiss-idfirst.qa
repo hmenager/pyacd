@@ -1,9 +1,0 @@
-
-ID dbifasta-swiss-idfirst
-AP seqret
-CL qapfasta-id:O42495_FUGRU test.out -auto
-FI test.out
-FZ = 470
-FP 1 /^>O42495_FUGRU /
-FP 1 /^>/
-//

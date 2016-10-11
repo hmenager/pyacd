@@ -1,9 +1,0 @@
-
-ID seq-in-sam
-AP seqret
-CL -auto ../../data/xxx.sam -sf sam test.out -osf embl
-FI test.out
-FP /^ID   read_28833_29006_6945;.* 35 BP\.\n/
-FP 2 /^ID   /
-FP /^SQ   Sequence 35 BP; 6 A; 9 C; 8 G; 12 T; 0 other;\n/
-//

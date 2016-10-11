@@ -1,9 +1,0 @@
-
-ID seqret-query-direct-deswordmid
-AP seqret
-CL -auto -out test.out -osf embl embl::../../embl/rod.dat:DES:mrna
-FI test.out
-FZ = 7751
-FP /^ID   L48662; /
-FP 3 /^ID/
-//

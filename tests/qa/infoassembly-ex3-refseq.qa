@@ -1,9 +1,0 @@
-
-ID infoassembly-ex3-refseq
-AP infoassembly
-CL sam::../../data/samspec1.4example.sam stdout -auto
-CL -ref ../../data/samspec1.4example.ref.fasta
-FI stdout
-FC > 2
-FP /ref	45	0.00	6	3	1.82	46.67/
-//

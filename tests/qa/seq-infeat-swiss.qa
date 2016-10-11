@@ -1,9 +1,0 @@
-
-ID seq-infeat-swiss
-AP seqret
-CL -feat tsw:laci_ecoli sw::test.out -auto
-FI test.out
-FZ = 14091
-FP /^FT   DNA_BIND      6     25       H-T-H motif\.\n/
-FP /^FT   HELIX        74     89\n/
-//

@@ -1,9 +1,0 @@
-
-ID dasregistry-uniparc
-AP seqret
-CL tdas:uniparc:UPI000000000A -sbegin 1 -send 10  stdout -auto
-FI stdout
-FC = 2
-FP 1 /^>UPI000000000A_1_10/
-FP 1 /MAETKEFKTL/
-//

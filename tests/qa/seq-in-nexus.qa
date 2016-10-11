@@ -1,9 +1,0 @@
-
-ID seq-in-nexus
-AP seqret
-CL -auto ../../data/protalign.nxs -sf nexus test.out -osf swiss
-FI test.out
-FP /^ID   .* 272 AA/
-FP /^SQ   SEQUENCE   272 AA;  28915 MW;  C35D30BD3F2C74AC CRC64;\n/
-FP /^SQ   SEQUENCE   272 AA;  29902 MW;  4A50E6FE63CE4ED5 CRC64;\n/
-//

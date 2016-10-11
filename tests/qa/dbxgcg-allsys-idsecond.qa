@@ -1,9 +1,0 @@
-
-ID dbxgcg-allsys-idsecond
-AP seqret
-CL qanxgcgall-id:AB009062 test.out -auto
-FI test.out
-FZ = 594
-FP 1 /^>AB009062 /
-FP 1 /^>/
-//

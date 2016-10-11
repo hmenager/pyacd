@@ -1,8 +1,0 @@
-
-ID seq-in-swissprot
-AP seqret
-CL -auto ../../data/amir.swiss -sf swissprot test.out -osf swiss
-FI test.out
-FP /^ID   AMIR_PSEAE .*Reviewed; *196 AA\.\n/
-FP /^SQ   SEQUENCE   196 AA;  21903 MW;  306A4F30E8E4C6C0 CRC64;/
-//

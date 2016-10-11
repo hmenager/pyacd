@@ -1,9 +1,0 @@
-
-ID dbxflat-embl-testincall
-AP seqret
-CL "qanxflatinc-id:*" test.out -auto
-FI test.out
-FZ = 5586
-FP 1 /^>U68037 /
-FP 6 /^>/
-//

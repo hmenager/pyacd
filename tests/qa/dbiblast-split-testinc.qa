@@ -1,9 +1,0 @@
-
-ID dbiblast-split-testinc
-AP seqret
-CL qapblastsplitinc:FABP_FUGRU test.out -auto
-FI test.out
-FZ = 175
-FP 1 /^>FABP_FUGRU /
-FP 1 /^>/
-//

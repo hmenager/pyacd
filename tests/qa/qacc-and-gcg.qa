@@ -1,8 +1,0 @@
-
-ID qacc-and-gcg
-AP seqret
-CL "qangcg-acc{v0029* & v00295}" stdout -auto
-FI stdout
-FP 1 /^>/
-FP 1 /^>V00295/
-//

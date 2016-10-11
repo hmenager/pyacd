@@ -1,9 +1,0 @@
-
-ID dbifasta-worm-nextlast
-AP seqret
-CL qawfasta-id:zk637.14 test.out -auto
-FI test.out
-FZ = 260
-FP 1 /^>ZK637\.14 /
-FP 1 /^>/
-//

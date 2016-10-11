@@ -1,9 +1,0 @@
-
-ID dbxflat-swiss-last
-AP seqret
-CL qapxflat-id:Q68HA9_TAKRU test.out -auto
-FI test.out
-FZ = 679
-FP 1 /^>Q68HA9_TAKRU /
-FP 1 /^>/
-//

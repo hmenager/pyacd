@@ -1,9 +1,0 @@
-
-ID seq-inauto-fastq
-AP seqret
-CL -auto ../../data/fastqall.sanger test.out -osf experiment
-FI test.out
-FC = 5
-FP /^ID   .* 94 BP\.\n/
-FP /^SQ   Sequence 94 BP; 24 A; 24 C; 23 G; 23 T; 0 other;/
-//

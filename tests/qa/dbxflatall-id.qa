@@ -1,9 +1,0 @@
-
-ID dbxflatall-id
-AP seqret
-CL qanxflatall-id:L07770 test.out -auto
-FI test.out
-FZ = 1775
-FP /\A>L07770 /
-FP 1 />/
-//

@@ -1,9 +1,0 @@
-
-ID dbiflat-tembl-keyspace
-AP seqret
-CL "tembl-key:lacy gene" test.out  -osformat embl -auto
-FI test.out
-FZ = 27194
-FP 2 /^KW   .*; lacY gene;/
-FP 2 /^ID   /
-//

@@ -1,9 +1,0 @@
-
-ID dbxgcg-pirall-orgwild2
-AP seqret
-CL "qaxpirall-org:mus*" test.out -auto
-FI test.out
-FZ = 324
-FP 1 /^>CCMS /
-FP 2 /^>/
-//

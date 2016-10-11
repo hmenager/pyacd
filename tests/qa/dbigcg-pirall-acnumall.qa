@@ -1,9 +1,0 @@
-
-ID dbigcg-pirall-acnumall
-AP seqret
-CL "qapirall-acc:*" test.out -auto
-FI test.out
-FZ = 10467
-FP 1 /^>CCRT /
-FP 60 /^>/
-//

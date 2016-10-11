@@ -1,9 +1,0 @@
-
-ID align-water-sam3
-AP water
-CL -auto -srev2 -aformat sam -datafile EDNASIMPLE -outfile stdout
-CL asis:AGCATGTTAGATAANNGANAGCTGTGCTAGTAGGCAGTCAGCGCCAT
-CL asis:gcctaAGCTAA
-FI stdout
-FP /.*\t31\t.*\t6H5M\t.*\ttaggc\t.*\tAS:i:5.0\tNM:i:0/
-//

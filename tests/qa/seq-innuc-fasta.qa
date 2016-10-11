@@ -1,9 +1,0 @@
-
-ID seq-innuc-fasta
-AP infoseq
-CL -nocolumn -delimiter "\t"
-CL -auto ../../data/dna.fasta -snuc -sf fasta -outfile test.out
-FI test.out
-FC = 2
-FP /^fasta::\S+\t-\tFASTA\tF10002\tN\t100\t/
-//

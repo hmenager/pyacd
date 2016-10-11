@@ -1,8 +1,0 @@
-
-ID assemblyget-maf2sam
-AP assemblyget
-CL maf::../../data/miradocex.maf -oformat sam stdout -auto
-FI stdout
-FC = 6
-FP 1 /^U13a05e07.t1\t0\tcontigname_s1\t1\t0\t6S24M10S/
-//

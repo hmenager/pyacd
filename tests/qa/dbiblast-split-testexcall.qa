@@ -1,9 +1,0 @@
-
-ID dbiblast-split-testexcall
-AP seqret
-CL "qapblastsplitexc:*" test.out -auto
-FI test.out
-FZ = 3864
-FP 1 /^>CO9_FUGRU /
-FP 7 /^>/
-//

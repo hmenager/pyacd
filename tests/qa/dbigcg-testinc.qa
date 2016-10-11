@@ -1,9 +1,0 @@
-
-ID dbigcg-testinc
-AP seqret
-CL qangcginc-id:j01636 test.out -auto
-FI test.out
-FZ = 7677
-FP 1 /\A>J01636 /
-FP 1 /^>/
-//

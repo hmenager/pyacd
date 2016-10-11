@@ -1,9 +1,0 @@
-
-ID seqret-query-direct-sv2
-AP seqret
-CL -auto -out test.out -osf embl embl::../../embl/rod.dat:SV:Z46957.1
-FI test.out
-FZ = 3312
-FP /^ID   Z46957; /
-FP 1 /^ID/
-//

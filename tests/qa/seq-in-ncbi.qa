@@ -1,8 +1,0 @@
-
-ID seq-in-ncbi
-AP seqret
-CL -auto ../../data/dna.ncbi -sf ncbi test.out -osf embl
-FI test.out
-FP /^ID   .* 100 BP\.\n/
-FP /^SQ   Sequence 100 BP; 25 A; 25 C; 25 G; 25 T; 0 other;/
-//

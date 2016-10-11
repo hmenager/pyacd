@@ -1,9 +1,0 @@
-
-ID dbxflat-wild
-AP seqret
-CL "qanxflat:*7" test.out -auto
-FI test.out
-FZ = 2886
-FP 1 /^>Z46957 /
-FP 2 /^>/
-//

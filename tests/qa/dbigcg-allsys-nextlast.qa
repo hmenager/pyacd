@@ -1,9 +1,0 @@
-
-ID dbigcg-allsys-nextlast
-AP seqret
-CL qangcgall-id:Z69719 test.out -auto
-FI test.out
-FZ = 34577
-FP 1 /^>Z69719 /
-FP 1 /^>/
-//

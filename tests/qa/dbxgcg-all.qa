@@ -1,9 +1,0 @@
-
-ID dbxgcg-all
-AP seqret
-CL "qanxgcg:*" test.out -auto
-FI test.out
-FZ = 2145074
-FP 1 /^>L07770 /
-FP 40 /^>/
-//

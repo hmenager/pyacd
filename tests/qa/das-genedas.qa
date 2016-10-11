@@ -1,9 +1,0 @@
-
-ID das-genedas
-AP seqret
-CL tgenedashuman:ENSG00000139618 -send 10 stdout -auto
-FI stdout
-FC = 2
-FP 1 /^>ENSG00000139618/
-FP 1 /^gggcttgtgg/
-//

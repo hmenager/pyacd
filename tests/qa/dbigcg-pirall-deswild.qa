@@ -1,9 +1,0 @@
-
-ID dbigcg-pirall-deswild
-AP seqret
-CL "qapirall-des:p*" test.out -auto
-FI test.out
-FZ = 2399
-FP 11 /^>.*[ -][Pp]/
-FP 11 /^>/
-//

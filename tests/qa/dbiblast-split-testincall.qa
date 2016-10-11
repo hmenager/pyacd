@@ -1,9 +1,0 @@
-
-ID dbiblast-split-testincall
-AP seqret
-CL "qapblastsplitinc:*" test.out -auto
-FI test.out
-FZ = 610
-FP 1 /^>FABP_FUGRU /
-FP 2 /^>/
-//

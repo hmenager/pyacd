@@ -1,9 +1,0 @@
-
-ID dbxflatall-nextlast
-AP seqret
-CL qanxflatall-id:Z52466 test.out -auto
-FI test.out
-FZ = 500
-FP 1 />Z52466 /
-FP 1 />/
-//

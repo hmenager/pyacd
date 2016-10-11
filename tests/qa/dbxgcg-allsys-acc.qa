@@ -1,9 +1,0 @@
-
-ID dbxgcg-allsys-acc
-AP seqret
-CL qanxgcgall:L07770 test.out -auto
-FI test.out
-FZ = 1775
-FP 1 /^>L07770 /
-FP 1 /^>/
-//

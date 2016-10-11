@@ -1,9 +1,0 @@
-
-ID dbfetch-uniprot
-AP seqret
-CL fasta::tdbfetch:uniprotkb:P06213 stdout -auto
-FI stdout
-FC = 25
-FP 1 /^>INSR_HUMAN/
-FP 1 /PS$/
-//

@@ -1,9 +1,0 @@
-
-ID dbxgcg-pir-all
-AP seqret
-CL "qaxpir:*" test.out -auto
-FI test.out
-FZ = 10467
-FP 1 /^>S11172 /
-FP 60 /^>/
-//

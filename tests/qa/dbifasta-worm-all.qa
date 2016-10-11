@@ -1,8 +1,0 @@
-
-ID dbifasta-worm-all
-AP seqret
-CL "qawfasta:*" test.out -auto
-FI test.out
-FZ = 33816
-FP 66 /^>/
-//

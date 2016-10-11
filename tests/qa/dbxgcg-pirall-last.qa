@@ -1,9 +1,0 @@
-
-ID dbxgcg-pirall-last
-AP seqret
-CL qaxpirall-id:S29350 test.out -auto
-FI test.out
-FZ = 186
-FP 1 /^>S29350 /
-FP 1 /^>/
-//

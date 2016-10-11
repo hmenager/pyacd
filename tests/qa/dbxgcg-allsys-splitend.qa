@@ -1,9 +1,0 @@
-
-ID dbxgcg-allsys-splitend
-AP seqret
-CL qanxgcgall-id:AL035476 test.out -auto
-FI test.out
-FZ = 326444
-FP 1 /^>AL035476 /
-FP 1 /^>/
-//

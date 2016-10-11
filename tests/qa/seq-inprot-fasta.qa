@@ -1,9 +1,0 @@
-
-ID seq-inprot-fasta
-AP infoseq
-CL -nocolumn -delimiter "\t"
-CL -auto ../../data/prot.fasta -sprot -sf fasta -outfile test.out
-FI test.out
-FC = 2
-FP /^fasta::\S+\t-\tFASTA\tF00001\tP\t100\t/
-//

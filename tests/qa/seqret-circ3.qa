@@ -1,8 +1,0 @@
-
-
-ID seqret-circ3
-AP seqret
-CL -auto -feature tembl:ab031077 gff3::test.out
-FI test.out
-FP /Is_circular[=]true;/
-//

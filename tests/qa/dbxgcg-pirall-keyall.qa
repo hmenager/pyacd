@@ -1,9 +1,0 @@
-
-ID dbxgcg-pirall-keyall
-AP seqret
-CL "qaxpirall-key:*" test.out -auto
-FI test.out
-FZ = 9109
-FP 1 /^>CCHU /
-FP 56 /^>/
-//

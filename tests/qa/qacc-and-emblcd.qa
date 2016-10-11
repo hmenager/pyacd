@@ -1,8 +1,0 @@
-
-ID qacc-and-emblcd
-AP seqret
-CL "qanflat-acc{x01958 & m11905}" stdout -auto
-FI stdout
-FP 1 /^>/
-FP 1 /^>M11905/
-//

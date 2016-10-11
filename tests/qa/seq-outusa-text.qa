@@ -1,8 +1,0 @@
-
-ID seq-outusa-text
-AP seqret
-CL -auto ../../data/dna.embl text::test.out
-FI test.out
-FZ = 102
-FP /^gtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgtacgt\n/
-//

@@ -1,9 +1,0 @@
-
-ID assemblyget-bamquery-case
-AP assemblyget
-CL bam::../../data/chr1to10.bam:Chr1 -oformat sam stdout -auto -cbegin 1 -cend 1000
-FI stdout
-FC = 103
-FP 100 /\tchr1\t/
-FP 1 /Read_0\t0\tchr1\t1\t0\t100M\t\*\t0\t0/
-//

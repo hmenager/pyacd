@@ -1,9 +1,0 @@
-
-ID dbiflat-tembl-wild
-AP seqret
-CL "tembl:a*" test.out -auto
-FI test.out
-FZ = 330041
-FP 3 /^>AF/
-FP 12 /^>/
-//

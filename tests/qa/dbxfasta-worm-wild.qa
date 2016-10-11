@@ -1,9 +1,0 @@
-
-ID dbxfasta-worm-wild
-AP seqret
-CL "qawxfasta:a*" test.out -auto
-FI test.out
-FZ = 19764
-FP 40 /^>A[^\n]+\n[^>]/
-FP 40 /^>/
-//

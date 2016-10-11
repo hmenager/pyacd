@@ -1,8 +1,0 @@
-
-ID seq-in-refseq-genbank
-AP seqret
-CL -auto ../../data/pao-short.refseq -sf genbank test.out -osf embl
-FI test.out
-FP /^ID   .* 7004 BP\.\n/
-FP /^SQ   Sequence 7004 BP; 1431 A; 2216 C; 2102 G; 1255 T; 0 other;/
-//

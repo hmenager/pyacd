@@ -1,9 +1,0 @@
-
-ID dbxgcg-allsys-deswild
-AP seqret
-CL "qanxgcgall-des:m*" test.out -auto
-FI test.out
-FZ = 1543931
-FP 18 /^>.* [Mm]/
-FP 18 /^>/
-//

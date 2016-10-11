@@ -1,8 +1,0 @@
-
-ID qacc-or-srswww
-AP seqret
-CL "srs:uniprot-id{bgal_ecoli | lacy_ecoli | thga_ecoli}" stdout -auto
-FI stdout
-FP 3 /^>/
-FP 3 /^>...._ECOLI /
-//

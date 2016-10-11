@@ -1,9 +1,0 @@
-
-ID seqret-query-direct-deswordend
-AP seqret
-CL -auto -out test.out -osf embl embl::../../embl/rod.dat:DES:receptor
-FI test.out
-FZ = 2956
-FP /^ID   U68037; /
-FP 1 /^ID/
-//

@@ -1,8 +1,0 @@
-
-ID qacc-or-embossgcg
-AP seqret
-CL "qanxgcg-id{v00294 | v00295 | v00296}" stdout -auto
-FI stdout
-FP 3 /^>/
-FP 3 /^>V0029/
-//

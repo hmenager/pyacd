@@ -1,9 +1,0 @@
-
-ID dbigcg-allsys-splitend
-AP seqret
-CL qangcgall-id:U18997 test.out -auto
-FI test.out
-FZ = 378731
-FP 1 /^>U18997 /
-FP 1 /^>/
-//

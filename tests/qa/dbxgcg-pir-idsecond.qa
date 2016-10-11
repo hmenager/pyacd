@@ -1,9 +1,0 @@
-
-ID dbxgcg-pir-idsecond
-AP seqret
-CL qaxpir-id:A32902 test.out -auto
-FI test.out
-FZ = 123
-FP 1 /^>A32902 /
-FP 1 /^>/
-//

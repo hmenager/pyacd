@@ -1,9 +1,0 @@
-
-ID dbxgcg-allsys-sv
-AP seqret
-CL qanxgcgall-sv:D00596.1 test.out -auto
-FI test.out
-FZ = 19008
-FP 1 /^>D00596 /
-FP 1 /^>/
-//

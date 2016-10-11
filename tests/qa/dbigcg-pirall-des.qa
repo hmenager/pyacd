@@ -1,9 +1,0 @@
-
-ID dbigcg-pirall-des
-AP seqret
-CL qapirall-des:cytochrome test.out -auto
-FI test.out
-FZ = 8825
-FP 1 />CCHU /
-FP 54 /^>/
-//

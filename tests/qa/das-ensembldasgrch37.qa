@@ -1,9 +1,0 @@
-
-ID das-ensembldasgrch37
-AP seqret
-CL tensembldasgrch37:11 -sbegin 60001 -send 60010 stdout -auto
-FI stdout
-FC = 2
-FP 1 /^>11_60001_60010/
-FP 1 /^gaattctaca/
-//

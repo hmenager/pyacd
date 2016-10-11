@@ -1,9 +1,0 @@
-
-ID dbiflat-tembl-keywild
-AP seqret
-CL "tembl-key:a*" test.out -auto
-FI test.out
-FZ = 90158
-FP 1 />U01317 /
-FP 7 />/
-//

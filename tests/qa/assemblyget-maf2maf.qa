@@ -1,8 +1,0 @@
-
-ID assemblyget-maf2maf
-AP assemblyget
-CL maf::../../data/miradocex.maf -oformat maf stdout -auto
-FI stdout
-FC = 25
-FP 1 /RD\tU13a/
-//

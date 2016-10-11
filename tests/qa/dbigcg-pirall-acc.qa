@@ -1,9 +1,0 @@
-
-ID dbigcg-pirall-acc
-AP seqret
-CL qapirall:A00001 test.out -auto
-FI test.out
-FZ = 153
-FP 1 /^>CCHU /
-FP 1 /^>/
-//

@@ -1,9 +1,0 @@
-
-ID dbfetch-uniprotxml
-AP xmlget
-CL uniprotxml::tdbfetch:uniprotkb:p12345 stdout -auto
-FI stdout
-FC > 160
-FP 1 /<uniprot xmlns="http://uniprot.org/uniprot"/
-FP 1 /<accession>P12345</accession>/
-//

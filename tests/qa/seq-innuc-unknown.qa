@@ -1,9 +1,0 @@
-
-ID seq-innuc-unknown
-AP infoseq
-CL -nocolumn -delimiter "\t"
-CL -auto ../../data/dna.text -snuc -outfile test.out -sf unknown
-FI test.out
-FC = 2
-FP /^raw::\S+\t-\t-\t-\tN\t100\t/
-//

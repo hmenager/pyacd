@@ -1,9 +1,0 @@
-
-ID dbiblast-split-aclast
-AP seqret
-CL qapblastsplit-acc:Q90515 test.out -auto
-FI test.out
-FZ = 287
-FP 1 /^>TM21_FUGRU Q90515 /
-FP 1 /^>/
-//

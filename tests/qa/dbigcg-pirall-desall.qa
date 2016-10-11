@@ -1,9 +1,0 @@
-
-ID dbigcg-pirall-desall
-AP seqret
-CL "qapirall-des:*" test.out -auto
-FI test.out
-FZ = 10467
-FP 1 /^>CCHU /
-FP 60 /^>/
-//

@@ -1,9 +1,0 @@
-
-ID seq-infeat-pir-topir
-AP seqret
-CL -feat ../../data/featprot.fasta -ufo ../../data/feat.pir pir::test.out -auto
-FI test.out
-FZ = 1756
-## active site two locations with copied annotation (note and comment)
-FP /^F;38,90\/Active site: Cys, His #status experimental\n/
-//

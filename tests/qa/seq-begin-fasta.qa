@@ -1,9 +1,0 @@
-
-ID seq-begin-fasta
-AQ seqretsingle
-CL tembl:v00294 -sbegin 51 -send 100 -out test.out -auto
-FI test.out
-FZ = 117
-FP 1 /^>/
-FP /^cgatgtcgcagagtatgccggtgtctcttatcagaccgtttcccgcgtgg\n/
-//

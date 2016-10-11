@@ -1,7 +1,0 @@
-
-ID seqret-dbacfirst
-AP seqret
-CL -auto tembl-acc:AB000095 test.out
-FI test.out
-FP 1 /\A>AB000095 AB000095\.1 /
-//

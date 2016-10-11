@@ -1,9 +1,0 @@
-
-ID dbiflat-swiss-nextlast
-AP seqret
-CL qapflat-id:Q50J40_TAKRU test.out -auto
-FI test.out
-FZ = 441
-FP 1 /^>Q50J40_TAKRU /
-FP 1 /^>/
-//

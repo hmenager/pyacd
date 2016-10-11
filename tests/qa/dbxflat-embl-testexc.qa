@@ -1,9 +1,0 @@
-
-ID dbxflat-embl-testexc
-AP seqret
-CL qanxflatexc-id:X13776 test.out -auto
-FI test.out
-FZ = 2296
-FP 1 /^>X13776 /
-FP 1 /^>/
-//

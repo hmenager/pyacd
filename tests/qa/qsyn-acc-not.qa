@@ -1,9 +1,0 @@
-
-ID qsyn-acc-not
-AP seqret
-CL "qanxflatall-{acc:x01958 ! des:1a}" stdout -auto
-FI stdout
-FP /^>M11905/
-FP 0 /^>M11903/
-FP 2 /^>/
-//

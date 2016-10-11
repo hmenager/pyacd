@@ -1,9 +1,0 @@
-
-ID dbigcg-allsys-orgall
-AP seqret
-CL "qangcgall-org:*" test.out -auto
-FI test.out
-FZ = 2145074
-FP 1 /^>X13776 /
-FP 40 /^>/
-//

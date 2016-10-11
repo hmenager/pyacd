@@ -1,9 +1,0 @@
-
-ID seq-out-asn1
-AP seqret
-CL -auto ../../data/dna.embl test.out -osf asn1
-FI test.out
-FZ = 291
-FP /repr raw, mol dna, length 100, topology linear,/
-FP /id \{ local id 1 \},/
-//

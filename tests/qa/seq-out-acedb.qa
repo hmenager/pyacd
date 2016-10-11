@@ -1,8 +1,0 @@
-
-ID seq-out-acedb
-AP seqret
-CL -auto ../../data/dna.embl test.out -osf acedb
-FI test.out
-FZ = 116
-FP /^DNA : "EMBL"\n/
-//

@@ -1,9 +1,0 @@
-
-ID dbiflat-tembl-idsecond
-AP seqret
-CL tembl-id:AB000360 test.out -auto
-FI test.out
-FZ = 2685
-FP 1 /^>AB000360 /
-FP 1 /^>/
-//

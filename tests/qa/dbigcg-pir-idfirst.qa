@@ -1,9 +1,0 @@
-
-ID dbigcg-pir-idfirst
-AP seqret
-CL qapir-id:A31558 test.out -auto
-FI test.out
-FZ = 156
-FP 1 /^>A31558 /
-FP 1 /^>/
-//

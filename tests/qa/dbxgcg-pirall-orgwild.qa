@@ -1,9 +1,0 @@
-
-ID dbxgcg-pirall-orgwild
-AP seqret
-CL "qaxpirall-org:s*" test.out -auto
-FI test.out
-FZ = 2010
-FP 1 /^>CCPG /
-FP 12 /^>/
-//

@@ -1,8 +1,0 @@
-ID dbxflat-swiss-idfirst
-AP seqret
-CL qapxflat-id:O42495_TAKRU test.out -auto
-FI test.out
-FZ = 471
-FP 1 /^>O42495_TAKRU /
-FP 1 /^>/
-//

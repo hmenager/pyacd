@@ -1,9 +1,0 @@
-
-ID dbigcg-pir-testincall
-AP seqret
-CL "qapirinc-id:*" test.out -auto
-FI test.out
-FZ = 7969
-FP 1 /^>CCHU /
-FP 49 /^>/
-//

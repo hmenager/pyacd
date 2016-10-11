@@ -1,9 +1,0 @@
-
-ID dbxflat-swiss-idsecond
-AP seqret
-CL qapxflat-id:Q1KKT3_TAKRU test.out -auto
-FI test.out
-FZ = 492
-FP 1 /^>Q1KKT3_TAKRU /
-FP 1 /^>/
-//

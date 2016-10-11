@@ -1,9 +1,0 @@
-
-ID dbxgcg-allsys-last
-AP seqret
-CL qanxgcgall-id:Z95399 test.out -auto
-FI test.out
-FZ = 362910
-FP 1 /^>Z95399 /
-FP 1 /^>/
-//

@@ -1,9 +1,0 @@
-
-ID seq-out-experiment
-AP seqret
-CL -auto ../../data/dna.embl test.out -osf experiment
-FI test.out
-FZ = 469
-FP /^ID   EMBL       standard; DNA; UNC; 100 BP\.\n/
-FP /^\s+ acgtacgtac gtacgtacgt acgtacgtac gtacgtacgt\s+100\n/
-//

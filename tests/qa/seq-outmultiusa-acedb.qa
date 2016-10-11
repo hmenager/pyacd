@@ -1,8 +1,0 @@
-
-ID seq-outmultiusa-acedb
-AP seqret
-CL -auto ../../data/dna.m-embl acedb::test.out
-FI test.out
-FZ = 420
-FP 3 /^DNA : "FASTAM[1-3]"/
-//

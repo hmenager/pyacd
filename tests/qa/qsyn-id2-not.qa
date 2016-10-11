@@ -1,9 +1,0 @@
-
-ID qsyn-id2-not
-AP seqret
-CL "qanxflatall-{id:m1190* ! des:1a}" stdout -auto
-FI stdout
-FP /^>M11905/
-FP 0 /^>M11903/
-FP 2 /^>/
-//

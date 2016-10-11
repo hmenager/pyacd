@@ -1,9 +1,0 @@
-
-ID dbxflatall-keyspace
-AP seqret
-CL "qanxflatall-key:lacy gene" test.out -osf embl -auto
-FI test.out
-FZ = 27194
-FP 2 /^KW   .*; lacY gene;/
-FP 2 /^ID   /
-//

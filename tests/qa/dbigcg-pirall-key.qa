@@ -1,9 +1,0 @@
-
-ID dbigcg-pirall-key
-AP seqret
-CL qapirall-key:polymorphism test.out -auto
-FI test.out
-FZ = 153
-FP 1 /^>CCHU /
-FP 1 /^>/
-//

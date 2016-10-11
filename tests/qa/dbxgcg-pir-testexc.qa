@@ -1,9 +1,0 @@
-
-ID dbxgcg-pir-testexc
-AP seqret
-CL qaxpirexc-id:S11172 test.out -auto
-FI test.out
-FZ = 178
-FP 1 /\A>S11172 /
-FP 1 /^>/
-//

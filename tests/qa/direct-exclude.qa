@@ -1,7 +1,0 @@
-
-ID direct-exclude
-AP seqret
-CL "temblrest:*" test.out -auto
-FI test.out
-FP 21 /^>/
-//

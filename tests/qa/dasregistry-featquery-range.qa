@@ -1,8 +1,0 @@
-
-ID dasregistry-featquery-range
-AP featcopy
-CL tensembldasserver:Homo_sapiens_GRCh37_transcript:10[32889611:32973347] stdout -auto
-FI stdout
-FP 2 /Target=ENST00000375030/
-FP 2 /Target=ENST00000375028/
-//
