@@ -37,7 +37,7 @@ class TestParseCommandLine(unittest.TestCase):
     @parameterized.expand(get_tests())
     def test_parse_command_line(self, acd_path, qa_string, qa_name, app_name):
         try:
-            if app_name in ['acdc', 'acdpretty', 'acdtable', 'showdb']:
+            if app_name in ['acdc', 'acdpretty', 'acdtable', 'acdvalid']:
                 raise unittest.SkipTest('ACD file {0} is not well-defined, skipping test on {1}'\
                     .format(acd_path, qa_name))
             if not(os.path.isfile(acd_path)):
