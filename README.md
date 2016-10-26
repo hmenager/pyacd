@@ -1,4 +1,4 @@
-Python API to parse and access EMBOSS ACD files
+Python API to parse and access EMBOSS [ACD](http://emboss.sourceforge.net/developers/acd/) files
 ===============================================
 
 pyacd is a parsing library for:
