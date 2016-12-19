@@ -17,7 +17,7 @@ setup(
     download_url='https://github.com/hmenager/pyacd/tarball/0.1',
     packages=['pyacd'],
     install_requires=[
-          'pyparsing',
+          'pyparsing==2.1.7',
           'ruamel.yaml'
     ],
     license="BSD",
