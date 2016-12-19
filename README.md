@@ -10,13 +10,12 @@ Install
 
 Installing the official package from PyPi:
 
-`pip install pyacd`
+    pip install pyacd
 
 Or from source:
-`
-git clone https://github.com/hmenager/pyacd.git
-cd pyacd && python setup.py install
-`
+
+    git clone https://github.com/hmenager/pyacd.git
+    cd pyacd && python setup.py install
 
 Usage
 -----
