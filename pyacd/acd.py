@@ -4,7 +4,7 @@ The acd module defines an object model for ACD files contents
 # pylint: disable=too-few-public-methods, missing-docstring
 import sys
 import os
-import yaml
+import ruamel.yaml as yaml
 SEQUENCE_FORMATS = {
     'abi': {'try': True,
             'Nuc': True,
