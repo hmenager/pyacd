@@ -1,2 +1,2 @@
 include README.md
-include data/datatypes.yml
+include pyacd/data/datatypes.yml
