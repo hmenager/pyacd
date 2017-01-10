@@ -4,6 +4,7 @@ import sys
 
 from nose_parameterized import parameterized
 from ruamel.yaml import load
+import six
 
 from pyacd.qaparser import parse_qa
 from pyacd.parser import parse_acd
@@ -48,6 +49,6 @@ class TestParseCommandLine(unittest.TestCase):
             qa_test = parse_qa(qa_string)
             job_order = qa_test.parse_command_lines(acd_object)
         except Exception as exc:
-            print "Failure parsing QA test {0} for ACD {1}".format(qa_name,
-         acd_path)
+            six.print_("Failure parsing QA test {0} for ACD {1}".format(qa_name,
+         acd_path))
             raise exc

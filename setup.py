@@ -18,7 +18,8 @@ setup(
     packages=['pyacd'],
     install_requires=[
           'pyparsing==2.1.7',
-          'ruamel.yaml'
+          'ruamel.yaml',
+          'six'
     ],
     license="BSD",
     entry_points={

@@ -4,7 +4,10 @@ The acd module defines an object model for ACD files contents
 # pylint: disable=too-few-public-methods, missing-docstring
 import sys
 import os
+
 import ruamel.yaml as yaml
+import six
+
 SEQUENCE_FORMATS = {
     'abi': {'try': True,
             'Nuc': True,
@@ -499,9 +502,9 @@ class ElementWithAttributes(object):
                         self.attributes[attribute.name] = type(self.attributes[
                             attribute.name])(attribute.value)
                 except TypeError as terr:
-                    print "Error while trying to set value of {0} to {1} in " \
+                    six.print_("Error while trying to set value of {0} to {1} in " \
                           "parameter {2}" \
-                          "".format(attribute.name, attribute.value, self.name)
+                          "".format(attribute.name, attribute.value, self.name))
                     raise terr
             elif attribute.name in self.qualifiers:
                 if attribute.value.startswith(
@@ -523,10 +526,10 @@ class ElementWithAttributes(object):
                         self.qualifiers[attribute.name] = type(self.qualifiers[
                             attribute.name])(attribute.value)
                 except TypeError as terr:
-                    print "Error while trying to set value of {0} to " \
+                    six.print_("Error while trying to set value of {0} to " \
                                "{1} in parameter {2}".format(attribute.name,
                                                              attribute.value,
-                                                             self.name)
+                                                             self.name))
                     raise terr
             else:
                 raise UnknownAcdPropertyException(attribute.name,
@@ -673,7 +676,7 @@ PARAMETER_CLASSES = {}
 
 with open(get_data_path('datatypes.yml'), 'r') as datatypes_fh:
     datatypes = yaml.safe_load(datatypes_fh)
-    for datatype, definition in datatypes.iteritems():
+    for datatype, definition in datatypes.items():
         bases = (Parameter,)
         attributes = Parameter.attributes.copy()
         attributes.update({key: value.get('default_value') for key, value in definition.get('attributes',{}).items()})

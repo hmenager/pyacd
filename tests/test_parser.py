@@ -1,4 +1,7 @@
 import unittest
+
+import six
+
 from pyacd.parser import parse_attribute, parse_attributes, parse_parameter, \
     parse_parameters, parse_section, parse_sections, parse_application, parse_acd
 from pyacd import acd
@@ -142,4 +145,4 @@ variable: isdual "@($(display) == D)"
 
 endsection: output
 ''')
-        print section
+        six.print_(section)

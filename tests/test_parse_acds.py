@@ -4,6 +4,7 @@ from glob import glob
 
 from nose_parameterized import parameterized
 from ruamel.yaml import load
+import six
 
 from pyacd.parser import parse_acd
 
@@ -28,6 +29,6 @@ class TestParseAcd(unittest.TestCase):
             self.assertEqual(acd_string.count('endsection'),
                              len(acd_object.desc_sections()))
         except Exception as exc:
-            print "Failure parsing ACD file {0}".format(acd_path)
+            six.print_("Failure parsing ACD file {0}".format(acd_path))
             raise exc
 

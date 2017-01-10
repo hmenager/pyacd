@@ -1,4 +1,6 @@
-from acd import BooleanParameter, ToggleParameter
+from .acd import BooleanParameter, ToggleParameter
+
+import six
 
 class ApplicationRef(object):
     """
@@ -136,7 +138,7 @@ class Qa(object):
                             parameter, ToggleParameter):
                         parameter_value = True
                     else:
-                        parameter_value = cl_chunks.next()
+                        parameter_value = six.next(cl_chunks)
                     if parameter.qualifiers.get('parameter') == True:
                         parameters_count += 1
                     job_order[parameter.name]['value'] = parameter_value
@@ -161,7 +163,7 @@ class Qa(object):
                             if isinstance(parameters[0][2], bool):
                                 parameter_value = True
                             else:
-                                parameter_value = cl_chunks.next()
+                                parameter_value = six.next(cl_chunks)
                             job_order[parameter.name][qualifier_name] = parameter_value
                         elif len(parameters)>1:
                             # ambiguous qualifier name
@@ -171,7 +173,7 @@ class Qa(object):
                                 if isinstance(parameters[index][2], bool):
                                     parameter_value = True
                                 else:
-                                    parameter_value = cl_chunks.next()
+                                    parameter_value = six.next(cl_chunks)
                                 job_order[parameter.name][qualifier_name] = parameter_value
                             else:
                                 # in case multiple parameters match for the
@@ -184,7 +186,7 @@ class Qa(object):
                                     if isinstance(match[2], bool):
                                         parameter_value = True
                                     else:
-                                        parameter_value = cl_chunks.next()
+                                        parameter_value = six.next(cl_chunks)
                                     job_order[parameter.name][
                                         qualifier_name] = parameter_value
                         else: #len(parameters)==0
@@ -236,7 +238,7 @@ class Qa(object):
                 break
             if job_order[parameter.name]['value'] is None:
                 job_order[parameter.name]['value']=input_lines_array.pop(0)
-        for key in job_order.keys():
+        for key in list(job_order.keys()):
             if job_order[key]=={'value':None}:
                 del job_order[key]
         return job_order
