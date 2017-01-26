@@ -1,6 +1,6 @@
 align:
   attributes:
-    maxseqs: {default_value: 9223372036854775807, description: Maximum number of sequences,
+    maxseqs: {default_value: 2147483647, description: Maximum number of sequences,
       value_type: int}
     minseqs: {default_value: 1, description: Minimum number of sequences, value_type: int}
     multiple: {default_value: false, description: More than one alignment in one file,
@@ -13,21 +13,18 @@ align:
   description: Alignment output file
   qualifiers:
     aaccshow: {default_value: false, description: Show accession number in the header,
-      value_type: <type 'bool'>}
+      value_type: bool}
     adesshow: {default_value: false, description: Show description in the header,
-      value_type: <type 'bool'>}
-    adirectory: {default_value: '', description: Output directory, value_type: <type
-        'str'>}
-    aextension: {default_value: '', description: File name extension, value_type: <type
-        'str'>}
-    aformat: {default_value: '', description: Alignment format, value_type: <type
-        'str'>}
+      value_type: bool}
+    adirectory: {default_value: '', description: Output directory, value_type: str}
+    aextension: {default_value: '', description: File name extension, value_type: str}
+    aformat: {default_value: '', description: Alignment format, value_type: str}
     aglobal: {default_value: false, description: Show the full sequence in alignment,
-      value_type: <type 'bool'>}
-    aname: {default_value: '', description: Base file name, value_type: <type 'str'>}
+      value_type: bool}
+    aname: {default_value: '', description: Base file name, value_type: str}
     ausashow: {default_value: false, description: Show the full USA in the alignment,
-      value_type: <type 'bool'>}
-    awidth: {default_value: 0, description: Alignment width, value_type: <type 'int'>}
+      value_type: bool}
+    awidth: {default_value: 0, description: Alignment width, value_type: int}
   type: OUTPUT
 array:
   attributes:
@@ -63,17 +60,12 @@ assembly:
   description: Assembly of sequence reads
   qualifiers:
     cbegin: {default_value: 0, description: Start of the contig/consensus sequences,
-      value_type: <type 'int'>}
-    cend: {default_value: 0, description: End of the contig/consensus sequences, value_type: <type
-        'int'>}
-    idbname: {default_value: '', description: User-provided database name, value_type: <type
-        'str'>}
-    iformat: {default_value: '', description: Input assembly format, value_type: <type
-        'str'>}
-    ioffset: {default_value: '', description: Input start position offset, value_type: <type
-        'int'>}
-    iquery: {default_value: '', description: Input query fields or ID list, value_type: <type
-        'str'>}
+      value_type: int}
+    cend: {default_value: 0, description: End of the contig/consensus sequences, value_type: int}
+    idbname: {default_value: '', description: User-provided database name, value_type: str}
+    iformat: {default_value: '', description: Input assembly format, value_type: str}
+    ioffset: {default_value: '', description: Input start position offset, value_type: int}
+    iquery: {default_value: '', description: Input query fields or ID list, value_type: str}
   type: INPUT
 boolean:
   attributes: {}
@@ -87,7 +79,7 @@ codon:
         file', value_type: bool}
   description: Codon usage file in EMBOSS data path
   qualifiers:
-    format: {default_value: '', description: Data format, value_type: <type 'str'>}
+    format: {default_value: '', description: Data format, value_type: str}
   type: INPUT
 cpdb:
   attributes:
@@ -95,7 +87,7 @@ cpdb:
         file', value_type: bool}
   description: Clean PDB file
   qualifiers:
-    format: {default_value: '', description: Data format, value_type: <type 'str'>}
+    format: {default_value: '', description: Data format, value_type: str}
   type: INPUT
 datafile:
   attributes:
@@ -116,8 +108,7 @@ directory:
         file', value_type: bool}
   description: Directory
   qualifiers:
-    extension: {default_value: '', description: Default file extension, value_type: <type
-        'str'>}
+    extension: {default_value: '', description: Default file extension, value_type: str}
   type: INPUT
 dirlist:
   attributes:
@@ -126,8 +117,7 @@ dirlist:
         file', value_type: bool}
   description: Directory with files
   qualifiers:
-    extension: {default_value: '', description: Default file extension, value_type: <type
-        'str'>}
+    extension: {default_value: '', description: Default file extension, value_type: str}
   type: INPUT
 discretestates:
   attributes:
@@ -166,23 +156,17 @@ featout:
       value_type: str}
   description: Writeable feature table
   qualifiers:
-    ofdirectory: {default_value: '', description: Output directory, value_type: <type
-        'str'>}
-    ofextension: {default_value: '', description: File name extension, value_type: <type
-        'str'>}
-    offormat: {default_value: '', description: Output feature format, value_type: <type
-        'str'>}
-    ofname: {default_value: '', description: Base file name, value_type: <type 'str'>}
-    ofopenfile: {default_value: '', description: Features file name, value_type: <type
-        'str'>}
-    ofsingle: {default_value: false, description: Separate file for each entry, value_type: <type
-        'bool'>}
+    ofdirectory: {default_value: '', description: Output directory, value_type: str}
+    ofextension: {default_value: '', description: File name extension, value_type: str}
+    offormat: {default_value: '', description: Output feature format, value_type: str}
+    ofname: {default_value: '', description: Base file name, value_type: str}
+    ofopenfile: {default_value: '', description: Features file name, value_type: str}
+    ofsingle: {default_value: false, description: Separate file for each entry, value_type: bool}
   type: OUTPUT
 features:
   attributes:
     entry: {default_value: false, description: Read whole entry text, value_type: bool}
-    maxreads: {default_value: 9223372036854775807, description: Maximum number of
-        inputs, value_type: int}
+    maxreads: {default_value: 2147483647, description: Maximum number of inputs, value_type: int}
     minreads: {default_value: 1, description: Minimum number of inputs, value_type: int}
     nullok: {default_value: false, description: Can accept a null filename as 'no
         file', value_type: bool}
@@ -190,23 +174,15 @@ features:
       value_type: str}
   description: Readable feature table
   qualifiers:
-    fask: {default_value: false, description: Prompt for begin/end/reverse, value_type: <type
-        'bool'>}
-    fbegin: {default_value: 0, description: Start of the features to be used, value_type: <type
-        'int'>}
-    fcircular: {default_value: false, description: Circular sequence features, value_type: <type
-        'bool'>}
-    fend: {default_value: 0, description: End of the features to be used, value_type: <type
-        'int'>}
-    fformat: {default_value: '', description: Features format, value_type: <type 'str'>}
-    fopenfile: {default_value: '', description: Features file name, value_type: <type
-        'str'>}
-    freverse: {default_value: false, description: Reverse (if DNA), value_type: <type
-        'bool'>}
-    ioffset: {default_value: '', description: Input start position offset, value_type: <type
-        'int'>}
-    iquery: {default_value: '', description: Input query fields or ID list, value_type: <type
-        'str'>}
+    fask: {default_value: false, description: Prompt for begin/end/reverse, value_type: bool}
+    fbegin: {default_value: 0, description: Start of the features to be used, value_type: int}
+    fcircular: {default_value: false, description: Circular sequence features, value_type: bool}
+    fend: {default_value: 0, description: End of the features to be used, value_type: int}
+    fformat: {default_value: '', description: Features format, value_type: str}
+    fopenfile: {default_value: '', description: Features file name, value_type: str}
+    freverse: {default_value: false, description: Reverse (if DNA), value_type: bool}
+    ioffset: {default_value: '', description: Input start position offset, value_type: int}
+    iquery: {default_value: '', description: Input query fields or ID list, value_type: str}
   type: INPUT
 filelist:
   attributes:
@@ -260,20 +236,15 @@ graph:
     sequence: {default_value: false, description: Sequence on x axis, value_type: bool}
   description: Graph device for a general graph
   qualifiers:
-    gdesc: {default_value: '', description: Graph description, value_type: <type 'str'>}
-    gdirectory: {default_value: '', description: Output directory, value_type: <type
-        'str'>}
+    gdesc: {default_value: '', description: Graph description, value_type: str}
+    gdirectory: {default_value: '', description: Output directory, value_type: str}
     goutfile: {default_value: '', description: Output file for non interactive displays,
-      value_type: <type 'str'>}
-    gprompt: {default_value: false, description: Graph prompting, value_type: <type
-        'bool'>}
-    gsubtitle: {default_value: '', description: Graph subtitle, value_type: <type
-        'str'>}
-    gtitle: {default_value: '', description: Graph title, value_type: <type 'str'>}
-    gxtitle: {default_value: '', description: Graph x axis title, value_type: <type
-        'str'>}
-    gytitle: {default_value: '', description: Graph y axis title, value_type: <type
-        'str'>}
+      value_type: str}
+    gprompt: {default_value: false, description: Graph prompting, value_type: bool}
+    gsubtitle: {default_value: '', description: Graph subtitle, value_type: str}
+    gtitle: {default_value: '', description: Graph title, value_type: str}
+    gxtitle: {default_value: '', description: Graph x axis title, value_type: str}
+    gytitle: {default_value: '', description: Graph y axis title, value_type: str}
   type: OUTPUT
 infile:
   attributes:
@@ -293,8 +264,8 @@ integer:
     increment: {default_value: 0, description: (Not used by ACD) Increment for GUIs,
       value_type: int}
     large: {default_value: false, description: Large values returned as long, value_type: bool}
-    maximum: {default_value: 9223372036854775807, description: Maximum value, value_type: int}
-    minimum: {default_value: -9223372036854775808, description: Minimum value, value_type: int}
+    maximum: {default_value: 2147483647, description: Maximum value, value_type: int}
+    minimum: {default_value: 2147483646, description: Minimum value, value_type: int}
     rangemessage: {default_value: '', description: Failure message if calculated ranges
         overlap, value_type: str}
     trueminimum: {default_value: false, description: 'If max/min overlap, use minimum',
@@ -341,21 +312,16 @@ matrixf:
 obo:
   attributes:
     entry: {default_value: false, description: Read whole entry text, value_type: bool}
-    maxreads: {default_value: 9223372036854775807, description: Maximum number of
-        inputs, value_type: int}
+    maxreads: {default_value: 2147483647, description: Maximum number of inputs, value_type: int}
     minreads: {default_value: 1, description: Minimum number of inputs, value_type: int}
     nullok: {default_value: false, description: Can accept a null filename as 'no
         file', value_type: bool}
   description: OBO bio-ontology term(s)
   qualifiers:
-    idbname: {default_value: '', description: User-provided database name, value_type: <type
-        'str'>}
-    iformat: {default_value: '', description: Input obo format, value_type: <type
-        'str'>}
-    ioffset: {default_value: '', description: Input start position offset, value_type: <type
-        'int'>}
-    iquery: {default_value: '', description: Input query fields or ID list, value_type: <type
-        'str'>}
+    idbname: {default_value: '', description: User-provided database name, value_type: str}
+    iformat: {default_value: '', description: Input obo format, value_type: str}
+    ioffset: {default_value: '', description: Input start position offset, value_type: int}
+    iquery: {default_value: '', description: Input query fields or ID list, value_type: str}
   type: INPUT
 outassembly:
   attributes:
@@ -366,10 +332,8 @@ outassembly:
         file', value_type: bool}
   description: Assembly of sequence reads
   qualifiers:
-    odirectory: {default_value: '', description: Output directory, value_type: <type
-        'str'>}
-    oformat: {default_value: '', description: Assembly output format, value_type: <type
-        'str'>}
+    odirectory: {default_value: '', description: Output directory, value_type: str}
+    oformat: {default_value: '', description: Assembly output format, value_type: str}
   type: OUTPUT
 outcodon:
   attributes:
@@ -380,10 +344,9 @@ outcodon:
         file', value_type: bool}
   description: Codon usage file
   qualifiers:
-    odirectory: {default_value: '', description: Output directory, value_type: <type
-        'str'>}
+    odirectory: {default_value: '', description: Output directory, value_type: str}
     oformat: {default_value: '', description: Output format specific to this data
-        type, value_type: <type 'str'>}
+        type, value_type: str}
   type: OUTPUT
 outcpdb:
   attributes:
@@ -402,10 +365,9 @@ outdata:
     type: {default_value: '', description: Data type, value_type: str}
   description: Formatted output file
   qualifiers:
-    odirectory: {default_value: '', description: Output directory, value_type: <type
-        'str'>}
+    odirectory: {default_value: '', description: Output directory, value_type: str}
     oformat: {default_value: '', description: Output format specific to this data
-        type, value_type: <type 'str'>}
+        type, value_type: str}
   type: OUTPUT
 outdir:
   attributes:
@@ -420,8 +382,7 @@ outdir:
         files deleted on completion, value_type: bool}
   description: Output directory
   qualifiers:
-    extension: {default_value: '', description: Default file extension, value_type: <type
-        'str'>}
+    extension: {default_value: '', description: Default file extension, value_type: str}
   type: OUTPUT
 outdiscrete:
   attributes:
@@ -430,10 +391,9 @@ outdiscrete:
         file', value_type: bool}
   description: Discrete states file
   qualifiers:
-    odirectory: {default_value: '', description: Output directory, value_type: <type
-        'str'>}
+    odirectory: {default_value: '', description: Output directory, value_type: str}
     oformat: {default_value: '', description: Output format specific to this data
-        type, value_type: <type 'str'>}
+        type, value_type: str}
   type: OUTPUT
 outdistance:
   attributes:
@@ -454,8 +414,7 @@ outfile:
         file', value_type: bool}
   description: Output file
   qualifiers:
-    odirectory: {default_value: '', description: Output directory, value_type: <type
-        'str'>}
+    odirectory: {default_value: '', description: Output directory, value_type: str}
   type: OUTPUT
 outfreq:
   attributes:
@@ -464,10 +423,9 @@ outfreq:
         file', value_type: bool}
   description: Frequency value(s)
   qualifiers:
-    odirectory: {default_value: '', description: Output directory, value_type: <type
-        'str'>}
+    odirectory: {default_value: '', description: Output directory, value_type: str}
     oformat: {default_value: '', description: Output format specific to this data
-        type, value_type: <type 'str'>}
+        type, value_type: str}
   type: OUTPUT
 outmatrix:
   attributes:
@@ -476,10 +434,9 @@ outmatrix:
         file', value_type: bool}
   description: Comparison matrix file
   qualifiers:
-    odirectory: {default_value: '', description: Output directory, value_type: <type
-        'str'>}
+    odirectory: {default_value: '', description: Output directory, value_type: str}
     oformat: {default_value: '', description: Output format specific to this data
-        type, value_type: <type 'str'>}
+        type, value_type: str}
   type: OUTPUT
 outmatrixf:
   attributes:
@@ -488,10 +445,9 @@ outmatrixf:
         file', value_type: bool}
   description: Comparison matrix file
   qualifiers:
-    odirectory: {default_value: '', description: Output directory, value_type: <type
-        'str'>}
+    odirectory: {default_value: '', description: Output directory, value_type: str}
     oformat: {default_value: '', description: Output format specific to this data
-        type, value_type: <type 'str'>}
+        type, value_type: str}
   type: OUTPUT
 outobo:
   attributes:
@@ -502,10 +458,8 @@ outobo:
         file', value_type: bool}
   description: OBO ontology term(s)
   qualifiers:
-    odirectory: {default_value: '', description: Output directory, value_type: <type
-        'str'>}
-    oformat: {default_value: '', description: Ontology term output format, value_type: <type
-        'str'>}
+    odirectory: {default_value: '', description: Output directory, value_type: str}
+    oformat: {default_value: '', description: Ontology term output format, value_type: str}
   type: OUTPUT
 outproperties:
   attributes:
@@ -514,10 +468,9 @@ outproperties:
         file', value_type: bool}
   description: Property value(s)
   qualifiers:
-    odirectory: {default_value: '', description: Output directory, value_type: <type
-        'str'>}
+    odirectory: {default_value: '', description: Output directory, value_type: str}
     oformat: {default_value: '', description: Output format specific to this data
-        type, value_type: <type 'str'>}
+        type, value_type: str}
   type: OUTPUT
 outrefseq:
   attributes:
@@ -528,10 +481,8 @@ outrefseq:
         file', value_type: bool}
   description: Reference sequence
   qualifiers:
-    odirectory: {default_value: '', description: Output directory, value_type: <type
-        'str'>}
-    oformat: {default_value: '', description: Referece sequence output format, value_type: <type
-        'str'>}
+    odirectory: {default_value: '', description: Output directory, value_type: str}
+    oformat: {default_value: '', description: Referece sequence output format, value_type: str}
   type: OUTPUT
 outresource:
   attributes:
@@ -542,10 +493,8 @@ outresource:
         file', value_type: bool}
   description: Data resource entry
   qualifiers:
-    odirectory: {default_value: '', description: Output directory, value_type: <type
-        'str'>}
-    oformat: {default_value: '', description: Data resource output format, value_type: <type
-        'str'>}
+    odirectory: {default_value: '', description: Output directory, value_type: str}
+    oformat: {default_value: '', description: Data resource output format, value_type: str}
   type: OUTPUT
 outscop:
   attributes:
@@ -554,10 +503,9 @@ outscop:
         file', value_type: bool}
   description: Scop entry
   qualifiers:
-    odirectory: {default_value: '', description: Output directory, value_type: <type
-        'str'>}
+    odirectory: {default_value: '', description: Output directory, value_type: str}
     oformat: {default_value: '', description: Output format specific to this data
-        type, value_type: <type 'str'>}
+        type, value_type: str}
   type: OUTPUT
 outtaxon:
   attributes:
@@ -568,10 +516,8 @@ outtaxon:
         file', value_type: bool}
   description: NCBI taxonomy entries
   qualifiers:
-    odirectory: {default_value: '', description: Output directory, value_type: <type
-        'str'>}
-    oformat: {default_value: '', description: Taxonomy output format, value_type: <type
-        'str'>}
+    odirectory: {default_value: '', description: Output directory, value_type: str}
+    oformat: {default_value: '', description: Taxonomy output format, value_type: str}
   type: OUTPUT
 outtext:
   attributes:
@@ -582,10 +528,8 @@ outtext:
         file', value_type: bool}
   description: Text entries
   qualifiers:
-    odirectory: {default_value: '', description: Output directory, value_type: <type
-        'str'>}
-    oformat: {default_value: '', description: Text output format, value_type: <type
-        'str'>}
+    odirectory: {default_value: '', description: Output directory, value_type: str}
+    oformat: {default_value: '', description: Text output format, value_type: str}
   type: OUTPUT
 outtree:
   attributes:
@@ -596,10 +540,9 @@ outtree:
         file', value_type: bool}
   description: Phylogenetic tree
   qualifiers:
-    odirectory: {default_value: '', description: Output directory, value_type: <type
-        'str'>}
+    odirectory: {default_value: '', description: Output directory, value_type: str}
     oformat: {default_value: '', description: Output format specific to this data
-        type, value_type: <type 'str'>}
+        type, value_type: str}
   type: OUTPUT
 outurl:
   attributes:
@@ -610,10 +553,8 @@ outurl:
         file', value_type: bool}
   description: URL entries
   qualifiers:
-    odirectory: {default_value: '', description: Output directory, value_type: <type
-        'str'>}
-    oformat: {default_value: '', description: URL output format, value_type: <type
-        'str'>}
+    odirectory: {default_value: '', description: Output directory, value_type: str}
+    oformat: {default_value: '', description: URL output format, value_type: str}
   type: OUTPUT
 outvariation:
   attributes:
@@ -624,10 +565,8 @@ outvariation:
         file', value_type: bool}
   description: Variation entries
   qualifiers:
-    odirectory: {default_value: '', description: Output directory, value_type: <type
-        'str'>}
-    oformat: {default_value: '', description: Variation output format, value_type: <type
-        'str'>}
+    odirectory: {default_value: '', description: Output directory, value_type: str}
+    oformat: {default_value: '', description: Variation output format, value_type: str}
   type: OUTPUT
 outxml:
   attributes:
@@ -638,27 +577,23 @@ outxml:
         file', value_type: bool}
   description: Xml
   qualifiers:
-    odirectory: {default_value: '', description: Output directory, value_type: <type
-        'str'>}
-    oformat: {default_value: '', description: Xml output format, value_type: <type
-        'str'>}
+    odirectory: {default_value: '', description: Output directory, value_type: str}
+    oformat: {default_value: '', description: Xml output format, value_type: str}
   type: OUTPUT
 pattern:
   attributes:
     lower: {default_value: false, description: Convert to lower case, value_type: bool}
-    maxlength: {default_value: 9223372036854775807, description: Maximum pattern length,
-      value_type: int}
-    maxsize: {default_value: 9223372036854775807, description: Maximum number of patterns,
+    maxlength: {default_value: 2147483647, description: Maximum pattern length, value_type: int}
+    maxsize: {default_value: 2147483647, description: Maximum number of patterns,
       value_type: int}
     minlength: {default_value: 1, description: Minimum pattern length, value_type: int}
     type: {default_value: '"string"', description: 'Type (nucleotide, protein)', value_type: str}
     upper: {default_value: false, description: Convert to upper case, value_type: bool}
   description: Property value(s)
   qualifiers:
-    pformat: {default_value: '', description: File format, value_type: <type 'str'>}
-    pmismatch: {default_value: 0, description: Pattern mismatch, value_type: <type
-        'int'>}
-    pname: {default_value: '', description: Pattern base name, value_type: <type 'str'>}
+    pformat: {default_value: '', description: File format, value_type: str}
+    pmismatch: {default_value: 0, description: Pattern mismatch, value_type: int}
+    pname: {default_value: '', description: Pattern base name, value_type: str}
   type: INPUT
 properties:
   attributes:
@@ -675,7 +610,7 @@ range:
   attributes:
     failrange: {default_value: '', description: Fail if calculated ranges overlap,
       value_type: bool}
-    maximum: {default_value: 9223372036854775807, description: Maximum value, value_type: int}
+    maximum: {default_value: 2147483647, description: Maximum value, value_type: int}
     minimum: {default_value: 1, description: Minimum value, value_type: int}
     minsize: {default_value: 0, description: Minimum number of values required, value_type: int}
     rangemessage: {default_value: '', description: Failure message if calculated ranges
@@ -695,21 +630,16 @@ refseq:
         file', value_type: bool}
   description: Reference sequence
   qualifiers:
-    idbname: {default_value: '', description: User-provided database name, value_type: <type
-        'str'>}
-    iformat: {default_value: '', description: Input reference sequence format, value_type: <type
-        'str'>}
-    ioffset: {default_value: '', description: Input start position offset, value_type: <type
-        'int'>}
-    iquery: {default_value: '', description: Input query fields or ID list, value_type: <type
-        'str'>}
+    idbname: {default_value: '', description: User-provided database name, value_type: str}
+    iformat: {default_value: '', description: Input reference sequence format, value_type: str}
+    ioffset: {default_value: '', description: Input start position offset, value_type: int}
+    iquery: {default_value: '', description: Input query fields or ID list, value_type: str}
   type: INPUT
 regexp:
   attributes:
     lower: {default_value: false, description: Convert to lower case, value_type: bool}
-    maxlength: {default_value: 9223372036854775807, description: Maximum pattern length,
-      value_type: int}
-    maxsize: {default_value: 9223372036854775807, description: Maximum number of patterns,
+    maxlength: {default_value: 2147483647, description: Maximum pattern length, value_type: int}
+    maxsize: {default_value: 2147483647, description: Maximum number of patterns,
       value_type: int}
     minlength: {default_value: 1, description: Minimum pattern length, value_type: int}
     type: {default_value: '"string"', description: 'Type (string, nucleotide, protein)',
@@ -717,8 +647,8 @@ regexp:
     upper: {default_value: false, description: Convert to upper case, value_type: bool}
   description: Regular expression pattern
   qualifiers:
-    pformat: {default_value: '', description: File format, value_type: <type 'str'>}
-    pname: {default_value: '', description: Pattern base name, value_type: <type 'str'>}
+    pformat: {default_value: '', description: File format, value_type: str}
+    pname: {default_value: '', description: Pattern base name, value_type: str}
   type: INPUT
 report:
   attributes:
@@ -733,44 +663,35 @@ report:
   description: Report output file
   qualifiers:
     raccshow: {default_value: false, description: Show accession number in the report,
-      value_type: <type 'bool'>}
+      value_type: bool}
     rdesshow: {default_value: false, description: Show description in the report,
-      value_type: <type 'bool'>}
-    rdirectory: {default_value: '', description: Output directory, value_type: <type
-        'str'>}
-    rextension: {default_value: '', description: File name extension, value_type: <type
-        'str'>}
-    rformat: {default_value: '', description: Report format, value_type: <type 'str'>}
-    rmaxall: {default_value: 0, description: Maximum total hits to report, value_type: <type
-        'int'>}
+      value_type: bool}
+    rdirectory: {default_value: '', description: Output directory, value_type: str}
+    rextension: {default_value: '', description: File name extension, value_type: str}
+    rformat: {default_value: '', description: Report format, value_type: str}
+    rmaxall: {default_value: 0, description: Maximum total hits to report, value_type: int}
     rmaxseq: {default_value: 0, description: Maximum hits to report for one sequence,
-      value_type: <type 'int'>}
-    rname: {default_value: '', description: Base file name, value_type: <type 'str'>}
-    rscoreshow: {default_value: true, description: Show the score in the report, value_type: <type
-        'bool'>}
+      value_type: int}
+    rname: {default_value: '', description: Base file name, value_type: str}
+    rscoreshow: {default_value: true, description: Show the score in the report, value_type: bool}
     rstrandshow: {default_value: true, description: Show the nucleotide strand in
-        the report, value_type: <type 'bool'>}
+        the report, value_type: bool}
     rusashow: {default_value: false, description: Show the full USA in the report,
-      value_type: <type 'bool'>}
+      value_type: bool}
   type: OUTPUT
 resource:
   attributes:
     entry: {default_value: false, description: Read whole entry text, value_type: bool}
-    maxreads: {default_value: 9223372036854775807, description: Maximum number of
-        inputs, value_type: int}
+    maxreads: {default_value: 2147483647, description: Maximum number of inputs, value_type: int}
     minreads: {default_value: 1, description: Minimum number of inputs, value_type: int}
     nullok: {default_value: false, description: Can accept a null filename as 'no
         file', value_type: bool}
   description: Data resource catalogue entry(s)
   qualifiers:
-    idbname: {default_value: '', description: User-provided database name, value_type: <type
-        'str'>}
-    iformat: {default_value: '', description: Input resource format, value_type: <type
-        'str'>}
-    ioffset: {default_value: '', description: Input start position offset, value_type: <type
-        'int'>}
-    iquery: {default_value: '', description: Input query fields or ID list, value_type: <type
-        'str'>}
+    idbname: {default_value: '', description: User-provided database name, value_type: str}
+    iformat: {default_value: '', description: Input resource format, value_type: str}
+    ioffset: {default_value: '', description: Input start position offset, value_type: int}
+    iquery: {default_value: '', description: Input query fields or ID list, value_type: str}
   type: INPUT
 scop:
   attributes:
@@ -778,7 +699,7 @@ scop:
         file', value_type: bool}
   description: Clean PDB file
   qualifiers:
-    format: {default_value: '', description: Data format, value_type: <type 'str'>}
+    format: {default_value: '', description: Data format, value_type: str}
   type: INPUT
 selection:
   attributes:
@@ -798,7 +719,7 @@ seqall:
   attributes:
     entry: {default_value: false, description: Read whole entry text, value_type: bool}
     features: {default_value: false, description: Read features if any, value_type: bool}
-    maxseqs: {default_value: 9223372036854775807, description: Maximum number of sequences,
+    maxseqs: {default_value: 2147483647, description: Maximum number of sequences,
       value_type: int}
     minseqs: {default_value: 1, description: Minimum number of sequences, value_type: int}
     nullok: {default_value: false, description: Can accept a null filename as 'no
@@ -807,38 +728,24 @@ seqall:
         etc.)', value_type: str}
   description: Readable sequence(s)
   qualifiers:
-    fformat: {default_value: '', description: Features format, value_type: <type 'str'>}
-    fopenfile: {default_value: '', description: Features file name, value_type: <type
-        'str'>}
-    ioffset: {default_value: '', description: Input start position offset, value_type: <type
-        'int'>}
-    iquery: {default_value: '', description: Input query fields or ID list, value_type: <type
-        'str'>}
-    sask: {default_value: false, description: Ask for begin/end/reverse, value_type: <type
-        'bool'>}
-    sbegin: {default_value: 0, description: Start of each sequence to be used, value_type: <type
-        'int'>}
-    scircular: {default_value: false, description: Sequence is circular, value_type: <type
-        'bool'>}
-    sdbname: {default_value: '', description: Database name, value_type: <type 'str'>}
-    send: {default_value: 0, description: End of each sequence to be used, value_type: <type
-        'int'>}
-    sformat: {default_value: '', description: Input sequence format, value_type: <type
-        'str'>}
-    sid: {default_value: '', description: Entryname, value_type: <type 'str'>}
-    slower: {default_value: false, description: Make lower case, value_type: <type
-        'bool'>}
-    snucleotide: {default_value: false, description: Sequence is nucleotide, value_type: <type
-        'bool'>}
-    sprotein: {default_value: false, description: Sequence is protein, value_type: <type
-        'bool'>}
-    squick: {default_value: false, description: Read id and sequence only, value_type: <type
-        'bool'>}
-    sreverse: {default_value: false, description: Reverse (if DNA), value_type: <type
-        'bool'>}
-    supper: {default_value: false, description: Make upper case, value_type: <type
-        'bool'>}
-    ufo: {default_value: '', description: UFO features, value_type: <type 'str'>}
+    fformat: {default_value: '', description: Features format, value_type: str}
+    fopenfile: {default_value: '', description: Features file name, value_type: str}
+    ioffset: {default_value: '', description: Input start position offset, value_type: int}
+    iquery: {default_value: '', description: Input query fields or ID list, value_type: str}
+    sask: {default_value: false, description: Ask for begin/end/reverse, value_type: bool}
+    sbegin: {default_value: 0, description: Start of each sequence to be used, value_type: int}
+    scircular: {default_value: false, description: Sequence is circular, value_type: bool}
+    sdbname: {default_value: '', description: Database name, value_type: str}
+    send: {default_value: 0, description: End of each sequence to be used, value_type: int}
+    sformat: {default_value: '', description: Input sequence format, value_type: str}
+    sid: {default_value: '', description: Entryname, value_type: str}
+    slower: {default_value: false, description: Make lower case, value_type: bool}
+    snucleotide: {default_value: false, description: Sequence is nucleotide, value_type: bool}
+    sprotein: {default_value: false, description: Sequence is protein, value_type: bool}
+    squick: {default_value: false, description: Read id and sequence only, value_type: bool}
+    sreverse: {default_value: false, description: Reverse (if DNA), value_type: bool}
+    supper: {default_value: false, description: Make upper case, value_type: bool}
+    ufo: {default_value: '', description: UFO features, value_type: str}
   type: INPUT
 seqout:
   attributes:
@@ -854,24 +761,16 @@ seqout:
         etc.)', value_type: str}
   description: Writeable sequence
   qualifiers:
-    ofdirectory: {default_value: '', description: Output directory, value_type: <type
-        'str'>}
-    offormat: {default_value: '', description: Features format, value_type: <type
-        'str'>}
-    ofname: {default_value: '', description: Features file name, value_type: <type
-        'str'>}
-    osdbname: {default_value: '', description: Database name to add, value_type: <type
-        'str'>}
-    osdirectory: {default_value: '', description: Output directory, value_type: <type
-        'str'>}
-    osextension: {default_value: '', description: File name extension, value_type: <type
-        'str'>}
-    osformat: {default_value: '', description: Output seq format, value_type: <type
-        'str'>}
-    osname: {default_value: '', description: Base file name, value_type: <type 'str'>}
-    ossingle: {default_value: false, description: Separate file for each entry, value_type: <type
-        'bool'>}
-    oufo: {default_value: '', description: UFO features, value_type: <type 'str'>}
+    ofdirectory: {default_value: '', description: Output directory, value_type: str}
+    offormat: {default_value: '', description: Features format, value_type: str}
+    ofname: {default_value: '', description: Features file name, value_type: str}
+    osdbname: {default_value: '', description: Database name to add, value_type: str}
+    osdirectory: {default_value: '', description: Output directory, value_type: str}
+    osextension: {default_value: '', description: File name extension, value_type: str}
+    osformat: {default_value: '', description: Output seq format, value_type: str}
+    osname: {default_value: '', description: Base file name, value_type: str}
+    ossingle: {default_value: false, description: Separate file for each entry, value_type: bool}
+    oufo: {default_value: '', description: UFO features, value_type: str}
   type: OUTPUT
 seqoutall:
   attributes:
@@ -879,7 +778,7 @@ seqoutall:
     extension: {default_value: '', description: Output extension (use of -osextension
         preferred), value_type: str}
     features: {default_value: false, description: Write features if any, value_type: bool}
-    maxseqs: {default_value: 9223372036854775807, description: Maximum number of sequences,
+    maxseqs: {default_value: 2147483647, description: Maximum number of sequences,
       value_type: int}
     minseqs: {default_value: 1, description: Minimum number of sequences, value_type: int}
     name: {default_value: '', description: Output base name (use of -osname preferred),
@@ -891,24 +790,16 @@ seqoutall:
         etc.)', value_type: str}
   description: Writeable sequence(s)
   qualifiers:
-    ofdirectory: {default_value: '', description: Output directory, value_type: <type
-        'str'>}
-    offormat: {default_value: '', description: Features format, value_type: <type
-        'str'>}
-    ofname: {default_value: '', description: Features file name, value_type: <type
-        'str'>}
-    osdbname: {default_value: '', description: Database name to add, value_type: <type
-        'str'>}
-    osdirectory: {default_value: '', description: Output directory, value_type: <type
-        'str'>}
-    osextension: {default_value: '', description: File name extension, value_type: <type
-        'str'>}
-    osformat: {default_value: '', description: Output seq format, value_type: <type
-        'str'>}
-    osname: {default_value: '', description: Base file name, value_type: <type 'str'>}
-    ossingle: {default_value: false, description: Separate file for each entry, value_type: <type
-        'bool'>}
-    oufo: {default_value: '', description: UFO features, value_type: <type 'str'>}
+    ofdirectory: {default_value: '', description: Output directory, value_type: str}
+    offormat: {default_value: '', description: Features format, value_type: str}
+    ofname: {default_value: '', description: Features file name, value_type: str}
+    osdbname: {default_value: '', description: Database name to add, value_type: str}
+    osdirectory: {default_value: '', description: Output directory, value_type: str}
+    osextension: {default_value: '', description: File name extension, value_type: str}
+    osformat: {default_value: '', description: Output seq format, value_type: str}
+    osname: {default_value: '', description: Base file name, value_type: str}
+    ossingle: {default_value: false, description: Separate file for each entry, value_type: bool}
+    oufo: {default_value: '', description: UFO features, value_type: str}
   type: OUTPUT
 seqoutset:
   attributes:
@@ -916,7 +807,7 @@ seqoutset:
     extension: {default_value: '', description: Output extension (use of -osextension
         preferred), value_type: str}
     features: {default_value: false, description: Write features if any, value_type: bool}
-    maxseqs: {default_value: 9223372036854775807, description: Maximum number of sequences,
+    maxseqs: {default_value: 2147483647, description: Maximum number of sequences,
       value_type: int}
     minseqs: {default_value: 1, description: Minimum number of sequences, value_type: int}
     name: {default_value: '', description: Output base name (use of -osname preferred),
@@ -928,30 +819,22 @@ seqoutset:
         etc.)', value_type: str}
   description: Writeable sequences
   qualifiers:
-    ofdirectory: {default_value: '', description: Output directory, value_type: <type
-        'str'>}
-    offormat: {default_value: '', description: Features format, value_type: <type
-        'str'>}
-    ofname: {default_value: '', description: Features file name, value_type: <type
-        'str'>}
-    osdbname: {default_value: '', description: Database name to add, value_type: <type
-        'str'>}
-    osdirectory: {default_value: '', description: Output directory, value_type: <type
-        'str'>}
-    osextension: {default_value: '', description: File name extension, value_type: <type
-        'str'>}
-    osformat: {default_value: '', description: Output seq format, value_type: <type
-        'str'>}
-    osname: {default_value: '', description: Base file name, value_type: <type 'str'>}
-    ossingle: {default_value: false, description: Separate file for each entry, value_type: <type
-        'bool'>}
-    oufo: {default_value: '', description: UFO features, value_type: <type 'str'>}
+    ofdirectory: {default_value: '', description: Output directory, value_type: str}
+    offormat: {default_value: '', description: Features format, value_type: str}
+    ofname: {default_value: '', description: Features file name, value_type: str}
+    osdbname: {default_value: '', description: Database name to add, value_type: str}
+    osdirectory: {default_value: '', description: Output directory, value_type: str}
+    osextension: {default_value: '', description: File name extension, value_type: str}
+    osformat: {default_value: '', description: Output seq format, value_type: str}
+    osname: {default_value: '', description: Base file name, value_type: str}
+    ossingle: {default_value: false, description: Separate file for each entry, value_type: bool}
+    oufo: {default_value: '', description: UFO features, value_type: str}
   type: OUTPUT
 seqset:
   attributes:
     aligned: {default_value: false, description: Sequences are aligned, value_type: bool}
     features: {default_value: false, description: Read features if any, value_type: bool}
-    maxseqs: {default_value: 9223372036854775807, description: Maximum number of sequences,
+    maxseqs: {default_value: 2147483647, description: Maximum number of sequences,
       value_type: int}
     minseqs: {default_value: 1, description: Minimum number of sequences, value_type: int}
     nullok: {default_value: false, description: Can accept a null filename as 'no
@@ -960,47 +843,33 @@ seqset:
         etc.)', value_type: str}
   description: Readable set of sequences
   qualifiers:
-    fformat: {default_value: '', description: Features format, value_type: <type 'str'>}
-    fopenfile: {default_value: '', description: Features file name, value_type: <type
-        'str'>}
-    ioffset: {default_value: '', description: Input start position offset, value_type: <type
-        'int'>}
-    iquery: {default_value: '', description: Input query fields or ID list, value_type: <type
-        'str'>}
-    sask: {default_value: false, description: Ask for begin/end/reverse, value_type: <type
-        'bool'>}
-    sbegin: {default_value: 0, description: Start of each sequence to be used, value_type: <type
-        'int'>}
-    scircular: {default_value: false, description: Sequence is circular, value_type: <type
-        'bool'>}
-    sdbname: {default_value: '', description: Database name, value_type: <type 'str'>}
-    send: {default_value: 0, description: End of each sequence to be used, value_type: <type
-        'int'>}
-    sformat: {default_value: '', description: Input sequence format, value_type: <type
-        'str'>}
-    sid: {default_value: '', description: Entryname, value_type: <type 'str'>}
-    slower: {default_value: false, description: Make lower case, value_type: <type
-        'bool'>}
-    snucleotide: {default_value: false, description: Sequence is nucleotide, value_type: <type
-        'bool'>}
-    sprotein: {default_value: false, description: Sequence is protein, value_type: <type
-        'bool'>}
-    squick: {default_value: false, description: Read id and sequence only, value_type: <type
-        'bool'>}
-    sreverse: {default_value: false, description: Reverse (if DNA), value_type: <type
-        'bool'>}
-    supper: {default_value: false, description: Make upper case, value_type: <type
-        'bool'>}
-    ufo: {default_value: '', description: UFO features, value_type: <type 'str'>}
+    fformat: {default_value: '', description: Features format, value_type: str}
+    fopenfile: {default_value: '', description: Features file name, value_type: str}
+    ioffset: {default_value: '', description: Input start position offset, value_type: int}
+    iquery: {default_value: '', description: Input query fields or ID list, value_type: str}
+    sask: {default_value: false, description: Ask for begin/end/reverse, value_type: bool}
+    sbegin: {default_value: 0, description: Start of each sequence to be used, value_type: int}
+    scircular: {default_value: false, description: Sequence is circular, value_type: bool}
+    sdbname: {default_value: '', description: Database name, value_type: str}
+    send: {default_value: 0, description: End of each sequence to be used, value_type: int}
+    sformat: {default_value: '', description: Input sequence format, value_type: str}
+    sid: {default_value: '', description: Entryname, value_type: str}
+    slower: {default_value: false, description: Make lower case, value_type: bool}
+    snucleotide: {default_value: false, description: Sequence is nucleotide, value_type: bool}
+    sprotein: {default_value: false, description: Sequence is protein, value_type: bool}
+    squick: {default_value: false, description: Read id and sequence only, value_type: bool}
+    sreverse: {default_value: false, description: Reverse (if DNA), value_type: bool}
+    supper: {default_value: false, description: Make upper case, value_type: bool}
+    ufo: {default_value: '', description: UFO features, value_type: str}
   type: INPUT
 seqsetall:
   attributes:
     aligned: {default_value: false, description: Sequences are aligned, value_type: bool}
     features: {default_value: false, description: Read features if any, value_type: bool}
-    maxseqs: {default_value: 9223372036854775807, description: Maximum number of sequences,
+    maxseqs: {default_value: 2147483647, description: Maximum number of sequences,
       value_type: int}
-    maxsets: {default_value: 9223372036854775807, description: Maximum number of sequence
-        sets, value_type: int}
+    maxsets: {default_value: 2147483647, description: Maximum number of sequence sets,
+      value_type: int}
     minseqs: {default_value: 1, description: Minimum number of sequences, value_type: int}
     minsets: {default_value: 1, description: Minimum number of sequence sets, value_type: int}
     nulldefault: {default_value: false, description: Defaults to 'no file', value_type: bool}
@@ -1010,38 +879,24 @@ seqsetall:
         etc.)', value_type: str}
   description: Readable sets of sequences
   qualifiers:
-    fformat: {default_value: '', description: Features format, value_type: <type 'str'>}
-    fopenfile: {default_value: '', description: Features file name, value_type: <type
-        'str'>}
-    ioffset: {default_value: '', description: Input start position offset, value_type: <type
-        'int'>}
-    iquery: {default_value: '', description: Input query fields or ID list, value_type: <type
-        'str'>}
-    sask: {default_value: false, description: Ask for begin/end/reverse, value_type: <type
-        'bool'>}
-    sbegin: {default_value: 0, description: Start of each sequence to be used, value_type: <type
-        'int'>}
-    scircular: {default_value: false, description: Sequence is circular, value_type: <type
-        'bool'>}
-    sdbname: {default_value: '', description: Database name, value_type: <type 'str'>}
-    send: {default_value: 0, description: End of each sequence to be used, value_type: <type
-        'int'>}
-    sformat: {default_value: '', description: Input sequence format, value_type: <type
-        'str'>}
-    sid: {default_value: '', description: Entryname, value_type: <type 'str'>}
-    slower: {default_value: false, description: Make lower case, value_type: <type
-        'bool'>}
-    snucleotide: {default_value: false, description: Sequence is nucleotide, value_type: <type
-        'bool'>}
-    sprotein: {default_value: false, description: Sequence is protein, value_type: <type
-        'bool'>}
-    squick: {default_value: false, description: Read id and sequence only, value_type: <type
-        'bool'>}
-    sreverse: {default_value: false, description: Reverse (if DNA), value_type: <type
-        'bool'>}
-    supper: {default_value: false, description: Make upper case, value_type: <type
-        'bool'>}
-    ufo: {default_value: '', description: UFO features, value_type: <type 'str'>}
+    fformat: {default_value: '', description: Features format, value_type: str}
+    fopenfile: {default_value: '', description: Features file name, value_type: str}
+    ioffset: {default_value: '', description: Input start position offset, value_type: int}
+    iquery: {default_value: '', description: Input query fields or ID list, value_type: str}
+    sask: {default_value: false, description: Ask for begin/end/reverse, value_type: bool}
+    sbegin: {default_value: 0, description: Start of each sequence to be used, value_type: int}
+    scircular: {default_value: false, description: Sequence is circular, value_type: bool}
+    sdbname: {default_value: '', description: Database name, value_type: str}
+    send: {default_value: 0, description: End of each sequence to be used, value_type: int}
+    sformat: {default_value: '', description: Input sequence format, value_type: str}
+    sid: {default_value: '', description: Entryname, value_type: str}
+    slower: {default_value: false, description: Make lower case, value_type: bool}
+    snucleotide: {default_value: false, description: Sequence is nucleotide, value_type: bool}
+    sprotein: {default_value: false, description: Sequence is protein, value_type: bool}
+    squick: {default_value: false, description: Read id and sequence only, value_type: bool}
+    sreverse: {default_value: false, description: Reverse (if DNA), value_type: bool}
+    supper: {default_value: false, description: Make upper case, value_type: bool}
+    ufo: {default_value: '', description: UFO features, value_type: str}
   type: INPUT
 sequence:
   attributes:
@@ -1053,43 +908,29 @@ sequence:
         etc.)', value_type: str}
   description: Readable sequence
   qualifiers:
-    fformat: {default_value: '', description: Features format, value_type: <type 'str'>}
-    fopenfile: {default_value: '', description: Features file name, value_type: <type
-        'str'>}
-    ioffset: {default_value: '', description: Input start position offset, value_type: <type
-        'int'>}
-    iquery: {default_value: '', description: Input query fields or ID list, value_type: <type
-        'str'>}
-    sask: {default_value: false, description: Ask for begin/end/reverse, value_type: <type
-        'bool'>}
-    sbegin: {default_value: 0, description: Start of the sequence to be used, value_type: <type
-        'int'>}
-    scircular: {default_value: false, description: Sequence is circular, value_type: <type
-        'bool'>}
-    sdbname: {default_value: '', description: Database name, value_type: <type 'str'>}
-    send: {default_value: 0, description: End of the sequence to be used, value_type: <type
-        'int'>}
-    sformat: {default_value: '', description: Input sequence format, value_type: <type
-        'str'>}
-    sid: {default_value: '', description: Entryname, value_type: <type 'str'>}
-    slower: {default_value: false, description: Make lower case, value_type: <type
-        'bool'>}
-    snucleotide: {default_value: false, description: Sequence is nucleotide, value_type: <type
-        'bool'>}
-    sprotein: {default_value: false, description: Sequence is protein, value_type: <type
-        'bool'>}
-    squick: {default_value: false, description: Read id and sequence only, value_type: <type
-        'bool'>}
-    sreverse: {default_value: false, description: Reverse (if DNA), value_type: <type
-        'bool'>}
-    supper: {default_value: false, description: Make upper case, value_type: <type
-        'bool'>}
-    ufo: {default_value: '', description: UFO features, value_type: <type 'str'>}
+    fformat: {default_value: '', description: Features format, value_type: str}
+    fopenfile: {default_value: '', description: Features file name, value_type: str}
+    ioffset: {default_value: '', description: Input start position offset, value_type: int}
+    iquery: {default_value: '', description: Input query fields or ID list, value_type: str}
+    sask: {default_value: false, description: Ask for begin/end/reverse, value_type: bool}
+    sbegin: {default_value: 0, description: Start of the sequence to be used, value_type: int}
+    scircular: {default_value: false, description: Sequence is circular, value_type: bool}
+    sdbname: {default_value: '', description: Database name, value_type: str}
+    send: {default_value: 0, description: End of the sequence to be used, value_type: int}
+    sformat: {default_value: '', description: Input sequence format, value_type: str}
+    sid: {default_value: '', description: Entryname, value_type: str}
+    slower: {default_value: false, description: Make lower case, value_type: bool}
+    snucleotide: {default_value: false, description: Sequence is nucleotide, value_type: bool}
+    sprotein: {default_value: false, description: Sequence is protein, value_type: bool}
+    squick: {default_value: false, description: Read id and sequence only, value_type: bool}
+    sreverse: {default_value: false, description: Reverse (if DNA), value_type: bool}
+    supper: {default_value: false, description: Make upper case, value_type: bool}
+    ufo: {default_value: '', description: UFO features, value_type: str}
   type: INPUT
 string:
   attributes:
     lower: {default_value: false, description: Convert to lower case, value_type: bool}
-    maxlength: {default_value: 9223372036854775807, description: Maximum length, value_type: int}
+    maxlength: {default_value: 2147483647, description: Maximum length, value_type: int}
     minlength: {default_value: 0, description: Minimum length, value_type: int}
     pattern: {default_value: '', description: Regular expression for validation, value_type: str}
     upper: {default_value: false, description: Convert to upper case, value_type: bool}
@@ -1100,40 +941,30 @@ string:
 taxon:
   attributes:
     entry: {default_value: false, description: Read whole entry text, value_type: bool}
-    maxreads: {default_value: 9223372036854775807, description: Maximum number of
-        inputs, value_type: int}
+    maxreads: {default_value: 2147483647, description: Maximum number of inputs, value_type: int}
     minreads: {default_value: 1, description: Minimum number of inputs, value_type: int}
     nullok: {default_value: false, description: Can accept a null filename as 'no
         file', value_type: bool}
   description: NCBI taxonomy entries
   qualifiers:
-    idbname: {default_value: '', description: User-provided database name, value_type: <type
-        'str'>}
-    iformat: {default_value: '', description: Input taxonomy format, value_type: <type
-        'str'>}
-    ioffset: {default_value: '', description: Input start position offset, value_type: <type
-        'int'>}
-    iquery: {default_value: '', description: Input query fields or ID list, value_type: <type
-        'str'>}
+    idbname: {default_value: '', description: User-provided database name, value_type: str}
+    iformat: {default_value: '', description: Input taxonomy format, value_type: str}
+    ioffset: {default_value: '', description: Input start position offset, value_type: int}
+    iquery: {default_value: '', description: Input query fields or ID list, value_type: str}
   type: INPUT
 text:
   attributes:
     entry: {default_value: false, description: Read whole entry text, value_type: bool}
-    maxreads: {default_value: 9223372036854775807, description: Maximum number of
-        inputs, value_type: int}
+    maxreads: {default_value: 2147483647, description: Maximum number of inputs, value_type: int}
     minreads: {default_value: 1, description: Minimum number of inputs, value_type: int}
     nullok: {default_value: false, description: Can accept a null filename as 'no
         file', value_type: bool}
   description: Text entries
   qualifiers:
-    idbname: {default_value: '', description: User-provided database name, value_type: <type
-        'str'>}
-    iformat: {default_value: '', description: Input text format, value_type: <type
-        'str'>}
-    ioffset: {default_value: '', description: Input start position offset, value_type: <type
-        'int'>}
-    iquery: {default_value: '', description: Input query fields or ID list, value_type: <type
-        'str'>}
+    idbname: {default_value: '', description: User-provided database name, value_type: str}
+    iformat: {default_value: '', description: Input text format, value_type: str}
+    ioffset: {default_value: '', description: Input start position offset, value_type: int}
+    iquery: {default_value: '', description: Input query fields or ID list, value_type: str}
   type: INPUT
 toggle:
   attributes: {}
@@ -1151,63 +982,47 @@ tree:
 url:
   attributes:
     entry: {default_value: false, description: Read whole entry text, value_type: bool}
-    maxreads: {default_value: 9223372036854775807, description: Maximum number of
-        inputs, value_type: int}
+    maxreads: {default_value: 2147483647, description: Maximum number of inputs, value_type: int}
     minreads: {default_value: 1, description: Minimum number of inputs, value_type: int}
     nullok: {default_value: false, description: Can accept a null filename as 'no
         file', value_type: bool}
   description: URL entries
   qualifiers:
     accession: {default_value: '', description: Primary accession for source data,
-      value_type: <type 'str'>}
-    embl: {default_value: false, description: EMBL/GenBank/DDBJ cross-reference, value_type: <type
-        'bool'>}
-    idbname: {default_value: '', description: User-provided database name, value_type: <type
-        'str'>}
-    identifier: {default_value: '', description: Identifier term name in EDAM, value_type: <type
-        'str'>}
-    iformat: {default_value: '', description: Input URL format, value_type: <type
-        'str'>}
-    swiss: {default_value: false, description: Swissprot cross-reference, value_type: <type
-        'bool'>}
+      value_type: str}
+    embl: {default_value: false, description: EMBL/GenBank/DDBJ cross-reference, value_type: bool}
+    idbname: {default_value: '', description: User-provided database name, value_type: str}
+    identifier: {default_value: '', description: Identifier term name in EDAM, value_type: str}
+    iformat: {default_value: '', description: Input URL format, value_type: str}
+    swiss: {default_value: false, description: Swissprot cross-reference, value_type: bool}
   type: INPUT
 variation:
   attributes:
     entry: {default_value: false, description: Read whole entry text, value_type: bool}
-    maxreads: {default_value: 9223372036854775807, description: Maximum number of
-        inputs, value_type: int}
+    maxreads: {default_value: 2147483647, description: Maximum number of inputs, value_type: int}
     minreads: {default_value: 1, description: Minimum number of inputs, value_type: int}
     nullok: {default_value: false, description: Can accept a null filename as 'no
         file', value_type: bool}
   description: Variation entries
   qualifiers:
-    idbname: {default_value: '', description: User-provided database name, value_type: <type
-        'str'>}
-    iformat: {default_value: '', description: Input variation format, value_type: <type
-        'str'>}
-    ioffset: {default_value: '', description: Input start position offset, value_type: <type
-        'int'>}
-    iquery: {default_value: '', description: Input query fields or ID list, value_type: <type
-        'str'>}
+    idbname: {default_value: '', description: User-provided database name, value_type: str}
+    iformat: {default_value: '', description: Input variation format, value_type: str}
+    ioffset: {default_value: '', description: Input start position offset, value_type: int}
+    iquery: {default_value: '', description: Input query fields or ID list, value_type: str}
   type: INPUT
 xml:
   attributes:
     entry: {default_value: false, description: Read whole entry text, value_type: bool}
-    maxreads: {default_value: 9223372036854775807, description: Maximum number of
-        inputs, value_type: int}
+    maxreads: {default_value: 2147483647, description: Maximum number of inputs, value_type: int}
     minreads: {default_value: 1, description: Minimum number of inputs, value_type: int}
     nullok: {default_value: false, description: Can accept a null filename as 'no
         file', value_type: bool}
   description: Xml
   qualifiers:
-    idbname: {default_value: '', description: User-provided database name, value_type: <type
-        'str'>}
-    iformat: {default_value: '', description: Input xml format, value_type: <type
-        'str'>}
-    ioffset: {default_value: '', description: Input start position offset, value_type: <type
-        'int'>}
-    iquery: {default_value: '', description: Input query fields or ID list, value_type: <type
-        'str'>}
+    idbname: {default_value: '', description: User-provided database name, value_type: str}
+    iformat: {default_value: '', description: Input xml format, value_type: str}
+    ioffset: {default_value: '', description: Input start position offset, value_type: int}
+    iquery: {default_value: '', description: Input query fields or ID list, value_type: str}
   type: INPUT
 xygraph:
   attributes:
@@ -1218,18 +1033,13 @@ xygraph:
     sequence: {default_value: false, description: Sequence on x axis, value_type: bool}
   description: Graph device for a 2D graph
   qualifiers:
-    gdesc: {default_value: '', description: Graph description, value_type: <type 'str'>}
-    gdirectory: {default_value: '', description: Output directory, value_type: <type
-        'str'>}
+    gdesc: {default_value: '', description: Graph description, value_type: str}
+    gdirectory: {default_value: '', description: Output directory, value_type: str}
     goutfile: {default_value: '', description: Output file for non interactive displays,
-      value_type: <type 'str'>}
-    gprompt: {default_value: false, description: Graph prompting, value_type: <type
-        'bool'>}
-    gsubtitle: {default_value: '', description: Graph subtitle, value_type: <type
-        'str'>}
-    gtitle: {default_value: '', description: Graph title, value_type: <type 'str'>}
-    gxtitle: {default_value: '', description: Graph x axis title, value_type: <type
-        'str'>}
-    gytitle: {default_value: '', description: Graph y axis title, value_type: <type
-        'str'>}
+      value_type: str}
+    gprompt: {default_value: false, description: Graph prompting, value_type: bool}
+    gsubtitle: {default_value: '', description: Graph subtitle, value_type: str}
+    gtitle: {default_value: '', description: Graph title, value_type: str}
+    gxtitle: {default_value: '', description: Graph x axis title, value_type: str}
+    gytitle: {default_value: '', description: Graph y axis title, value_type: str}
   type: OUTPUT
