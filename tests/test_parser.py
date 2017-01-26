@@ -38,8 +38,8 @@ class TestParser(unittest.TestCase):
             additional: "no"
         ]""")
         self.assertEqual(parameter.name, 'myparameter')
-        self.assertEqual(parameter.attributes['information'], 'parameter information')
-        self.assertEqual(parameter.attributes['prompt'], 'test prompt')
+        self.assertEqual(parameter.attributes['information']['default_value'], 'parameter information')
+        self.assertEqual(parameter.attributes['prompt']['default_value'], 'test prompt')
 
     def test_parse_boolean_values(self):
         parameter = parse_parameter("""
@@ -47,29 +47,29 @@ class TestParser(unittest.TestCase):
             needed: "yes"
             additional: "no"
         ]""")
-        self.assertEqual(parameter.attributes['needed'], True)
-        self.assertEqual(parameter.attributes['additional'], False)
+        self.assertEqual(parameter.attributes['needed']['default_value'], True)
+        self.assertEqual(parameter.attributes['additional']['default_value'], False)
         parameter = parse_parameter("""
             string: myparameter [
             needed: "Y"
             additional: "N"
         ]""")
-        self.assertEqual(parameter.attributes['needed'], True)
-        self.assertEqual(parameter.attributes['additional'], False)
+        self.assertEqual(parameter.attributes['needed']['default_value'], True)
+        self.assertEqual(parameter.attributes['additional']['default_value'], False)
         parameter = parse_parameter("""
             string: myparameter [
             needed: "y"
             additional: "n"
         ]""")
-        self.assertEqual(parameter.attributes['needed'], True)
-        self.assertEqual(parameter.attributes['additional'], False)
+        self.assertEqual(parameter.attributes['needed']['default_value'], True)
+        self.assertEqual(parameter.attributes['additional']['default_value'], False)
         parameter = parse_parameter("""
             string: myparameter [
             needed: "true"
             additional: "false"
         ]""")
-        self.assertEqual(parameter.attributes['needed'], True)
-        self.assertEqual(parameter.attributes['additional'], False)
+        self.assertEqual(parameter.attributes['needed']['default_value'], True)
+        self.assertEqual(parameter.attributes['additional']['default_value'], False)
         def bad_value_parse():
             parse_parameter("""
                 string: myparameter [

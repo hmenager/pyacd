@@ -139,7 +139,7 @@ class Qa(object):
                         parameter_value = True
                     else:
                         parameter_value = six.next(cl_chunks)
-                    if parameter.qualifiers.get('parameter') == True:
+                    if parameter.qualifiers.get('parameter', {'default_value': False}).get('default_value') == True:
                         parameters_count += 1
                     job_order[parameter.name]['value'] = parameter_value
                 else:
@@ -157,10 +157,11 @@ class Qa(object):
                             name = name[:-1]
                         parameters = acd_def.parameter_by_qualifier_name(
                             name)
+                        six._print(parameters)
                         if len(parameters)==1:
                             parameter = parameters[0][0]
                             qualifier_name = parameters[0][1]
-                            if isinstance(parameters[0][2], bool):
+                            if parameters[0][2]['value_type']=='bool':
                                 parameter_value = True
                             else:
                                 parameter_value = six.next(cl_chunks)
@@ -170,7 +171,7 @@ class Qa(object):
                             if index is not None:
                                 parameter = parameters[index][0]
                                 qualifier_name = parameters[index][1]
-                                if isinstance(parameters[index][2], bool):
+                                if parameters[index][2]['value_type']=='bool':
                                     parameter_value = True
                                 else:
                                     parameter_value = six.next(cl_chunks)
@@ -183,7 +184,7 @@ class Qa(object):
                                 for match in parameters:
                                     parameter = match[0]
                                     qualifier_name = match[1]
-                                    if isinstance(match[2], bool):
+                                    if match[2]['default_value']=='bool':
                                         parameter_value = True
                                     else:
                                         parameter_value = six.next(cl_chunks)
@@ -230,7 +231,7 @@ class Qa(object):
                 # parameter values by position on the command line
                 parameter = acd_def.parameter_by_index(parameters_count)
                 job_order[parameter.name]['value'] = chunk
-                if parameter.qualifiers.get('parameter')==True:
+                if parameter.qualifiers.get('parameter', {'default_value': False}).get('default_value')==True:
                     parameters_count += 1
         input_lines_array = [line.input_line for line in self.input_lines]
         for parameter in acd_def.desc_parameters():

@@ -420,7 +420,7 @@ class Acd(object):
 
     def parameter_by_index(self, index):
         return [parameter for parameter in self.desc_parameters() if
-                parameter.attributes['parameter']==True][index]
+                parameter.attributes['parameter']['default_value']==True][index]
 
     def parameter_by_qualifier_name(self, name):
         results = []
@@ -467,6 +467,27 @@ class InvalidAcdPropertyValue(Exception):
         return template.format(self.attribute_name, self.attribute_value,
                                self.parameter_name)
 
+def set_att_def_value(attribute, value, att_name, el_name):
+    if value.startswith('$') or value.startswith('@'):
+        # computed attribute values
+        attribute['default_value'] = value
+    elif attribute['value_type']=='list':
+        attribute['default_value'].append(value)
+    elif attribute['value_type']=='bool':
+        if value in ['yes', 'Y', 'y', 'true']:
+            attribute['default_value'] = True
+        elif value in ['no', 'N', 'n', 'false']:
+            attribute['default_value'] = False
+        else:
+            raise InvalidAcdPropertyValue(att_name, value, el_name)
+    elif attribute['value_type']=='float':
+        attribute['default_value'] = float(value)
+    elif attribute['value_type']=='int':
+        attribute['default_value'] = int(value)
+    elif attribute['value_type']=='str':
+        attribute['default_value'] = str(value)
+    elif attribute['value_type']=='str':
+        attribute['default_value'] = str(value)
 
 class ElementWithAttributes(object):
     """
@@ -483,50 +504,20 @@ class ElementWithAttributes(object):
         # pylint: disable=no-member
         for attribute in attributes:
             if attribute.name in self.attributes:
-                if attribute.value.startswith(
-                        '$') or attribute.value.startswith('@'):
-                    # computed attribute values
-                    self.attributes[attribute.name] = attribute.value
+                set_att_def_value(self.attributes[attribute.name], attribute.value, attribute.name, self.name)
                 try:
-                    if isinstance(self.attributes[attribute.name], list):
-                        self.attributes[attribute.name].append(attribute.value)
-                    elif isinstance(self.attributes[attribute.name], bool):
-                        if attribute.value in ['yes', 'Y', 'y', 'true']:
-                            self.attributes[attribute.name] = True
-                        elif attribute.value in ['no', 'N', 'n', 'false']:
-                            self.attributes[attribute.name] = False
-                        else:
-                            raise InvalidAcdPropertyValue(
-                                attribute.name, attribute.value, self.name)
-                    else:
-                        self.attributes[attribute.name] = type(self.attributes[
-                            attribute.name])(attribute.value)
+                    set_att_def_value(self.attributes[attribute.name], attribute.value, attribute.name, self.name)
                 except TypeError as terr:
-                    six.print_("Error while trying to set value of {0} to {1} in " \
+                    six.print_("Error while trying to set value of attribute {0} to {1} in " \
                           "parameter {2}" \
                           "".format(attribute.name, attribute.value, self.name))
                     raise terr
             elif attribute.name in self.qualifiers:
-                if attribute.value.startswith(
-                        '$') or attribute.value.startswith('@'):
-                    # computed qualifier values
-                    self.qualifiers[attribute.name] = attribute.value
+                set_att_def_value(self.qualifiers[attribute.name], attribute.value, attribute.name, self.name)
                 try:
-                    if isinstance(self.qualifiers[attribute.name], list):
-                        self.qualifiers[attribute.name].append(attribute.value)
-                    elif isinstance(self.qualifiers[attribute.name], bool):
-                        if attribute.value in ['yes', 'Y', 'y', 'true']:
-                            self.qualifiers[attribute.name] = True
-                        elif attribute.value in ['no', 'N', 'n', 'false']:
-                            self.qualifiers[attribute.name] = False
-                        else:
-                            raise InvalidAcdPropertyValue(
-                                attribute.name, attribute.value, self.name)
-                    else:
-                        self.qualifiers[attribute.name] = type(self.qualifiers[
-                            attribute.name])(attribute.value)
+                    set_att_def_value(self.qualifiers[attribute.name], attribute.value, attribute.name, self.name)
                 except TypeError as terr:
-                    six.print_("Error while trying to set value of {0} to " \
+                    six.print_("Error while trying to set value of qualifier {0} to " \
                                "{1} in parameter {2}".format(attribute.name,
                                                              attribute.value,
                                                              self.name))
@@ -548,22 +539,22 @@ class Application(ElementWithAttributes):
         :type attributes: dict
         """
         self.name = name
-        self.attributes = {'documentation': '',
-                           'relations': [],
-                           'groups': '',
-                           'keywords': [],
-                           'gui': True,
-                           'batch': True,
-                           'embassy': '',
-                           'external': '',
-                           'cpu': '',
-                           'supplier': '',
-                           'version': '',
-                           'nonemboss': '',
-                           'executable': '',
-                           'template': '',
-                           'comment': '',
-                           'obsolete': ''}
+        self.attributes = {'documentation': {'default_value': '', 'value_type': 'str', 'description': 'Short description of the application function'},
+                           'relations': {'default_value': [], 'value_type': 'list', 'description': ''},
+                           'groups': {'default_value': '', 'value_type': 'str', 'description': 'Standard application group(s) for wossname and GUIs'},
+                           'keywords': {'default_value': '', 'value_type': 'str', 'description': 'Set of keywords describing the application functionality'},
+                           'gui': {'default_value': '', 'value_type': 'str', 'description': 'Suitability for launching in a GUI'},
+                           'batch': {'default_value': '', 'value_type': 'str', 'description': 'Suitability for launching in a GUI'},
+                           'embassy': {'default_value': '', 'value_type': 'str', 'description': 'EMBASSY package name'},
+                           'external': {'default_value': '', 'value_type': 'str', 'description': 'Third party tool(s) required by this program'},
+                           'cpu': {'default_value': '', 'value_type': 'str', 'description': 'Estimated maximum CPU usage'},
+                           'supplier': {'default_value': '', 'value_type': 'str', 'description': 'Supplier name'},
+                           'version': {'default_value': '', 'value_type': 'str', 'description': 'Version number'},
+                           'nonemboss': {'default_value': '', 'value_type': 'str', 'description': 'Non-emboss application name for SoapLab'},
+                           'executable': {'default_value': '', 'value_type': 'str', 'description': 'Non-emboss executable for SoapLab'},
+                           'template': {'default_value': '', 'value_type': 'str', 'description': 'Commandline template for SoapLab\'s ACD files'},
+                           'comment': {'default_value': '', 'value_type': 'str', 'description': 'Comment for SoapLab\'s ACD files'},
+                           'obsolete': {'default_value': '', 'value_type': 'str', 'description': ''}}
         if attributes is not None:
             self.set_attributes(attributes)
 
@@ -645,29 +636,40 @@ class Parameter(ElementWithAttributes):
         self.attributes = self.__class__.attributes.copy()
         self.set_attributes(attributes)
 
-    attributes = {'information': '',
-                           'prompt': '',
-                           'code': '',
-                           'help': '',
-                           'parameter': False,
-                           'standard': False,
-                           'additional': False,
-                           'missing': False,
-                           'valid': '',
-                           'expected': '',
-                           'needed': True,
-                           'knowntype': '',
-                           'relations': [],
-                           'outputmodifier': False,
-                           'style': '',
-                           'qualifier': '',
-                           'template': '',
-                           'comment': '',
-                           'pformat': '',
-                           'pname': '',
-                           'type': '',
-                           'features': '',
-                           'default': '', 
+    attributes = {'information': {'default_value': '', 'value_type': 'str', 'description': 'Information for menus etc., and default prompt'},
+                  'prompt': {'default_value': '', 'value_type': 'str', 'description': 'Prompt (if information string is unclear)'},
+                  'code': {'default_value': '', 'value_type': 'str', 'description': 'Code name for information/prompt to be looked up in standard table'},
+                  'help': {'default_value': '', 'value_type': 'str', 'description': 'Text for help documentation'},
+                  'parameter': {'default_value': False, 'value_type': 'bool', 
+                                'description': 'Command line parameter. Can be on the command line with no qualifier name. Implies \'standard\' qualifier'},
+                  'standard': {'default_value': False, 'value_type': 'bool', 
+                                'description': 'Standard qualifier, value required. Interactive prompt if missing'},
+                  'additional': {'default_value': False, 'value_type': 'bool', 
+                                'description': 'Additional qualifier. Value required if -options is on the command line, or set by default'},
+                  'missing': {'default_value': False, 'value_type': 'bool', 
+                                'description': 'Allow with no value on the command line to set to \'\''},
+                  'valid': {'default_value': '', 'value_type': 'str', 
+                                'description': 'Help: String description of allowed values for -help output, used if the default help is nuclear'},
+                  'expected': {'default_value': '', 'value_type': 'str', 
+                                'description': 'Help: String description of the expected value for -help output, used if the default help is nuclear'},
+                  'needed': {'default_value': True, 'value_type': 'bool', 
+                                'description': 'Include in GUI form, used to hide options if they are unclear in GUIs'},
+                  'knowntype': {'default_value': '', 'value_type': 'str', 
+                                'description': 'Known standard type, used to define input and output types for workflows'},
+                  'relations': {'default_value': [], 'value_type': 'str', 
+                                'description': 'Relationships between this ACD item and others, defined as specially formatted text'},
+                  'outputmodifier': {'default_value': False, 'value_type': 'bool', 
+                                'description': 'Modifies the output in ways that can break parsers'},
+                  'style': {'default_value': '', 'value_type': 'str', 
+                                'description': 'Style for SoapLab\'s ACD files'},
+                  'qualifier': {'default_value': '', 'value_type': 'str', 
+                                'description': 'Qualifier name for SoapLab\'s ACD files'},
+                  'template': {'default_value': '', 'value_type': 'str', 
+                                'description': 'Commandline template for SoapLab\'s ACD files'},
+                  'comment': {'default_value': '', 'value_type': 'str', 
+                                'description': 'Comment for SoapLab\'s ACD files'},
+                  'default': {'default_value': '', 'value_type': 'str', 
+                                'description': 'Default value'},
                 }
 
     qualifiers = {}
@@ -679,9 +681,9 @@ with open(get_data_path('datatypes.yml'), 'r') as datatypes_fh:
     for datatype, definition in datatypes.items():
         bases = (Parameter,)
         attributes = Parameter.attributes.copy()
-        attributes.update({key: value.get('default_value') for key, value in definition.get('attributes',{}).items()})
+        attributes.update({key: value for key, value in definition.get('attributes',{}).items()})
         qualifiers = Parameter.qualifiers.copy()
-        qualifiers.update({key: value.get('default_value') for key, value in definition.get('qualifiers',{}).items()})
+        qualifiers.update({key: value for key, value in definition.get('qualifiers',{}).items()})
         properties = {'description': definition.get('description'),
                       'attributes': attributes, 'qualifiers': qualifiers}
         new_class = type(datatype.capitalize()+'Parameter',
