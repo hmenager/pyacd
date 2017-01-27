@@ -4,6 +4,7 @@ The acd module defines an object model for ACD files contents
 # pylint: disable=too-few-public-methods, missing-docstring
 import sys
 import os
+import copy
 
 import ruamel.yaml as yaml
 import six
@@ -633,7 +634,7 @@ class Parameter(ElementWithAttributes):
         """
         self.name = name
         self.datatype = datatype
-        self.attributes = self.__class__.attributes.copy()
+        self.attributes = copy.deepcopy(self.__class__.attributes)
         self.set_attributes(attributes)
 
     attributes = {'information': {'default_value': '', 'value_type': 'str', 'description': 'Information for menus etc., and default prompt'},
