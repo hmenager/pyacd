@@ -681,9 +681,9 @@ with open(get_data_path('datatypes.yml'), 'r') as datatypes_fh:
     datatypes = yaml.safe_load(datatypes_fh)
     for datatype, definition in datatypes.items():
         bases = (Parameter,)
-        attributes = Parameter.attributes.copy()
+        attributes = copy.deepcopy(Parameter.attributes)
         attributes.update({key: value for key, value in definition.get('attributes',{}).items()})
-        qualifiers = Parameter.qualifiers.copy()
+        qualifiers = copy.deepcopy(Parameter.qualifiers)
         qualifiers.update({key: value for key, value in definition.get('qualifiers',{}).items()})
         properties = {'description': definition.get('description'),
                       'attributes': attributes, 'qualifiers': qualifiers}
