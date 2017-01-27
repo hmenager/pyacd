@@ -157,7 +157,6 @@ class Qa(object):
                             name = name[:-1]
                         parameters = acd_def.parameter_by_qualifier_name(
                             name)
-                        six._print(parameters)
                         if len(parameters)==1:
                             parameter = parameters[0][0]
                             qualifier_name = parameters[0][1]
