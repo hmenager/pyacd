@@ -8,7 +8,7 @@ readme = open('README.md').read()
 
 setup(
     name='pyacd',
-    version='0.1.2',
+    version='0.2.0',
     description='python API to EMBOSS ACD files',
     long_description=readme,
     author='Hervé Ménager',
